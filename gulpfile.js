@@ -1,6 +1,7 @@
 var gulp = require('gulp'), // Сообственно Gulp JS
     concat = require('gulp-concat'), // Склейка файлов
     jade = require('gulp-jade'),
+    imagemin = require('gulp-imagemin'),
     less = require('gulp-less');
    
 var path = require('path');
@@ -32,11 +33,20 @@ gulp.task('jade', function() {
 gulp.task('copy', function() {
     gulp.src('./assets/js/*.js')
         .pipe(gulp.dest('./build/js'));
+    gulp.src('./assets/fonts/**/*.otf')
+        .pipe(gulp.dest('./build/fonts')); 
+    gulp.src('./assets/img/**/*')    
+        .pipe(imagemin({
+            progressive: true,
+            optimizationLevel: 5
+        }))
+        .pipe(gulp.dest('./build/img'));    
 });
 
 gulp.task('watch', function () {
     gulp.watch('./assets/less/*.less', ['build-less']);
     gulp.watch('./assets/template/**/*.jade', ['jade']);
+    gulp.watch('./assets/img/**/*', ['copy']);
     
 });
 

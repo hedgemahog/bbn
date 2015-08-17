@@ -1,3 +1,49 @@
 doctype html
 html(lang="ru")
     include partials/cab_head.jade
+    body
+      div(class="maincont container")
+        header
+          .row
+            div(class="col-xs-12")
+              <a href="#"><img src="img/logo.jpg"></a>
+          .row
+            div(class="col-xs-12")
+              p.mainheader
+                | Bureau Babkin News
+              p.mainsubhead
+                | политический консалтинг 
+           .row
+             div(class="col-xs-12")
+               nav.navbar
+                 ul(class="nav navbar-nav")
+                   li
+                     | <a href="#">О бюро</a>
+                   li
+                     | <a href="#">Услуги</a>
+                   li
+                     | <a href="#">Связаться</a>       
+           .row
+             div(class="col-xs-12")
+               p.whoWhom
+                 span
+                   | для кого мы рабтаем:
+               div(class="col-xs-4 mainCandidat")
+                 p
+                   <a href="#"><img src="img/KANDIDAT_MAINPAGE_NO_FILL_TEST.png"></a>
+                 p.mainIcontext
+                   | Кандидаты  	
+               div(class="col-xs-4 mainFlag")
+                 p
+                   <a href="#"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a>
+                 p.mainIcontext
+                   | Официальные лица   	
+               div(class="col-xs-4 mainParti")
+                 p
+                   <a href="#"><img src="img/PARTII_GRUPPA.png"></a>
+                 p.mainIcontext
+                   | Политические партии
+           footer
+             div(class="col-xs-12 mainfooter")
+               p
+                 |© Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.      

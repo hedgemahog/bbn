@@ -1,6 +1,126 @@
 @import "bootstrap.less";
 @import "variables.less";
 
-.fda {
-	color: #dddddd;
+h1 {
+	font-family: @font-family-sans-serif-head;
+}
+
+.maincont {
+	text-align: center;
+	padding-top: 50px;
+}
+footer{
+	height: 50px;
+	font-family: @font-family-sans-serif-med;
+	font-size: 13px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	height: 55px;
+	width: 100%;
+	z-index: 1000;
+}
+.mainfooter {
+	padding-top: 80px;
+}
+.pagefooter {
+	box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
+	padding-top: 20px;
+}
+
+//Navbar
+.navbar-nav {
+	a {
+		font-family: @font-family-sans-serif-med;
+		font-size: 20px;
+	}
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+//Internal pages Navbar
+.internalNav{
+	text-align: right;
+	height: 55px;
+	box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.35);
+	background: #fff;
+}
+.navbar-brand {
+	font-family: @font-family-sans-serif-bold;
+	font-size: 25px;
+}
+
+
+
+//Main Page
+.maincont {
+	position: absolute;
+}
+
+.mainheader{
+	font-family: @font-family-sans-serif-bold;
+	font-size: 44px;
+}
+.mainsubhead {
+	font-family: @font-family-sans-serif-med;
+	font-size: 18px;
+	letter-spacing: 5px;
+	margin-top: -10px;
+}
+.whoWhom {
+	font-family: @font-family-sans-serif-head;
+	font-size: 40px;
+	letter-spacing: 15px;
+	margin-top: -20px;
+	padding-bottom: 20px;
+	span {
+		border-top: 5px solid black;
+		padding-top: 10px;
+	}
+}
+.mainIcontext {
+	font-family: @font-family-sans-serif-med;
+	font-size: 20px;
+}
+.mainCandidat,
+.mainFlag,
+.mainParti {
+	position: relative;
+}
+
+//Internal page
+.textPageCont {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	position: relative;
+	z-index: 1;
+	h1 {
+		padding-top: 0;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	p{
+		&:first-letter {
+			font-family: @font-family-sans-serif-head;
+			font-size: 55px;
+			float: left;
+			margin: -20px 4px 2px 0;
+		}
+	}
 }
