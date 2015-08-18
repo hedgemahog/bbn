@@ -2,22 +2,26 @@ var gulp = require('gulp'), // Сообственно Gulp JS
     concat = require('gulp-concat'), // Склейка файлов
     jade = require('gulp-jade'),
     imagemin = require('gulp-imagemin'),
-    less = require('gulp-less');
+    less = require('gulp-less'),
+    csso = require('gulp-csso'),
+    myth = require('gulp-myth');
    
 var path = require('path');
 var bower = require('gulp-bower');
    
 
 gulp.task('cssConcat', function() {
-    gulp.src('./assets/css/*.css')
-        .pipe(concat('style.css'))
+    gulp.src('./assets/css/**/*.css')
+        .pipe(concat('styles.css'))
+        .pipe(myth())
+        .pipe(csso())
         .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('build-less', function(){
     return gulp.src('./assets/less/styles.less')
         .pipe(less())
-        .pipe(gulp.dest('./build/css'));
+        .pipe(gulp.dest('./assets/css'));
 });
 
 
@@ -51,10 +55,11 @@ gulp.task('copy', function() {
 
 gulp.task('watch', function () {
     gulp.watch('./assets/less/*.less', ['build-less']);
+    gulp.watch('./assets/css/**/*.css', ['cssConcat']);
     gulp.watch('./assets/template/**/*.jade', ['jade']);
     gulp.watch('./assets/img/**/*', ['copy']);
     
 });
 
 
-gulp.task('default', ['build-less', 'jade', 'copy', 'bower', 'watch']);
+gulp.task('default', ['build-less', 'cssConcat', 'jade', 'copy', 'bower', 'watch']);
