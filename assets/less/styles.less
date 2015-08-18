@@ -22,7 +22,8 @@ footer{
 	z-index: 1000;
 }
 .mainfooter {
-	padding-top: 80px;
+	margin-top: 110px;
+	clear: both;
 }
 .pagefooter {
 	box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
@@ -31,19 +32,22 @@ footer{
 
 //Navbar
 .navbar-nav {
+	li {
+		a {
+			&:hover {
+				background-color: #000 !important;
+				color: #fff;
+			}
+			padding: 10px 25px;
+		}
+	}
 	a {
 		font-family: @font-family-sans-serif-med;
 		font-size: 20px;
 	}
 }
-.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
-.navbar .navbar-nav .open .dropdown-menu > .active > a,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #fff !important;
-  background-color: #428bca !important;
-}
+
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -69,9 +73,6 @@ footer{
 
 
 //Main Page
-.maincont {
-	position: absolute;
-}
 
 .mainheader{
 	font-family: @font-family-sans-serif-bold;
@@ -87,7 +88,7 @@ footer{
 	font-family: @font-family-sans-serif-head;
 	font-size: 40px;
 	letter-spacing: 15px;
-	margin-top: -20px;
+	margin-top: -22px;
 	padding-bottom: 20px;
 	span {
 		border-top: 5px solid black;
@@ -97,12 +98,52 @@ footer{
 .mainIcontext {
 	font-family: @font-family-sans-serif-med;
 	font-size: 20px;
+
 }
 .mainCandidat,
 .mainFlag,
 .mainParti {
-	position: relative;
+	//border: 1px solid black;
+	cursor: pointer;
+	box-sizing: border-box;
+	.img {
+		height: 155px;
+	}
 }
+.mainCandidat {
+	padding-left: 5%;
+	.mainIcontext {
+		margin-left: 80px;
+	}
+}
+.mainFlag {
+	margin-left: -20px;
+}
+.mainParti {
+	margin-left: -5%;
+}
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+.mainParti {
+	.cntr {
+		position: absolute;
+		top: 0;
+		left: 0;	
+	}
+}
+
+//Main page animation
+.card {
+	width: 100%;
+	height: 155px;
+}
+
 
 //Internal page
 .textPageCont {

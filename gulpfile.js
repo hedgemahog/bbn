@@ -5,6 +5,7 @@ var gulp = require('gulp'), // Сообственно Gulp JS
     less = require('gulp-less');
    
 var path = require('path');
+var bower = require('gulp-bower');
    
 
 gulp.task('cssConcat', function() {
@@ -30,6 +31,11 @@ gulp.task('jade', function() {
      
 }); 
 
+gulp.task('bower', function() {
+  return bower()
+    .pipe(gulp.dest('./build/lib/'))
+});
+
 gulp.task('copy', function() {
     gulp.src('./assets/js/*.js')
         .pipe(gulp.dest('./build/js'));
@@ -51,4 +57,4 @@ gulp.task('watch', function () {
 });
 
 
-gulp.task('default', ['build-less', 'jade', 'copy', 'watch']);
+gulp.task('default', ['build-less', 'jade', 'copy', 'bower', 'watch']);

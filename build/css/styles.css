@@ -4539,8 +4539,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: #ffffff;
+  color: #000000;
+  background-color: #000000;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -4580,8 +4580,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ffffff;
-    background-color: #ffffff;
+    color: #000000;
+    background-color: #000000;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
@@ -4600,14 +4600,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777777;
 }
 .navbar-default .navbar-link:hover {
-  color: #ffffff;
+  color: #000000;
 }
 .navbar-default .btn-link {
   color: #777777;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #ffffff;
+  color: #000000;
 }
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
@@ -6800,23 +6800,23 @@ footer {
   z-index: 1000;
 }
 .mainfooter {
-  padding-top: 80px;
+  margin-top: 110px;
+  clear: both;
 }
 .pagefooter {
   box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
   padding-top: 20px;
 }
+.navbar-nav li a {
+  padding: 10px 25px;
+}
+.navbar-nav li a:hover {
+  background-color: #000 !important;
+  color: #fff;
+}
 .navbar-nav a {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
   font-size: 20px;
-}
-.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
-.navbar .navbar-nav .open .dropdown-menu > .active > a,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #fff !important;
-  background-color: #428bca !important;
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -6836,9 +6836,6 @@ footer {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
   font-size: 25px;
 }
-.maincont {
-  position: absolute;
-}
 .mainheader {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
   font-size: 44px;
@@ -6853,7 +6850,7 @@ footer {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
   font-size: 40px;
   letter-spacing: 15px;
-  margin-top: -20px;
+  margin-top: -22px;
   padding-bottom: 20px;
 }
 .whoWhom span {
@@ -6867,7 +6864,40 @@ footer {
 .mainCandidat,
 .mainFlag,
 .mainParti {
-  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.mainCandidat .img,
+.mainFlag .img,
+.mainParti .img {
+  height: 155px;
+}
+.mainCandidat {
+  padding-left: 5%;
+}
+.mainCandidat .mainIcontext {
+  margin-left: 80px;
+}
+.mainFlag {
+  margin-left: -20px;
+}
+.mainParti {
+  margin-left: -5%;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.mainParti .cntr {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card {
+  width: 100%;
+  height: 155px;
 }
 .textPageCont {
   padding-top: 100px;

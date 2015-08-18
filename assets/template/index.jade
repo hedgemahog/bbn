@@ -1,5 +1,5 @@
 doctype html
-html(lang="ru")
+html
     include partials/cab_head.jade
     body
       div(class="maincont container")
@@ -27,22 +27,14 @@ html(lang="ru")
              div(class="col-xs-12")
                p.whoWhom
                  span
-                   | для кого мы рабтаем:
+                   | для кого мы работаем:
                div(class="col-xs-4 mainCandidat")
-                 p
-                   <a href="#"><img src="img/KANDIDAT_MAINPAGE_NO_FILL_TEST.png"></a>
-                 p.mainIcontext
-                   | Кандидаты  	
+                 include partials/candidFlip.jade 	
                div(class="col-xs-4 mainFlag")
-                 p
-                   <a href="#"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a>
-                 p.mainIcontext
-                   | Официальные лица   	
+                 include partials/flag.jade   	
                div(class="col-xs-4 mainParti")
-                 p
-                   <a href="#"><img src="img/PARTII_GRUPPA.png"></a>
-                 p.mainIcontext
-                   | Политические партии
+                 include partials/parties.jade
+               .clearfix     
            footer
              div(class="col-xs-12 mainfooter")
                p
