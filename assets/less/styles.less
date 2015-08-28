@@ -1,5 +1,6 @@
 @import "bootstrap.less";
 @import "variables.less";
+@import "sprite.less";
 
 h1 {
 	font-family: @font-family-sans-serif-head;
@@ -25,9 +26,13 @@ footer{
 	margin-top: 110px;
 	clear: both;
 }
+
 .pagefooter {
 	box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
-	padding-top: 20px;
+	height: 43px;
+	padding-top: 15px;
+	padding-left: 70px;
+	background: #fff;
 }
 
 //Navbar
@@ -47,6 +52,14 @@ footer{
 	}
 }
 
+.navbar-header {
+	>.navbar-nav {
+		//margin-top: 7px;
+		a {
+			padding: 17px 25px;
+		}
+	}
+}
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -68,6 +81,7 @@ footer{
 .navbar-brand {
 	font-family: @font-family-sans-serif-bold;
 	font-size: 25px;
+	padding-left: 70px;
 }
 
 //Main Page
@@ -145,14 +159,19 @@ footer{
 
 //Internal page
 .textPageCont {
-	padding-top: 100px;
+	padding-top: 60px;
 	padding-bottom: 50px;
 	position: relative;
 	z-index: 1;
 	h1 {
+		font-family: @font-family-h1-textpage;
+		text-align: center;
+	}
+	h2 {
 		padding-top: 0;
 		margin-top: 0;
 		margin-bottom: 30px;
+		font-family: @font-family-sans-serif-head; 
 	}
 	p{
 		&:first-letter {
@@ -161,5 +180,94 @@ footer{
 			float: left;
 			margin: -20px 4px 2px 0;
 		}
+	}
+	.textitem {
+		margin-top: 45px;
+	}
+	.uslugiGrid {
+		text-align: center;
+		.usl {
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+			width: 70%;
+			//background: #eee;
+			display: block;
+			padding-left: 6%;
+			margin: 0 auto;
+			li {
+				width: 210px;
+				height: 155px;
+				display: block;
+				float: left;
+				margin-top: 5px;
+				margin-right: 20px;
+				margin-bottom: 10px;
+
+
+				a {
+					.polit-consult {
+						.sprite(@polit-consult);
+					}
+					.izbir {
+						.sprite(@izbir);
+					}
+					.prgr {
+						.sprite(@prgr);
+					}
+					.press-sluzhba {
+						.sprite(@press-sluzhba);
+					}
+					.analytical {
+						.sprite(@analytical);
+					}
+					.event-man {
+						.sprite(@event-man);
+					}
+					.branding {
+						.sprite(@branding);
+					}
+					.dig-media {
+						.sprite(@dig-media);
+					}
+					.creative {
+						.sprite(@creative);
+					}
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.uslCaption {
+			font-family: @font-family-sans-serif-head;
+			font-size: 12px;
+			padding-top: 10px;
+		}
+	}
+}
+.clockcont {
+	margin-top: -30px;
+	text-align: center;
+	border-bottom: 4px solid black;
+	.alarmclock {
+		margin-bottom: -3px;
+	}
+}
+.clocktext {
+	text-align: center;
+	font-family: @font-family-h1-textpage;
+	font-size: 21px;
+	p {
+		display: block;
+		margin: 0 auto;
+		width: 40%;
+		padding-top: 25px;
+		line-height: 1.8;
+	}
+	.timer {
+		font-family: @lineaturaBold;
+		font-size: 34px;
+		color: rgb(67, 153, 198);
+		padding: 15px 0 30px 0;
 	}
 }

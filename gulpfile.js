@@ -8,6 +8,21 @@ var gulp = require('gulp'), // Сообственно Gulp JS
    
 var path = require('path');
 var bower = require('gulp-bower');
+var spritesmith = require('gulp.spritesmith');
+
+
+gulp.task('sprite', function() {
+    var spriteData = 
+        gulp.src('./assets/img/uslugi_icons/*.*') // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.less',
+                cssFormat: 'less'
+            }));
+
+    spriteData.img.pipe(gulp.dest('./build/img/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('./assets/less/')); // путь, куда сохраняем стили
+});
    
 
 gulp.task('cssConcat', function() {
@@ -58,6 +73,7 @@ gulp.task('watch', function () {
     gulp.watch('./assets/css/**/*.css', ['cssConcat']);
     gulp.watch('./assets/template/**/*.jade', ['jade']);
     gulp.watch('./assets/img/**/*', ['copy']);
+    gulp.watch('./assets/js/**/*', ['copy']);
     
 });
 

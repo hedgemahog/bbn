@@ -1,0 +1,64 @@
+doctype html
+html(lang="ru")
+  include partials/cab_head.jade
+  body
+    div(class="navbar internalNav navbar-fixed-top")
+      .container
+        .navbar-header.navbar-fixed-top
+          <a class="navbar-brand" href="#">Bureau Babkin News</a>
+          ul(class="nav navbar-nav")
+            li
+              | <a href="#">О бюро</a>
+            li
+              | <a href="#">Услуги</a>
+            li
+              | <a href="#">Связаться</a>
+    div(class="container textPageCont")
+      h1 Услуги бюро
+      .uslugiGrid
+        ul.usl
+          li 
+            a(href="#")
+              .polit-consult
+              .uslCaption Политическое консультироваиние
+          li 
+            a(href="#")
+              .izbir
+              .uslCaption Избирательные кампании
+          li 
+            a(href="#")
+              .prgr
+              .uslCaption PR & GR
+          li 
+            a(href="#")
+              .press-sluzhba
+              .uslCaption Пресс-служба
+          li 
+            a(href="#")
+              .analytical
+              .uslCaption Аналитическая поддержка
+          li 
+            a(href="#")
+              .event-man
+              .uslCaption Организация мероприятий
+          li 
+            a(href="#")
+              .branding
+              .uslCaption Брендинг территорий
+          li 
+            a(href="#")
+              .dig-media
+              .uslCaption Digital media
+          li 
+            a(href="#")
+              .creative
+              .uslCaption Creative centre 
+          .clearfix
+    .clockcont
+      img(src="./img/clock.png" class="alarmclock")
+    .clocktext 
+      p Bureau Babkin News напоминает: <br> до выборов в Государственную думу Федерального собрания Российской Федерации VII созыва осталось
+      .timer
+      script(src="js/timer.js")
+    footer
+      div(class="pagefooter") © Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.     

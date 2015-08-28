@@ -21,6 +21,7 @@
     "gulp-myth": "^1.0.3",
     "gulp-stylus": "^2.0.6",
     "gulp-uglify": "^1.2.0",
+    "gulp.spritesmith": "^4.0.0",
     "tiny-lr": "^0.1.6"
   }
 }

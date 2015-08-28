@@ -1254,11 +1254,11 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 23px;
+  font-size: 30px;
 }
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 23px;
 }
 h3,
 .h3 {
@@ -6780,6 +6780,46 @@ button.close {
   font-family: 'LineaturaRegular';
   src: url(../fonts/LineaturaRegular.otf);
 }
+@font-face {
+  font-family: 'LineaturaBold';
+  src: url(../fonts/LineaturaBold.otf);
+}
+@font-face {
+  font-family: 'GeometriaHeavy';
+  src: url(../fonts/Geometria-Heavy.otf);
+}
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
 h1 {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
 }
@@ -6805,7 +6845,10 @@ footer {
 }
 .pagefooter {
   box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
-  padding-top: 20px;
+  height: 43px;
+  padding-top: 15px;
+  padding-left: 70px;
+  background: #fff;
 }
 .navbar-nav li a {
   padding: 10px 25px;
@@ -6817,6 +6860,9 @@ footer {
 .navbar-nav a {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
   font-size: 20px;
+}
+.navbar-header > .navbar-nav a {
+  padding: 17px 25px;
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -6835,6 +6881,7 @@ footer {
 .navbar-brand {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
   font-size: 25px;
+  padding-left: 70px;
 }
 .mainheader {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
@@ -6900,19 +6947,135 @@ footer {
   height: 155px;
 }
 .textPageCont {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 50px;
   position: relative;
   z-index: 1;
 }
 .textPageCont h1 {
+  font-family: "GeometriaHeavy";
+  text-align: center;
+}
+.textPageCont h2 {
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 30px;
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
 }
 .textPageCont p:first-letter {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
   font-size: 55px;
   float: left;
   margin: -20px 4px 2px 0;
+}
+.textPageCont .textitem {
+  margin-top: 45px;
+}
+.textPageCont .uslugiGrid {
+  text-align: center;
+}
+.textPageCont .uslugiGrid .usl {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 70%;
+  display: block;
+  padding-left: 6%;
+  margin: 0 auto;
+}
+.textPageCont .uslugiGrid .usl li {
+  width: 210px;
+  height: 155px;
+  display: block;
+  float: left;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.textPageCont .uslugiGrid .usl li a .polit-consult {
+  background-image: url(../img/sprite.png);
+  background-position: -388px 0px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a .izbir {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -250px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a .prgr {
+  background-image: url(../img/sprite.png);
+  background-position: -388px -250px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a .press-sluzhba {
+  background-image: url(../img/sprite.png);
+  background-position: -388px -125px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a .analytical {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a .event-man {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -250px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a .branding {
+  background-image: url(../img/sprite.png);
+  background-position: -194px 0px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a .dig-media {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -125px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a .creative {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -125px;
+  width: 194px;
+  height: 125px;
+}
+.textPageCont .uslugiGrid .usl li a:hover {
+  text-decoration: none;
+}
+.textPageCont .uslugiGrid .uslCaption {
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  padding-top: 10px;
+}
+.clockcont {
+  margin-top: -30px;
+  text-align: center;
+  border-bottom: 4px solid black;
+}
+.clockcont .alarmclock {
+  margin-bottom: -3px;
+}
+.clocktext {
+  text-align: center;
+  font-family: "GeometriaHeavy";
+  font-size: 21px;
+}
+.clocktext p {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  padding-top: 25px;
+  line-height: 1.8;
+}
+.clocktext .timer {
+  font-family: "LineaturaBold";
+  font-size: 34px;
+  color: #4399c6;
+  padding: 15px 0 30px 0;
 }

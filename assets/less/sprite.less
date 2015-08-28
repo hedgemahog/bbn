@@ -1,0 +1,172 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@analytical-name: 'analytical';
+@analytical-x: 0px;
+@analytical-y: 0px;
+@analytical-offset-x: 0px;
+@analytical-offset-y: 0px;
+@analytical-width: 194px;
+@analytical-height: 125px;
+@analytical-total-width: 582px;
+@analytical-total-height: 375px;
+@analytical-image: 'sprite.png';
+@analytical: 0px 0px 0px 0px 194px 125px 582px 375px 'sprite.png' 'analytical';
+@branding-name: 'branding';
+@branding-x: 194px;
+@branding-y: 0px;
+@branding-offset-x: -194px;
+@branding-offset-y: 0px;
+@branding-width: 194px;
+@branding-height: 125px;
+@branding-total-width: 582px;
+@branding-total-height: 375px;
+@branding-image: 'sprite.png';
+@branding: 194px 0px -194px 0px 194px 125px 582px 375px 'sprite.png' 'branding';
+@creative-name: 'creative';
+@creative-x: 0px;
+@creative-y: 125px;
+@creative-offset-x: 0px;
+@creative-offset-y: -125px;
+@creative-width: 194px;
+@creative-height: 125px;
+@creative-total-width: 582px;
+@creative-total-height: 375px;
+@creative-image: 'sprite.png';
+@creative: 0px 125px 0px -125px 194px 125px 582px 375px 'sprite.png' 'creative';
+@dig-media-name: 'dig_media';
+@dig-media-x: 194px;
+@dig-media-y: 125px;
+@dig-media-offset-x: -194px;
+@dig-media-offset-y: -125px;
+@dig-media-width: 194px;
+@dig-media-height: 125px;
+@dig-media-total-width: 582px;
+@dig-media-total-height: 375px;
+@dig-media-image: 'sprite.png';
+@dig-media: 194px 125px -194px -125px 194px 125px 582px 375px 'sprite.png' 'dig_media';
+@event-man-name: 'event_man';
+@event-man-x: 0px;
+@event-man-y: 250px;
+@event-man-offset-x: 0px;
+@event-man-offset-y: -250px;
+@event-man-width: 194px;
+@event-man-height: 125px;
+@event-man-total-width: 582px;
+@event-man-total-height: 375px;
+@event-man-image: 'sprite.png';
+@event-man: 0px 250px 0px -250px 194px 125px 582px 375px 'sprite.png' 'event_man';
+@izbir-name: 'izbir';
+@izbir-x: 194px;
+@izbir-y: 250px;
+@izbir-offset-x: -194px;
+@izbir-offset-y: -250px;
+@izbir-width: 194px;
+@izbir-height: 125px;
+@izbir-total-width: 582px;
+@izbir-total-height: 375px;
+@izbir-image: 'sprite.png';
+@izbir: 194px 250px -194px -250px 194px 125px 582px 375px 'sprite.png' 'izbir';
+@polit-consult-name: 'polit_consult';
+@polit-consult-x: 388px;
+@polit-consult-y: 0px;
+@polit-consult-offset-x: -388px;
+@polit-consult-offset-y: 0px;
+@polit-consult-width: 194px;
+@polit-consult-height: 125px;
+@polit-consult-total-width: 582px;
+@polit-consult-total-height: 375px;
+@polit-consult-image: 'sprite.png';
+@polit-consult: 388px 0px -388px 0px 194px 125px 582px 375px 'sprite.png' 'polit_consult';
+@press-sluzhba-name: 'press_sluzhba';
+@press-sluzhba-x: 388px;
+@press-sluzhba-y: 125px;
+@press-sluzhba-offset-x: -388px;
+@press-sluzhba-offset-y: -125px;
+@press-sluzhba-width: 194px;
+@press-sluzhba-height: 125px;
+@press-sluzhba-total-width: 582px;
+@press-sluzhba-total-height: 375px;
+@press-sluzhba-image: 'sprite.png';
+@press-sluzhba: 388px 125px -388px -125px 194px 125px 582px 375px 'sprite.png' 'press_sluzhba';
+@prgr-name: 'prgr';
+@prgr-x: 388px;
+@prgr-y: 250px;
+@prgr-offset-x: -388px;
+@prgr-offset-y: -250px;
+@prgr-width: 194px;
+@prgr-height: 125px;
+@prgr-total-width: 582px;
+@prgr-total-height: 375px;
+@prgr-image: 'sprite.png';
+@prgr: 388px 250px -388px -250px 194px 125px 582px 375px 'sprite.png' 'prgr';
+@spritesheet-width: 582px;
+@spritesheet-height: 375px;
+@spritesheet-image: 'sprite.png';
+@spritesheet-sprites: @analytical @branding @creative @dig-media @event-man @izbir @polit-consult @press-sluzhba @prgr;
+@spritesheet: 582px 375px 'sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~` "../img/" + "@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

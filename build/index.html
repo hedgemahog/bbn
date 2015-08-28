@@ -43,28 +43,26 @@
                 <div class="back"><a href="#"><img src="img/KANDIDAT_MAINPAGE_FLIPPED.png"></a>  </div>
               </div>
               <p class="mainIcontext">Кандидаты</p>
-              <script>$(function() { $('.mainCandidat').flip({ axis:"y", reverse:false, trigger: "hover", speed: 1000 }); });  </script>
+              <script>$(function() { $('.mainCandidat').flip({ axis:"y", reverse:false, trigger: "hover", speed: 400 }); });  </script>
             </div>
             <div class="col-xs-4 mainFlag">
               <div class="flagOff show"><a href="#"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a></div>
               <div class="flagOn hide"><a href="#"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
               <p class="mainIcontext">Официальные лица</p>
-              <script>$(function(){ $('.mainFlag').mouseenter(function(){ $('.flagOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.flagOn').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainFlag').mouseleave(function(){ $('.flagOff').switchClass("hide", "show", 1000, "easeInOutCubic"); $('.flagOn').switchClass("show", "hide", 1000, "easeInOutCubic");  }); });  </script>
+              <script>$(function(){ $('.mainFlag').mouseenter(function(){ $('.flagOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.flagOn').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainFlag').mouseleave(function(){ $('.flagOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.flagOn').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
             </div>
             <div class="col-xs-4 mainParti">
               <div class="pOff show"><a href="#"><img src="img/PARTII_GRUPPA.png"></a></div>
-              <div class="pOn hide"><a href="#"><img src="img/PARTII_GRUPPA_FLIP.png"></a></div>
               <p class="mainIcontext">Политические партии</p>
-              <script>$(function(){ $('.mainParti').mouseenter(function(){ $('.pOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.pOn').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainParti').mouseleave(function(){ $('.pOff').switchClass("hide", "show", 1000, "easeInOutCubic"); $('.pOn').switchClass("show", "hide", 1000, "easeInOutCubic");  }); }); </script>
             </div>
             <div class="clearfix">    </div>
           </div>
         </div>
-        <footer>
-          <div class="col-xs-12 mainfooter">
-            <p>© Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.      </p>
-          </div>
-        </footer>
+        <div class="row">
+          <footer> 
+            <div class="navbar-fixed-bottom">© Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.      </div>
+          </footer>
+        </div>
       </header>
     </div>
   </body>
