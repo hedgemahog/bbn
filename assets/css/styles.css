@@ -3108,27 +3108,27 @@ fieldset[disabled] .btn-default.active {
   background-color: #333333;
 }
 .btn-primary {
-  color: #ffffff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #4399c6;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #122b40;
+  color: #000000;
+  background-color: #e6e6e6;
+  border-color: #20506a;
 }
 .btn-primary:hover {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: #000000;
+  background-color: #e6e6e6;
+  border-color: #2f779c;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: #000000;
+  background-color: #e6e6e6;
+  border-color: #2f779c;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3139,9 +3139,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  color: #ffffff;
-  background-color: #204d74;
-  border-color: #122b40;
+  color: #000000;
+  background-color: #d4d4d4;
+  border-color: #20506a;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3166,12 +3166,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #ffffff;
+  border-color: #4399c6;
 }
 .btn-primary .badge {
-  color: #337ab7;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
 }
 .btn-success {
   color: #ffffff;
@@ -3475,7 +3475,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 10px 16px;
   font-size: 19px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 0;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -6850,6 +6850,15 @@ footer {
   padding-left: 70px;
   background: #fff;
 }
+.uslugifooter {
+  box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
+  height: 43px;
+  padding-top: 15px;
+  padding-left: 70px;
+  background: #fff;
+  box-shadow: none;
+  border-top: 1px solid black;
+}
 .navbar-nav li a {
   padding: 10px 25px;
 }
@@ -7069,7 +7078,7 @@ footer {
 .clocktext p {
   display: block;
   margin: 0 auto;
-  width: 40%;
+  width: 50%;
   padding-top: 25px;
   line-height: 1.8;
 }
@@ -7078,4 +7087,13 @@ footer {
   font-size: 34px;
   color: #4399c6;
   padding: 15px 0 30px 0;
+}
+.clocktext .orderbutton {
+  margin-bottom: 40px;
+}
+.btn-primary {
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  padding: 40px 17px;
+  box-shadow: 10px 10px 0px -5px #4299c6;
 }

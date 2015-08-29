@@ -1,21 +1,48 @@
+//Дата, до которой ведется отсчет
+var targetYear = 2016;
+var targetMonth = 8; //месяцы отсчитываются от 0
+var targetDay = 18;
+
+
 var nowDate = new Date();
-var targetDate = new Date(2016, 8, 18);
 
-var days = 24*60*60,
-	hours = 60*60,
-	month = (24*60*60*365)/12;
+var targetDate = new Date(targetYear, targetMonth, targetDay);
 
-var left = ((targetDate - nowDate)/1000);
+var timeNow = nowDate.getHours();
 
-var m = Math.floor(left/month);
-var d = Math.floor(left/days);
-var h = Math.floor(left/hours);
+function getLastDayOfMonth() {	
+  var date = new Date(nowDate.getYear(), nowDate.getMonth() + 1, 0);
+  return date.getDate();
+}
+var lastDay = getLastDayOfMonth();
 
-var daysx = Math.floor(d/12);
+var days = 24 * 60 * 60,
+	hours = 60 * 60,
+	month = (24 * 60 * 60 * 365) / 12;
 
-if (daysx > 31) {
-  m += 1;
-  daysx = Math.floor(daysx - 31);
+var left = ((targetDate - nowDate) / 1000);
+
+var m = Math.floor(left / month);
+var d = (lastDay - nowDate.getDate());
+var h = Math.floor(left / hours);
+
+m += 1;
+h -= (h - timeNow);
+
+if (d < 10) {
+  d = "0" + d;
+}
+if (m < 10) {
+  m = "0" + m;
+}
+if (h < 10) {
+  h = "0" + h;
 }
 
-$(".timer").append( m + " Месяцев : " + daysx + " Дней : " + (h/hours) + " Часа" );
+if (m == 1) {
+	m = 0;
+	d = (targetDay - nowDate.getDate());
+}
+
+
+$(".timer").append(m + " Месяцев : " + d + " Дней : " + h + " Часа");
