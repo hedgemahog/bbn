@@ -1,0 +1,12 @@
+div(class="modal fade contactmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel")
+      div(class="modal-dialog modal-lg")
+        .modal-content
+          a.modal_close(href="#" data-dismiss="modal")
+          form(role="form")
+            .form-group
+              input( type="text" class="form-control input-lg" placeholder="Ваше имя")
+              input( type="email" class="form-control input-lg" placeholder="Email")
+              input( type="text" class="form-control input-lg" placeholder="Предполагаемая должность")
+              input(type="file" class="form-control input-lg" placeholder="Загрузить резюме")
+              textarea( rows="6" class="form-control input-lg" placeholder="Нам очень интересно узнать о вас побольше") 
+              button(type="submit" class="btn btn-primary") Отправить 

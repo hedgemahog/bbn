@@ -61,6 +61,7 @@ html(lang="ru")
       .timer
       script(src="js/timer.js")
       .orderbutton
-        button(type="button" class="btn btn-primary btn-lg") Заказать консультацию  
+        a(href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".contactmodal") Заказать консультацию
+    include partials/modal_contact.jade      
     footer
       div(class="pagefooter uslugifooter") © Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.     

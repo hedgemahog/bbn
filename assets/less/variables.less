@@ -28,6 +28,16 @@
 	src: url(../fonts/Geometria-Heavy.otf);
 }
 
+@font-face {
+	font-family: 'GeometriaBold';
+	src: url(../fonts/Geometria-Bold.otf);
+}
+
+@font-face {
+	font-family: 'GeometriaMedium';
+	src: url(../fonts/Geometria-Medium.otf);
+}
+
 //
 // Variables
 // --------------------------------------------------
@@ -77,6 +87,8 @@
 @font-family-sans-serif-bold:  "MuseoBold", Helvetica, Arial, sans-serif;
 @font-family-sans-serif-head:  "LineaturaRegular", Helvetica, Arial, sans-serif;
 @font-family-h1-textpage:  "GeometriaHeavy";
+@GeometriaBold:  "GeometriaBold";
+@GeometriaMedium:  "GeometriaMedium";
 @lineaturaBold:  "LineaturaBold";
 
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
@@ -180,7 +192,7 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
+@btn-default-color:              #fff;
 @btn-default-bg:                 #fff;
 @btn-default-border:             #ccc;
 
@@ -207,9 +219,9 @@
 @btn-link-disabled-color:        @gray-light;
 
 // Allows for customizing button radius independently from global border radius
-@btn-border-radius-base:         @border-radius-base;
+@btn-border-radius-base:         0;
 @btn-border-radius-large:        0;
-@btn-border-radius-small:        @border-radius-small;
+@btn-border-radius-small:        0;
 
 
 //== Forms
@@ -224,16 +236,16 @@
 //** Text color for `<input>`s
 @input-color:                    @gray;
 //** `<input>` border color
-@input-border:                   #ccc;
+@input-border:                   #000;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-@input-border-radius:            @border-radius-base;
+@input-border-radius:            0;
 //** Large `.form-control` border radius
-@input-border-radius-large:      @border-radius-large;
+@input-border-radius-large:      0;
 //** Small `.form-control` border radius
-@input-border-radius-small:      @border-radius-small;
+@input-border-radius-small:      0;
 
 //** Border color for inputs on focus
 @input-border-focus:             #66afe9;
@@ -634,7 +646,7 @@
 //** Background color of modal content area
 @modal-content-bg:                             #fff;
 //** Modal content border color
-@modal-content-border-color:                   rgba(0,0,0,.2);
+@modal-content-border-color:                   #000;
 //** Modal content border color **for IE8**
 @modal-content-fallback-border-color:          #999;
 
@@ -647,7 +659,7 @@
 //** Modal footer border color
 @modal-footer-border-color:   @modal-header-border-color;
 
-@modal-lg:                    900px;
+@modal-lg:                    1240px;
 @modal-md:                    600px;
 @modal-sm:                    300px;
 
@@ -901,3 +913,8 @@
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
+
+//My vars
+
+@shadow-black: 10px 10px 0px -5px rgba(0, 0, 0, 1);
+@shadow-blue: 10px 10px 0px -5px rgba(67, 153, 198, 1);

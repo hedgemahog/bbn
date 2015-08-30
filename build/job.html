@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="lib/flip/src/flip.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js">     </script>
+  </head>
+  <body>
+    <div class="navbar internalNav navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header navbar-fixed-top"><a class="navbar-brand" href="#">Bureau Babkin News</a>
+          <ul class="nav navbar-nav">
+            <li><a href="#">О бюро</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Связаться</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container textPageCont">
+      <div class="col-md-10 col-md-offset-1 jobcont">
+        <div class="textitem">
+          <div class="row">
+            <div class="col-xs-5">
+              <h2>Работа и стажировки в Bureau Babkin News</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-5"><img src="img/WORK_N_INTERNSHIPS_FIN.png"> </div>
+            <div class="col-xs-7 jobconttext">
+              <p>Если вы заинтересованы в работе или стажировке в бюро Babkin News — воспользуйтесь формой ниже, чтобы отправить нам свое резюме и краткий рассказ о себе.</p><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-md">Отправить резюме</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
+          <form role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Ваше имя" class="form-control input-lg">
+              <input type="email" placeholder="Email" class="form-control input-lg">
+              <input type="text" placeholder="Предполагаемая должность" class="form-control input-lg">
+              <input type="file" placeholder="Загрузить резюме" class="form-control input-lg">
+              <textarea rows="6" placeholder="Нам очень интересно узнать о вас побольше" class="form-control input-lg"> </textarea>
+              <button type="submit" class="btn btn-primary">Отправить </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="navbar-fixed-bottom pagefooter">© Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.     </div>
+    </footer>
+  </body>
+</html>
