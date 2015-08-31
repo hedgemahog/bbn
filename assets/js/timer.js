@@ -2,7 +2,7 @@
 var targetYear = 2016;
 var targetMonth = 8; //месяцы отсчитываются от 0
 var targetDay = 18;
-
+var hText = " Часа";
 
 var nowDate = new Date();
 
@@ -29,14 +29,29 @@ var h = Math.floor(left / hours);
 m += 1;
 h -= (h - timeNow);
 
-if (d < 10) {
+if ((d >= 1) && (d < 10)) {
   d = "0" + d;
 }
+if (d == 0) {
+  d += 19;
+}
+if (nowDate.getDate() == 18) {
+  d = "00";
+}
+
 if (m < 10) {
   m = "0" + m;
 }
-if (h < 10) {
+
+
+if ((h >= 1)&&(h < 10)) {
   h = "0" + h;
+} else if ((h == 0) || (h > 10) && h < 20 ) {
+  hText = " Часов"
+} else if (h > 20) {
+  hText = " Часа"
+} else if (h == 1) {
+  hText = " Час"
 }
 
 if (m == 1) {
@@ -45,4 +60,5 @@ if (m == 1) {
 }
 
 
-$(".timer").append(m + " Месяцев : " + d + " Дней : " + h + " Часа");
+
+$(".timer").append(m + " Месяцев : " + d + " Дней : " + h + hText);

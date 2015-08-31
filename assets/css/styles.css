@@ -1285,7 +1285,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .lead {
     font-size: 22.5px;
   }
@@ -1441,7 +1441,7 @@ dt {
 dd {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1575,7 +1575,7 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .container {
     width: 750px;
   }
@@ -1762,7 +1762,7 @@ pre code {
 .col-xs-offset-0 {
   margin-left: 0%;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
@@ -2431,7 +2431,7 @@ table th[class*="col-"] {
   overflow-x: auto;
   min-height: 0.01%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 639px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15.75px;
@@ -2640,7 +2640,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-right .dropdown-menu {
     left: auto;
     right: 0;
@@ -3058,7 +3058,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3076,7 +3076,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
@@ -3123,7 +3123,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3144,7 +3144,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
@@ -3172,12 +3172,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 21px;
   border: 1px solid transparent;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar {
     border-radius: 4px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-header {
     float: left;
   }
@@ -3193,7 +3193,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3232,7 +3232,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -3245,7 +3245,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3257,7 +3257,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -3286,7 +3286,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand > img {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -3316,7 +3316,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-toggle {
     display: none;
   }
@@ -3329,7 +3329,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 21px;
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3351,7 +3351,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -3375,7 +3375,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -3425,7 +3425,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
@@ -3433,7 +3433,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-form {
     width: auto;
     border: 0;
@@ -3473,14 +3473,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 14.5px;
   margin-bottom: 14.5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-text {
     float: left;
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .navbar-left {
     float: left !important;
   }
@@ -3547,7 +3547,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #e7e7e7;
   color: #555555;
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777777;
   }
@@ -3643,7 +3643,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #080808;
   color: #ffffff;
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
@@ -3981,7 +3981,7 @@ a.badge:focus {
 .jumbotron .container {
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -5293,7 +5293,7 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -5426,7 +5426,7 @@ button.close {
 .visible-lg-inline-block {
   display: none !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .visible-xs {
     display: block !important;
   }
@@ -5441,22 +5441,22 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .visible-xs-block {
     display: block !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .visible-xs-inline {
     display: inline !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .visible-xs-inline-block {
     display: inline-block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 991px) {
   .visible-sm {
     display: block !important;
   }
@@ -5471,17 +5471,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 991px) {
   .visible-sm-block {
     display: block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 991px) {
   .visible-sm-inline {
     display: inline !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 991px) {
   .visible-sm-inline-block {
     display: inline-block !important;
   }
@@ -5546,12 +5546,12 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 639px) {
   .hidden-xs {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 991px) {
   .hidden-sm {
     display: none !important;
   }
@@ -5751,7 +5751,7 @@ button.close {
   height: 50px;
   overflow: scroll;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
@@ -6188,7 +6188,7 @@ select[multiple].input-lg {
   margin-bottom: 10px;
   color: #404040;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -6254,7 +6254,7 @@ select[multiple].input-lg {
   margin-left: -15px;
   margin-right: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
@@ -6264,13 +6264,13 @@ select[multiple].input-lg {
 .form-horizontal .has-feedback .form-control-feedback {
   right: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 14.333333px;
     font-size: 19px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
     font-size: 13px;
@@ -6392,25 +6392,25 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #000000;
   background-color: #ffffff;
-  border-color: #4399c6;
+  border-color: #000000;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #000000;
   background-color: #e6e6e6;
-  border-color: #20506a;
+  border-color: #000000;
 }
 .btn-primary:hover {
   color: #000000;
   background-color: #e6e6e6;
-  border-color: #2f779c;
+  border-color: #000000;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #000000;
   background-color: #e6e6e6;
-  border-color: #2f779c;
+  border-color: #000000;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -6423,7 +6423,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary.focus {
   color: #000000;
   background-color: #d4d4d4;
-  border-color: #20506a;
+  border-color: #000000;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -6449,7 +6449,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #ffffff;
-  border-color: #4399c6;
+  border-color: #000000;
 }
 .btn-primary .badge {
   color: #ffffff;
@@ -6826,6 +6826,22 @@ p strong {
 .maincont {
   text-align: center;
   padding-top: 50px;
+  position: relative;
+}
+@media (max-width: 640px) {
+  .logo_desktop {
+    display: none;
+  }
+}
+.logo_mobile {
+  display: none;
+}
+@media (max-width: 640px) {
+  .logo_mobile {
+    display: block;
+    width: 42px;
+    float: left;
+  }
 }
 footer {
   height: 50px;
@@ -6870,6 +6886,11 @@ footer {
   box-shadow: none;
   border-top: 1px solid black;
 }
+@media (max-width: 640px) {
+  .navbar {
+    display: none;
+  }
+}
 .navbar-nav li a {
   padding: 10px 25px;
 }
@@ -6907,11 +6928,20 @@ footer {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
   font-size: 44px;
 }
+@media (max-width: 640px) {
+  .mainheader {
+    display: block;
+  }
+}
 .mainsubhead {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  letter-spacing: 5px;
+  letter-spacing: 6.9px;
   margin-top: -10px;
+}
+.mainsubhead span {
+  border-bottom: 2px solid black;
+  padding-bottom: 12px;
 }
 .whoWhom {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
@@ -6920,13 +6950,16 @@ footer {
   margin-top: -22px;
   padding-bottom: 20px;
 }
-.whoWhom span {
-  border-top: 5px solid black;
-  padding-top: 10px;
+@media (max-width: 640px) {
+  .whoWhom {
+    font-size: 35px;
+    letter-spacing: 0px;
+  }
 }
 .mainIcontext {
-  font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  letter-spacing: 3px;
 }
 .mainCandidat,
 .mainFlag,
@@ -6942,14 +6975,38 @@ footer {
 .mainCandidat {
   padding-left: 5%;
 }
+@media (max-width: 640px) {
+  .mainCandidat {
+    padding-left: 0;
+  }
+  .mainCandidat img {
+    height: 130px;
+  }
+}
 .mainCandidat .mainIcontext {
   margin-left: 80px;
 }
 .mainFlag {
   margin-left: -20px;
 }
+@media (max-width: 640px) {
+  .mainFlag {
+    padding-left: 0;
+  }
+  .mainFlag img {
+    height: 130px;
+  }
+}
 .mainParti {
   margin-left: -5%;
+}
+@media (max-width: 640px) {
+  .mainParti {
+    padding-left: 0;
+  }
+  .mainParti img {
+    height: 130px;
+  }
 }
 .hide {
   display: none;
@@ -6963,8 +7020,29 @@ footer {
   left: 0;
 }
 .card {
-  width: 100%;
   height: 155px;
+}
+@media (max-width: 640px) {
+  .card {
+    height: 130px;
+  }
+}
+.candidat,
+.flag,
+.partie {
+  display: none;
+}
+@media (max-width: 640px) {
+  .candidat,
+  .flag,
+  .partie {
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  .iconmaincont {
+    display: none;
+  }
 }
 .textPageCont {
   padding-top: 60px;
@@ -7073,6 +7151,13 @@ footer {
   font-size: 12px;
   padding-top: 10px;
 }
+.textPageCont .about p a {
+  font-family: "GeometriaBold";
+  color: #4399c6;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+}
 .clockcont {
   margin-top: -30px;
   text-align: center;
@@ -7104,6 +7189,7 @@ footer {
 }
 .clocktext .orderbutton .btn-primary {
   box-shadow: 10px 10px 0px -5px #4399c6;
+  border-color: #4399c6;
 }
 .btn-primary {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
@@ -7144,6 +7230,7 @@ footer {
   width: 748px;
   height: 287px;
   margin-bottom: 20px;
+  border: 1px solid black;
 }
 .contactpage .btn-primary {
   padding: 20px 17px;

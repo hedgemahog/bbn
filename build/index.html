@@ -17,12 +17,15 @@
     <div class="maincont container">
       <header>
         <div class="row">
-          <div class="col-xs-12"><a href="#"><img src="img/logo.jpg"></a></div>
+          <div class="col-xs-12"><a href="#" class="logo_desktop"><img src="img/logo.jpg"></a></div>
         </div>
         <div class="row">
           <div class="col-xs-12">
+            <div class="logo_mobile"><a href="#"><img src="img/logo.jpg"></a></div>
             <p class="mainheader">Bureau Babkin News</p>
-            <p class="mainsubhead">политический консалтинг </p>
+            <p class="mainsubhead"><span>
+                 
+                политический консалтинг </span></p>
           </div>
         </div>
         <div class="row">
@@ -40,22 +43,31 @@
           <div class="col-xs-12">
             <p class="whoWhom"><span>для кого мы работаем:</span></p>
             <div class="col-xs-4 mainCandidat">
+              <div class="candidat"><a href="#"><img src="img/KANDIDAT_MAINPAGE_FLIPPED.png"></a> </div>
               <div id="card-1" class="card">
                 <div class="front"><a href="#"><img src="img/KANDIDAT_MAINPAGE_NO_FILL_TEST.png"></a> </div>
                 <div class="back"><a href="#"><img src="img/KANDIDAT_MAINPAGE_FLIPPED.png"></a>  </div>
               </div>
               <p class="mainIcontext">Кандидаты</p>
-              <script>$(function() { $('.mainCandidat').flip({ axis:"y", reverse:false, trigger: "hover", speed: 400 }); });  </script>
+              <script src="js/candidat.js"> </script>
             </div>
             <div class="col-xs-4 mainFlag">
-              <div class="flagOff show"><a href="#"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a></div>
-              <div class="flagOn hide"><a href="#"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
+              <div class="flag"><a href="#"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
+              <div class="iconmaincont">
+                <div class="flagOff show"><a href="#"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a></div>
+                <div class="flagOn hide"><a href="#"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
+              </div>
               <p class="mainIcontext">Официальные лица</p>
               <script>$(function(){ $('.mainFlag').mouseenter(function(){ $('.flagOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.flagOn').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainFlag').mouseleave(function(){ $('.flagOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.flagOn').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
             </div>
             <div class="col-xs-4 mainParti">
-              <div class="pOff show"><a href="#"><img src="img/PARTII_GRUPPA.png"></a></div>
+              <div class="partie"><a href="#"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
+              <div class="iconmaincont">
+                <div class="pOff show"><a href="#"><img src="img/PARTII_GRUPPA.png"></a></div>
+                <div class="pOon hide"><a href="#"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
+              </div>
               <p class="mainIcontext">Политические партии</p>
+              <script>$(function(){ $('.mainParti').mouseenter(function(){ $('.pOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.pOon').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainParti').mouseleave(function(){ $('.pOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.pOon').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
             </div>
             <div class="clearfix">    </div>
           </div>
