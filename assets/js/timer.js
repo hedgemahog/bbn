@@ -63,17 +63,3 @@ if (m == 1) {
 
 $(".timer").append(m + " Месяцев : " + d + " Дней : " + h + hText);
 
-
-/***** Clock block top animation *****/
-
-topheight =$(".usltop").height(); 
-
-$(window).scroll(function() 
-{
-   if ($(window).scrollTop() >= (topheight - 40) ) {
-     $('.clockcont').css({"padding-top" : "60px" });
-   } else {
-    $('.clockcont').css({"padding-top" : "0" });
-   }
-  
-});
