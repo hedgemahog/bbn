@@ -6,7 +6,7 @@ html
         header
           .row
             div(class="col-xs-12")
-              <a href="#" class="logo_desktop"><img src="img/logo.jpg"></a>
+              <a href="./index.html" class="logo_desktop"><img src="img/logo.jpg"></a>
           .row
             div(class="col-xs-12")
               .logo_mobile <a href="#"><img src="img/logo.jpg"></a>
@@ -30,13 +30,12 @@ html
                p.whoWhom
                  span
                    | для кого мы работаем:
-               div(class="col-xs-4 mainCandidat")
+               div(class="col-xs-4 mainCandidat" onclick="location.href='./kandidatam.html'")
                  include partials/candidFlip.jade 	
                div(class="col-xs-4 mainFlag")
                  include partials/flag.jade   	
                div(class="col-xs-4 mainParti")
                  include partials/parties.jade
-               .clearfix     
+              
            .row
-             footer  
-               div(class="navbar-fixed-bottom") © Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.      
+             include partials/footer_index.jade     

@@ -2,17 +2,7 @@ doctype html
 html(lang="ru")
   include partials/cab_head.jade
   body
-    div(class="navbar internalNav navbar-fixed-top")
-      .container
-        .navbar-header.navbar-fixed-top
-          <a class="navbar-brand" href="#">Bureau Babkin News</a>
-          ul(class="nav navbar-nav")
-            li
-              | <a href="#">О бюро</a>
-            li
-              | <a href="#">Услуги</a>
-            li
-              | <a href="#">Связаться</a>
+    include partials/head_inner.jade
     div(class="container textPageCont")
       .textitem
         .row
@@ -113,7 +103,5 @@ html(lang="ru")
           div(class="col-xs-8")
             p.bigFl
               |Никто не застрахован от внезапного кризиса идей. И политики-новички, и зрелые тяжеловесы находятся под постоянным давлением: избиратели, властные структуры и коллеги ждут хлеба и зрелищ. Но иногда сгенерировать свежую идею, предложить неожиданное решение или проект оказывается самым сложным. «Я же столько раз это делал!» — говорите вы себе, но муза, кажется, не слышит.<br>Бюро Babkin News — не музы, но нестандартные подходы близки и нам. Если вас оставило политическое вдохновение, знайте: мы не будем спать ночами, пока не предложим вам то самое —  идею, жест, высказывание, новую программу или проект, — что откроет перед вами новые горизонты политической деятельности.        
-
-            
-    footer
-      div(class="navbar-fixed-bottom pagefooter") © Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.     
+    
+    include partials/footer_inner_fixed.jade    

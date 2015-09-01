@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Bureau Babkin News</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,6 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
     <script src="lib/flip/src/flip.js"></script>
     <script src="lib/jquery-ui/jquery-ui.js">     </script>
   </head>
@@ -17,7 +16,7 @@
     <div class="maincont container">
       <header>
         <div class="row">
-          <div class="col-xs-12"><a href="#" class="logo_desktop"><img src="img/logo.jpg"></a></div>
+          <div class="col-xs-12"><a href="./index.html" class="logo_desktop"><img src="img/logo.jpg"></a></div>
         </div>
         <div class="row">
           <div class="col-xs-12">
@@ -42,7 +41,7 @@
         <div class="row">
           <div class="col-xs-12">
             <p class="whoWhom"><span>для кого мы работаем:</span></p>
-            <div class="col-xs-4 mainCandidat">
+            <div onclick="location.href='./kandidatam.html'" class="col-xs-4 mainCandidat">
               <div class="candidat"><a href="#"><img src="img/KANDIDAT_MAINPAGE_FLIPPED.png"></a> </div>
               <div id="card-1" class="card">
                 <div class="front"><a href="#"><img src="img/KANDIDAT_MAINPAGE_NO_FILL_TEST.png"></a> </div>
@@ -52,29 +51,28 @@
               <script src="js/candidat.js"> </script>
             </div>
             <div class="col-xs-4 mainFlag">
-              <div class="flag"><a href="#"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
+              <div class="flag"><a href="./partiyam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
               <div class="iconmaincont">
-                <div class="flagOff show"><a href="#"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a></div>
-                <div class="flagOn hide"><a href="#"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
+                <div class="flagOff show"><a href="./partiyam.html"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a></div>
+                <div class="flagOn hide"><a href="./partiyam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
               </div>
               <p class="mainIcontext">Официальные лица</p>
               <script>$(function(){ $('.mainFlag').mouseenter(function(){ $('.flagOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.flagOn').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainFlag').mouseleave(function(){ $('.flagOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.flagOn').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
             </div>
             <div class="col-xs-4 mainParti">
-              <div class="partie"><a href="#"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
+              <div class="partie"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
               <div class="iconmaincont">
-                <div class="pOff show"><a href="#"><img src="img/PARTII_GRUPPA.png"></a></div>
-                <div class="pOon hide"><a href="#"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
+                <div class="pOff show"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA.png"></a></div>
+                <div class="pOon hide"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
               </div>
               <p class="mainIcontext">Политические партии</p>
               <script>$(function(){ $('.mainParti').mouseenter(function(){ $('.pOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.pOon').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainParti').mouseleave(function(){ $('.pOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.pOon').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
             </div>
-            <div class="clearfix">    </div>
           </div>
         </div>
         <div class="row">
           <footer> 
-            <div class="navbar-fixed-bottom">© Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.      </div>
+            <div class="navbar-fixed-bottom">© Bureau Babkin News, 2015. All rights reserved. <a href="./terms.html">Правила пользования сайтом</a>. </div>
           </footer>
         </div>
       </header>

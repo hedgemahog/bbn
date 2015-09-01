@@ -1,18 +1,9 @@
 doctype html
 html(lang="ru")
   include partials/cab_head.jade
+  script(src="js/map.js")
   body
-    div(class="navbar internalNav navbar-fixed-top")
-      .container
-        .navbar-header.navbar-fixed-top
-          <a class="navbar-brand" href="#">Bureau Babkin News</a>
-          ul(class="nav navbar-nav")
-            li
-              | <a href="#">О бюро</a>
-            li
-              | <a href="#">Услуги</a>
-            li
-              | <a href="#">Связаться</a>
+    include partials/head_inner.jade
     div(class="container textPageCont contactpage")
       .row
         h1.contacthead Для связи с бюро
@@ -29,7 +20,6 @@ html(lang="ru")
           p 
             |Офис Bureau Babkin News на ул. Такой-то работает с таких-то по такие часы, но рекомендуется приходить по предварительной записи, например. Секретать Бюро Борис Шлипкенбойк. 
          div(class="col-md-4 buttoncont")
-           a(href="#" class="btn btn-primary btn-md" data-toggle="modal" data-target=".contactmodal") Написать бюро
+           a(href="#" class="btn btn-primary btn-md" data-toggle="modal" data-target=".contactmodal") Написать
     include partials/modal_contact.jade        
-    footer
-      div(class="navbar-fixed-bottom pagefooter") © Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.     
+    include partials/footer_inner_fixed.jade    

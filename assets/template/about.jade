@@ -2,17 +2,7 @@ doctype html
 html(lang="ru")
   include partials/cab_head.jade
   body
-    div(class="navbar internalNav navbar-fixed-top")
-      .container
-        .navbar-header.navbar-fixed-top
-          <a class="navbar-brand" href="#">Bureau Babkin News</a>
-          ul(class="nav navbar-nav")
-            li
-              | <a href="#">О бюро</a>
-            li
-              | <a href="#">Услуги</a>
-            li
-              | <a href="#">Связаться</a>
+    include partials/head_inner.jade
     div(class="container textPageCont")
       .textitem
         .row
@@ -31,7 +21,4 @@ html(lang="ru")
             p Используя классические и инновационные методы  в области связей с общественостью, социологии, политических  технологий, мы стараемся не стоять на месте, находить новые грани в профессии.
             p Динамично развиваясь, мы стремимся стать лучшими в российском политическом консультировании и стремимся сделать мир политики ярче, интереснее, понятнее и доступнее.
             p <a href="job.html">Работа и стажировки в бюро</a>
-    footer
-      div(class="navbar-fixed-bottom pagefooter") 
-        div(class="col-xs-6") © Bureau Babkin News, 2015. All rights reserved. Правила пользования сайтом.     
-        div(class="col-xs-6 footRighttext") 
+    include partials/footer_inner_fixed.jade  

@@ -6977,6 +6977,7 @@ footer {
 }
 @media (max-width: 640px) {
   .mainCandidat {
+    width: 100px;
     padding-left: 0;
   }
   .mainCandidat img {

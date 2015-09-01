@@ -10,15 +10,15 @@ var targetDate = new Date(targetYear, targetMonth, targetDay);
 
 var timeNow = nowDate.getHours();
 
-function getLastDayOfMonth() {	
+function getLastDayOfMonth() {
   var date = new Date(nowDate.getYear(), nowDate.getMonth() + 1, 0);
   return date.getDate();
 }
 var lastDay = getLastDayOfMonth();
 
 var days = 24 * 60 * 60,
-	hours = 60 * 60,
-	month = (24 * 60 * 60 * 365) / 12;
+  hours = 60 * 60,
+  month = (24 * 60 * 60 * 365) / 12;
 
 var left = ((targetDate - nowDate) / 1000);
 
@@ -44,19 +44,21 @@ if (m < 10) {
 }
 
 
-if ((h >= 1)&&(h < 10)) {
-  h = "0" + h;
-} else if ((h == 0) || (h > 10) && h < 20 ) {
+if ((h >= 1) && (h < 10)) {
+  if (h == 1) {
+    hText = " Час"
+  }
+  h = "0" + h
+
+} else if ((h == 0) || (h > 5) && h < 21) {
   hText = " Часов"
-} else if (h > 20) {
+} else if (h > 21) {
   hText = " Часа"
-} else if (h == 1) {
-  hText = " Час"
 }
 
 if (m == 1) {
-	m = 0;
-	d = (targetDay - nowDate.getDate());
+  m = 0;
+  d = (targetDay - nowDate.getDate());
 }
 
 
