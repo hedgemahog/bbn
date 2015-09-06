@@ -1071,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "MuseoLight", Helvetica, Arial, sans-serif;
+  font-family: "Museo500", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
   color: #000000;
@@ -1258,7 +1258,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 23px;
+  font-size: 25px;
 }
 h3,
 .h3 {
@@ -4856,7 +4856,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "MuseoLight", Helvetica, Arial, sans-serif;
+  font-family: "Museo500", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4974,7 +4974,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "MuseoLight", Helvetica, Arial, sans-serif;
+  font-family: "Museo500", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5618,6 +5618,10 @@ button.close {
   src: url(../fonts/MuseoSansCyrl_3.otf);
 }
 @font-face {
+  font-family: 'Museo500';
+  src: url(../fonts/MuseoSansCyrl_1.otf);
+}
+@font-face {
   font-family: 'MuseoMedium';
   src: url(../fonts/MuseoSansCyrl_2.otf);
 }
@@ -5640,6 +5644,10 @@ button.close {
 @font-face {
   font-family: 'GeometriaBold';
   src: url(../fonts/Geometria-Bold.otf);
+}
+@font-face {
+  font-family: 'GeometriaExtraBold';
+  src: url(../fonts/Geometria-ExtaBlack.otf);
 }
 @font-face {
   font-family: 'GeometriaMedium';
@@ -6899,7 +6907,7 @@ footer {
   color: #fff;
 }
 .navbar-nav a {
-  font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
+  font-family: "GeometriaExtraBold";
   font-size: 20px;
 }
 .navbar-header > .navbar-nav a {
@@ -6936,7 +6944,7 @@ footer {
 .mainsubhead {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  letter-spacing: 6.9px;
+  letter-spacing: 4.4px;
   margin-top: -10px;
 }
 .mainsubhead span {
@@ -6957,7 +6965,7 @@ footer {
   }
 }
 .mainIcontext {
-  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-family: "LineaturaBold";
   font-size: 19px;
   letter-spacing: 3px;
 }
@@ -7059,13 +7067,13 @@ footer {
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 30px;
-  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-family: "LineaturaBold";
 }
 .textPageCont p.bigFl:first-letter {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
-  font-size: 55px;
+  font-size: 35px;
   float: left;
-  margin: -20px 4px 2px 0;
+  margin: -10px 4px 2px 0;
 }
 .textPageCont .textitem {
   margin-top: 65px;
@@ -7148,8 +7156,8 @@ footer {
   text-decoration: none;
 }
 .textPageCont .uslugiGrid .uslCaption {
-  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-family: "LineaturaBold";
+  font-size: 11px;
   padding-top: 10px;
 }
 .textPageCont .about p a {

@@ -2,6 +2,11 @@
 	font-family: 'MuseoBold';
 	src: url(../fonts/MuseoSansCyrl_3.otf);
 }
+
+@font-face{
+	font-family: 'Museo500';
+	src: url(../fonts/MuseoSansCyrl_1.otf);
+}
 	
 @font-face { 
 	font-family: 'MuseoMedium';
@@ -31,6 +36,11 @@
 @font-face {
 	font-family: 'GeometriaBold';
 	src: url(../fonts/Geometria-Bold.otf);
+}
+
+@font-face {
+	font-family: 'GeometriaExtraBold';
+	src: url(../fonts/Geometria-ExtaBlack.otf);
 }
 
 @font-face {
@@ -82,12 +92,13 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "MuseoLight", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Museo500", Helvetica, Arial, sans-serif;
 @font-family-sans-serif-med:  "MuseoMedium", Helvetica, Arial, sans-serif;
 @font-family-sans-serif-bold:  "MuseoBold", Helvetica, Arial, sans-serif;
 @font-family-sans-serif-head:  "LineaturaRegular", Helvetica, Arial, sans-serif;
 @font-family-h1-textpage:  "GeometriaHeavy";
 @GeometriaBold:  "GeometriaBold";
+@GeometriaExtraBold:  "GeometriaExtraBold";
 @GeometriaMedium:  "GeometriaMedium";
 @lineaturaBold:  "LineaturaBold";
 
@@ -101,7 +112,7 @@
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
 @font-size-h1:            30px; 
-@font-size-h2:            23px; 
+@font-size-h2:            25px; 
 @font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
 @font-size-h5:            @font-size-base;
