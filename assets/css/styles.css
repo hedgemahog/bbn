@@ -6932,6 +6932,9 @@ footer {
   font-size: 25px;
   padding-left: 70px;
 }
+.termspage > p {
+  font-family: "MuseoMedium", Helvetica, Arial, sans-serif !important;
+}
 .mainheader {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
   font-size: 44px;

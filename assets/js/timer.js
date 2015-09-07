@@ -2,7 +2,11 @@
 var targetYear = 2016;
 var targetMonth = 8; //месяцы отсчитываются от 0
 var targetDay = 18;
+
 var hText = " Часа";
+var mText = " Месяцев : ";
+var dText = " Дней : "; 
+
 
 var nowDate = new Date();
 
@@ -30,8 +34,24 @@ m += 1;
 h -= (h - timeNow);
 
 if ((d >= 1) && (d < 10)) {
-  d = "0" + d;
+  d = "0" + d; 
 }
+if (d == 1) {
+    dText = " День : ";
+  }
+  if (d == 21) {
+    dText = " День : ";
+  }
+  if (d > 1 && d < 5) {
+    dText = " Дня : ";
+  }
+  if (d > 21 && d < 25) {
+    dText = " Дня : ";
+  }
+  if (d == 31) {
+    dText = " День : ";
+  }
+
 if (d == 0) {
   d += 19;
 }
@@ -41,6 +61,15 @@ if (nowDate.getDate() == 18) {
 
 if (m < 10) {
   m = "0" + m;
+}
+if (m == 1 || m == 21) {
+  dText = " Месяц : ";
+}
+if (m > 1 && m < 5) {
+  dText = " Месяца : ";
+}
+if (m > 21 && m < 25) {
+  dText = " Месяца : ";
 }
 
 
@@ -61,5 +90,5 @@ if (m == 1) {
   d = (targetDay - nowDate.getDate());
 }
 
-$(".timer").append(m + " Месяцев : " + d + " Дней : " + h + hText);
+$(".timer").append(m + mText + d + dText + h + hText);
 
