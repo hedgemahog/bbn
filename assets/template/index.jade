@@ -4,38 +4,129 @@ html
     body
       div(class="maincont container")
         header
+          .row.bordered-top
+            div(class="col-xs-7")
+              <a href="./index.html" ><img src="img/logonew.jpg" class="logoimg"></a>
+              .headtext
+                p.mainheader
+                  | Бюро<br>
+                  | Стратегические Коммуникации
+                p.mainsubhead
+                  span  
+                    | в большой политике с 2010 года  
+            div(class="col-xs-5")
+              nav.navbar
+               ul(class="nav navbar-nav")
+                 li
+                   | <a href="./about.html">О бюро</a>
+                 li
+                   | <a href="./uslugi.html">Услуги</a>
+                 li
+                   | <a href="./contacts.html">Связаться</a>    
+         
+        .row
+          div(class="col-xs-12").textslider
+            .textsliderCont
+              |С нами становятся депутатами
+        .row
+          div(class="col-xs-12").whoWhom
+            |Для кого мы работаем
+
+        .row
+          div(class="col-xs-4 mainCandidat1" onclick="location.href='./kandidatam.html'")
+            include partials/candidFlip.jade 	
+          div(class="col-xs-4 mainFlag1")
+            include partials/flag.jade   	
+          div(class="col-xs-4 mainParti1")
+            include partials/parties.jade
+        .row
+          div(class="col-xs-8 col-xs-offset-2").bordered-bottom-small
+            .mainH2
+              | Клиенты бюро:
+        .row
+          div(class="col-xs-8 col-xs-offset-2")      
+            .col-xs-3
+              .partlogo
+                <img src="img/er.png">
+              .caption 
+                |Всероссийская политическая партия «Единая Россия» 
+            .col-xs-3
+              .partlogo
+                <img src="img/kprf.png">
+              .caption 
+                |Коммунистическая партия Российской Федерации
+            .col-xs-3
+              .partlogo
+                <img src="img/ldpr.png">
+              .caption 
+                |Либерально-демократическая партия Российской Федерации 
+            .col-xs-3
+              .partlogo
+                <img src="img/sr.png">
+              .caption 
+                |Политическая партия Справедливая Россия 
+        .row
+          div(class="col-xs-8 col-xs-offset-2")      
+            .col-xs-3
+              .partlogo
+                <img src="img/rodina.png">
+              .caption 
+                |Всероссийская политическая партия «Родина»
+            .col-xs-3
+              .partlogo
+                <img src="img/platf.png">
+              .caption 
+                |Политическая партия «Гражданская платформа»
+            .col-xs-3
+              .partlogo
+                <img src="img/onf.png">
+              .caption 
+                |Общероссийский народный фронт
+            .col-xs-3
+              .partlogo
+                <img src="img/rosteh.png">
+              .caption 
+                |Госкорпорация «Ростех»  
+      div(class="container geo")                   
+        .geocont
+          .row.zindex11
+            div(class="col-xs-10 col-xs-offset-1").bordered-bottom-small
+              .mainH2
+                | География работы: 
+          .row.zindex11
+            div(class="col-xs-8 col-xs-offset-2").logosliderCont
+              .prev
+                <img src="img/prev.png">
+              .next
+                <img src="img/next.png">
+              .logoslider
+                .col-xs-3
+                  .partlogo
+                    <img src="img/altay.jpg">
+                  .caption 
+                    |Алтайский край
+                .col-xs-3
+                  .partlogo
+                    <img src="img/amur.jpg">
+                  .caption 
+                    |Амурская область
+                .col-xs-3
+                  .partlogo
+                    <img src="img/kostroma.jpg">
+                  .caption 
+                    |Костромская область
+                .col-xs-3
+                  .partlogo
+                    <img src="img/krasnodar.jpg">
+                  .caption 
+                    |Краснодарский край
+            div(class="col-xs-8 col-xs-offset-2 ordermain")
+              .orderbutton
+                a(href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".contactmodal") Заказать консультацию
+      div(class="maincont container")  
+        footer
           .row
-            div(class="col-xs-12")
-              <a href="./index.html" class="logo_desktop"><img src="img/logo.jpg"></a>
-          .row
-            div(class="col-xs-12")
-              .logo_mobile <a href="#"><img src="img/logo.jpg"></a>
-              p.mainheader
-                | Bureau Babkin News
-              p.mainsubhead
-                span  
-                  | коммуникационный консалтинг 
-           .row
-             div(class="col-xs-12")
-               nav.navbar
-                 ul(class="nav navbar-nav")
-                   li
-                     | <a href="./about.html">О бюро</a>
-                   li
-                     | <a href="./uslugi.html">Услуги</a>
-                   li
-                     | <a href="./contacts.html">Связаться</a>       
-           .row
-             div(class="col-xs-12")
-               p.whoWhom
-                 span
-                   | для кого мы работаем:
-               div(class="col-xs-4 mainCandidat" onclick="location.href='./kandidatam.html'")
-                 include partials/candidFlip.jade 	
-               div(class="col-xs-4 mainFlag")
-                 include partials/flag.jade   	
-               div(class="col-xs-4 mainParti")
-                 include partials/parties.jade
-              
-           .row
-             include partials/footer_index.jade     
+            div(class="col-xs-12 mainfoot") | +7 (495) 649-83-74  | info@burcon.ru |
+      include partials/modal_contact.jade       
+
+                 

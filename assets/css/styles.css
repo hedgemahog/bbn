@@ -1587,7 +1587,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1410px;
   }
 }
 .container-fluid {
@@ -5616,6 +5616,7 @@ button.close {
 @font-face {
   font-family: 'MuseoBold';
   src: url(../fonts/MuseoSansCyrl_3.otf);
+  src: url(../fonts/MuseoSansCyrl_3.otf);
 }
 @font-face {
   font-family: 'Museo500';
@@ -6825,16 +6826,82 @@ This must be run when you have at least 2 sprites.
 
 .sprites(@spritesheet-sprites);
 */
+.bordered-top {
+  border-top: 5px solid black;
+  padding-top: 10px;
+}
+.bordered-bottom-small {
+  border-bottom: 1px solid black;
+}
+.zindex11 {
+  z-index: 11;
+}
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+  transform-style: preserve-3d;
+}
+/*  UPDATED! flip the pane when hovered */
+.flip-container:hover .back {
+  transform: rotateY(0deg);
+}
+.flip-container:hover .front {
+  transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+  width: 331px;
+  height: 319px;
+}
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+/*  UPDATED! front pane, placed above back */
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(-180deg);
+}
+body {
+  background: #c6c6c6;
+}
+header {
+  margin-top: 50px;
+}
 h1 {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
 }
 p strong {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
 }
+.logoimg {
+  width: 81px;
+  height: auto;
+  float: left;
+  margin-right: 40px;
+}
 .maincont {
-  text-align: center;
   padding-top: 50px;
   position: relative;
+  background: #fff;
+  padding: 0 74px 0 74px;
 }
 @media (max-width: 640px) {
   .logo_desktop {
@@ -6863,9 +6930,10 @@ footer {
   width: 100%;
   z-index: 1000;
 }
-.mainfooter {
-  margin-top: 110px;
-  clear: both;
+.mainfoot {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
 }
 .footRighttext {
   text-align: right;
@@ -6894,21 +6962,23 @@ footer {
   box-shadow: none;
   border-top: 1px solid black;
 }
-@media (max-width: 640px) {
-  .navbar {
-    display: none;
-  }
+.navbar {
+  text-align: right;
+  margin-top: 20px;
 }
 .navbar-nav li a {
-  padding: 10px 25px;
+  padding: 10px 20px;
 }
 .navbar-nav li a:hover {
-  background-color: #000 !important;
-  color: #fff;
+  background-color: #fff !important;
+  text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.89);
+}
+.navbar-nav li a:last-child {
+  padding-right: 0px;
 }
 .navbar-nav a {
-  font-family: "GeometriaExtraBold";
-  font-size: 20px;
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-size: 28px;
 }
 .navbar-header > .navbar-nav a {
   padding: 17px 25px;
@@ -6935,90 +7005,69 @@ footer {
 .termspage > p {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif !important;
 }
+.textslider {
+  border-top: 8px solid black;
+  border-bottom: 8px solid black;
+  width: 100%;
+  height: 134px;
+  text-align: center;
+  padding-top: 8px;
+}
+.textsliderCont {
+  font-size: 72px;
+  font-family: "GeometriaExtraBold";
+}
 .mainheader {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
-  font-size: 44px;
-}
-@media (max-width: 640px) {
-  .mainheader {
-    display: block;
-  }
+  font-size: 34px;
+  line-height: 1.2;
 }
 .mainsubhead {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   letter-spacing: 4.4px;
-  margin-top: -10px;
-}
-.mainsubhead span {
-  border-bottom: 2px solid black;
-  padding-bottom: 12px;
+  margin-top: -5px;
+  color: #419ac6;
 }
 .whoWhom {
-  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
-  font-size: 40px;
-  letter-spacing: 15px;
-  margin-top: -22px;
-  padding-bottom: 20px;
+  font-family: "LineaturaBold";
+  font-size: 55px;
+  letter-spacing: 20px;
+  text-align: center;
+  padding: 62px 0;
 }
-@media (max-width: 640px) {
-  .whoWhom {
-    font-size: 35px;
-    letter-spacing: 0px;
-  }
+.mainH2 {
+  font-family: "LineaturaBold";
+  font-size: 55px;
+  letter-spacing: 20px;
+  text-align: center;
+  padding: 62px 0;
+  padding: 40px 0;
 }
 .mainIcontext {
   font-family: "LineaturaBold";
-  font-size: 19px;
+  font-size: 30px;
   letter-spacing: 3px;
 }
-.mainCandidat,
-.mainFlag,
-.mainParti {
+.mainCandidat1,
+.mainFlag1,
+.mainParti1 {
   cursor: pointer;
-  box-sizing: border-box;
+  text-align: center;
 }
-.mainCandidat .img,
-.mainFlag .img,
-.mainParti .img {
-  height: 155px;
+.mainCandidat1 .img,
+.mainFlag1 .img,
+.mainParti1 .img {
+  height: 319px;
 }
-.mainCandidat {
-  padding-left: 5%;
+.partlogo,
+.caption {
+  text-align: center;
 }
-@media (max-width: 640px) {
-  .mainCandidat {
-    width: 100px;
-    padding-left: 0;
-  }
-  .mainCandidat img {
-    height: 130px;
-  }
-}
-.mainCandidat .mainIcontext {
-  margin-left: 80px;
-}
-.mainFlag {
-  margin-left: -20px;
-}
-@media (max-width: 640px) {
-  .mainFlag {
-    padding-left: 0;
-  }
-  .mainFlag img {
-    height: 130px;
-  }
-}
-.mainParti {
-  margin-left: -5%;
-}
-@media (max-width: 640px) {
-  .mainParti {
-    padding-left: 0;
-  }
-  .mainParti img {
-    height: 130px;
-  }
+.caption {
+  font-family: "GeometriaBold";
+  font-size: 18px;
+  line-height: 1.2;
 }
 .hide {
   display: none;
@@ -7030,6 +7079,47 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
+}
+.logosliderCont {
+  position: relative;
+}
+.logosliderCont .prev,
+.logosliderCont .next {
+  position: absolute;
+}
+.logosliderCont .prev {
+  top: 40%;
+  left: 0;
+}
+.logosliderCont .next {
+  top: 40%;
+  right: 0;
+}
+.geo {
+  padding: 0;
+}
+.geocont {
+  position: relative;
+  background: url(../img/wh.jpg);
+  padding: 0 !important;
+  min-height: 1480px;
+}
+.ordermain {
+  text-align: center;
+  padding-top: 600px;
+}
+.ordermain .orderbutton {
+  margin-bottom: 40px;
+}
+.ordermain .orderbutton .btn-primary {
+  box-shadow: none;
+  border-color: #ef4623;
+  border-width: 6px;
+}
+.ordermain .orderbutton a {
+  font-family: "GeometriaExtraBold";
+  font-size: 34px;
+  color: #ef4623;
 }
 .card {
   height: 155px;

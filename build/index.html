@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bureau Babkin News</title>
+    <title>Бюро Стратегические Коммуникации</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,67 +15,206 @@
   <body>
     <div class="maincont container">
       <header>
-        <div class="row">
-          <div class="col-xs-12"><a href="./index.html" class="logo_desktop"><img src="img/logo.jpg"></a></div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="logo_mobile"><a href="#"><img src="img/logo.jpg"></a></div>
-            <p class="mainheader">Bureau Babkin News</p>
-            <p class="mainsubhead"><span>
-                 
-                коммуникационный консалтинг </span></p>
+        <div class="row bordered-top">
+          <div class="col-xs-7"><a href="./index.html" ><img src="img/logonew.jpg" class="logoimg"></a>
+            <div class="headtext">
+              <p class="mainheader">
+                Бюро<br>
+                Стратегические Коммуникации
+              </p>
+              <p class="mainsubhead"><span>
+                   
+                  в большой политике с 2010 года  </span></p>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-5">
             <nav class="navbar">
               <ul class="nav navbar-nav">
                 <li><a href="./about.html">О бюро</a></li>
                 <li><a href="./uslugi.html">Услуги</a></li>
-                <li><a href="./contacts.html">Связаться</a>       </li>
+                <li><a href="./contacts.html">Связаться</a>    </li>
               </ul>
             </nav>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <p class="whoWhom"><span>для кого мы работаем:</span></p>
-            <div onclick="location.href='./kandidatam.html'" class="col-xs-4 mainCandidat">
-              <div class="candidat"><a href="#"><img src="img/KANDIDAT_MAINPAGE_FLIPPED.png"></a> </div>
-              <div id="card-1" class="card">
-                <div class="front"><a href="#"><img src="img/KANDIDAT_MAINPAGE_NO_FILL_TEST.png"></a> </div>
-                <div class="back"><a href="#"><img src="img/KANDIDAT_MAINPAGE_FLIPPED.png"></a>  </div>
-              </div>
-              <p class="mainIcontext">Кандидаты</p>
-              <script src="js/candidat.js"> </script>
+      </header>
+      <div class="row">
+        <div class="col-xs-12 textslider">
+          <div class="textsliderCont">С нами становятся депутатами</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 whoWhom">Для кого мы работаем</div>
+      </div>
+      <div class="row">
+        <div onclick="location.href='./kandidatam.html'" class="col-xs-4 mainCandidat1">
+          <div ontouchstart="this.classList.toggle('hover');" class="flip-container">
+            <div class="flipper">
+              <div class="front"><img src="img/kand1.png">    	</div>
+              <div class="back"><img src="img/kand2.png">	</div>
             </div>
-            <div class="col-xs-4 mainFlag">
-              <div class="flag"><a href="./of-licam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
-              <div class="iconmaincont">
-                <div class="flagOff show"><a href="./of-licam.html"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a></div>
-                <div class="flagOn hide"><a href="./of-licam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
-              </div>
-              <p class="mainIcontext">Официальные лица</p>
-              <script>$(function(){ $('.mainFlag').mouseenter(function(){ $('.flagOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.flagOn').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainFlag').mouseleave(function(){ $('.flagOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.flagOn').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
+          </div>
+          <p class="mainIcontext">Кандидаты</p>
+          <script src="js/candidat.js"> </script>
+        </div>
+        <div class="col-xs-4 mainFlag1">
+          <div class="flag"><a href="./of-licam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
+          <div class="iconmaincont">
+            <div class="flagOff show"><a href="./of-licam.html"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a></div>
+            <div class="flagOn hide"><a href="./of-licam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
+          </div>
+          <p class="mainIcontext">Официальные лица</p>
+          <script>$(function(){ $('.mainFlag1').mouseenter(function(){ $('.flagOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.flagOn').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainFlag1').mouseleave(function(){ $('.flagOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.flagOn').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
+        </div>
+        <div class="col-xs-4 mainParti1">
+          <div class="partie"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
+          <div class="iconmaincont">
+            <div class="pOff show"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA.png"></a></div>
+            <div class="pOon hide"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
+          </div>
+          <p class="mainIcontext">Политические партии</p>
+          <script>$(function(){ $('.mainParti1').mouseenter(function(){ $('.pOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.pOon').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainParti1').mouseleave(function(){ $('.pOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.pOon').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 bordered-bottom-small">
+          <div class="mainH2">Клиенты бюро:</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">     
+          <div class="col-xs-3">
+            <div class="partlogo"><img src="img/er.png"></div>
+            <div class="caption">
+               
+              Всероссийская политическая партия «Единая Россия» 
             </div>
-            <div class="col-xs-4 mainParti">
-              <div class="partie"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
-              <div class="iconmaincont">
-                <div class="pOff show"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA.png"></a></div>
-                <div class="pOon hide"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
-              </div>
-              <p class="mainIcontext">Политические партии</p>
-              <script>$(function(){ $('.mainParti').mouseenter(function(){ $('.pOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.pOon').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainParti').mouseleave(function(){ $('.pOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.pOon').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
+          </div>
+          <div class="col-xs-3">
+            <div class="partlogo"><img src="img/kprf.png"></div>
+            <div class="caption">
+               
+              Коммунистическая партия Российской Федерации
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="partlogo"><img src="img/ldpr.png"></div>
+            <div class="caption">
+               
+              Либерально-демократическая партия Российской Федерации 
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="partlogo"><img src="img/sr.png"></div>
+            <div class="caption">
+               
+              Политическая партия Справедливая Россия 
             </div>
           </div>
         </div>
-        <div class="row">
-          <footer> 
-            <div class="navbar-fixed-bottom">© Bureau Babkin News, 2015. All rights reserved. <a href="./terms.html">Правила пользования сайтом</a>. </div>
-          </footer>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">     
+          <div class="col-xs-3">
+            <div class="partlogo"><img src="img/rodina.png"></div>
+            <div class="caption">
+               
+              Всероссийская политическая партия «Родина»
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="partlogo"><img src="img/platf.png"></div>
+            <div class="caption">
+               
+              Политическая партия «Гражданская платформа»
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="partlogo"><img src="img/onf.png"></div>
+            <div class="caption">
+               
+              Общероссийский народный фронт
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="partlogo"><img src="img/rosteh.png"></div>
+            <div class="caption">
+               
+              Госкорпорация «Ростех»  
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
+    </div>
+    <div class="container geo">                  
+      <div class="geocont">
+        <div class="row zindex11">
+          <div class="col-xs-10 col-xs-offset-1 bordered-bottom-small">
+            <div class="mainH2">География работы: </div>
+          </div>
+        </div>
+        <div class="row zindex11">
+          <div class="col-xs-8 col-xs-offset-2 logosliderCont">
+            <div class="prev"><img src="img/prev.png"></div>
+            <div class="next"><img src="img/next.png"></div>
+            <div class="logoslider">
+              <div class="col-xs-3">
+                <div class="partlogo"><img src="img/altay.jpg"></div>
+                <div class="caption">
+                   
+                  Алтайский край
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="partlogo"><img src="img/amur.jpg"></div>
+                <div class="caption">
+                   
+                  Амурская область
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="partlogo"><img src="img/kostroma.jpg"></div>
+                <div class="caption">
+                   
+                  Костромская область
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="partlogo"><img src="img/krasnodar.jpg"></div>
+                <div class="caption">
+                   
+                  Краснодарский край
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-8 col-xs-offset-2 ordermain">
+            <div class="orderbutton"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-lg">Заказать консультацию</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="maincont container"> 
+      <footer>
+        <div class="row">
+          <div class="col-xs-12 mainfoot">| +7 (495) 649-83-74  | info@burcon.ru |</div>
+        </div>
+      </footer>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
+          <form role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
+              <input type="email" placeholder="Email (обязательно)" class="form-control input-lg">
+              <input type="text" placeholder="Телефон (опционально)" class="form-control input-lg">
+              <textarea rows="6" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
+              <button type="submit" class="btn btn-primary">Отправить </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
