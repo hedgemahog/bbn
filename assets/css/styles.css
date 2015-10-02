@@ -1587,7 +1587,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1410px;
+    width: 1435px;
   }
 }
 .container-fluid {
@@ -6891,17 +6891,29 @@ h1 {
 p strong {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
 }
+h3 {
+  font-family: GeometriaBold;
+  font-size: 15px;
+}
 .logoimg {
   width: 81px;
   height: auto;
   float: left;
   margin-right: 40px;
 }
+.logoimg-inner {
+  height: 44px;
+  width: 31px;
+  float: left;
+}
 .maincont {
   padding-top: 50px;
   position: relative;
   background: #fff;
   padding: 0 74px 0 74px;
+}
+.textPageCont {
+  background: #fff;
 }
 @media (max-width: 640px) {
   .logo_desktop {
@@ -6946,7 +6958,7 @@ footer {
 }
 .pagefooter {
   box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
-  height: 43px;
+  height: 53px;
   padding-top: 15px;
   padding-left: 70px;
   padding-right: 70px;
@@ -6954,7 +6966,7 @@ footer {
 }
 .uslugifooter {
   box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
-  height: 43px;
+  height: 53px;
   padding-top: 15px;
   padding-left: 70px;
   padding-right: 70px;
@@ -6962,9 +6974,11 @@ footer {
   box-shadow: none;
   border-top: 1px solid black;
 }
+header .navbar {
+  margin-top: 35px;
+}
 .navbar {
   text-align: right;
-  margin-top: 20px;
 }
 .navbar-nav li a {
   padding: 10px 20px;
@@ -6993,17 +7007,31 @@ footer {
 }
 .internalNav {
   text-align: right;
-  height: 55px;
+  height: 75px;
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.35);
   background: #fff;
+}
+.internalNav .navbar-nav {
+  margin-top: 10px;
+  margin-right: 40px;
+}
+.internalNav .navbar-nav a {
+  font-family: "MuseoBold", Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
 .navbar-brand {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
   font-size: 25px;
   padding-left: 70px;
 }
+.navbar-brand > span {
+  padding-top: 20px;
+}
 .termspage > p {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif !important;
+}
+#carousel-example-generic {
+  padding-top: 10px;
 }
 .textslider {
   border-top: 8px solid black;
@@ -7036,6 +7064,9 @@ footer {
   text-align: center;
   padding: 62px 0;
 }
+.clientscont {
+  padding-top: 40px;
+}
 .mainH2 {
   font-family: "LineaturaBold";
   font-size: 55px;
@@ -7066,7 +7097,7 @@ footer {
 }
 .caption {
   font-family: "GeometriaBold";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
 }
 .hide {
@@ -7147,10 +7178,11 @@ footer {
   }
 }
 .textPageCont {
-  padding-top: 60px;
+  padding-top: 70px;
   padding-bottom: 50px;
   position: relative;
   z-index: 1;
+  min-height: 700px;
 }
 .textPageCont h1 {
   font-family: "GeometriaHeavy";
@@ -7160,7 +7192,8 @@ footer {
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 30px;
-  font-family: "LineaturaBold";
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-size: 25px;
 }
 .textPageCont p.bigFl:first-letter {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
@@ -7171,20 +7204,32 @@ footer {
 .textPageCont .textitem {
   margin-top: 65px;
 }
+.textPageCont .textitem a {
+  font-family: "GeometriaBold";
+  color: #4399c6;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+  opacity: 0.6;
+}
+.textPageCont .textitem a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
 .textPageCont .uslugiGrid {
   text-align: center;
 }
 .textPageCont .uslugiGrid .usl {
+  display: inline-block;
   border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  width: 70%;
+  width: 100%;
   display: block;
   padding-left: 6%;
   margin: 0 auto;
 }
 .textPageCont .uslugiGrid .usl li {
-  width: 210px;
-  height: 155px;
+  width: 320px;
+  height: 314px;
   display: block;
   float: left;
   margin-top: 5px;
@@ -7193,64 +7238,64 @@ footer {
 }
 .textPageCont .uslugiGrid .usl li a .polit-consult {
   background-image: url(../img/sprite.png);
-  background-position: -388px 0px;
-  width: 194px;
-  height: 125px;
+  background-position: -640px 0px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a .izbir {
   background-image: url(../img/sprite.png);
-  background-position: -194px -250px;
-  width: 194px;
-  height: 125px;
+  background-position: -320px -408px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a .prgr {
   background-image: url(../img/sprite.png);
-  background-position: -388px -250px;
-  width: 194px;
-  height: 125px;
+  background-position: -640px -408px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a .press-sluzhba {
   background-image: url(../img/sprite.png);
-  background-position: -388px -125px;
-  width: 194px;
-  height: 125px;
+  background-position: -640px -204px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a .analytical {
   background-image: url(../img/sprite.png);
   background-position: 0px 0px;
-  width: 194px;
-  height: 125px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a .event-man {
   background-image: url(../img/sprite.png);
-  background-position: 0px -250px;
-  width: 194px;
-  height: 125px;
+  background-position: 0px -408px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a .branding {
   background-image: url(../img/sprite.png);
-  background-position: -194px 0px;
-  width: 194px;
-  height: 125px;
+  background-position: -320px 0px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a .dig-media {
   background-image: url(../img/sprite.png);
-  background-position: -194px -125px;
-  width: 194px;
-  height: 125px;
+  background-position: -320px -204px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a .creative {
   background-image: url(../img/sprite.png);
-  background-position: 0px -125px;
-  width: 194px;
-  height: 125px;
+  background-position: 0px -204px;
+  width: 320px;
+  height: 204px;
 }
 .textPageCont .uslugiGrid .usl li a:hover {
   text-decoration: none;
 }
 .textPageCont .uslugiGrid .uslCaption {
-  font-family: "LineaturaBold";
-  font-size: 11px;
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-size: 24px;
   padding-top: 10px;
 }
 .textPageCont .about p a {
@@ -7266,19 +7311,19 @@ footer {
   border-bottom: 4px solid black;
 }
 .clockcont .alarmclock {
-  margin-bottom: -3px;
+  margin-bottom: 0px;
 }
 .clocktext {
   text-align: center;
-  font-family: "GeometriaHeavy";
-  font-size: 21px;
+  font-family: "GeometriaExtraBold";
+  font-size: 35px;
 }
 .clocktext p {
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
   padding-top: 25px;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 .clocktext .timer {
   font-family: "LineaturaBold";
@@ -7292,12 +7337,35 @@ footer {
 .clocktext .orderbutton .btn-primary {
   box-shadow: 10px 10px 0px -5px #4399c6;
   border-color: #4399c6;
+  border-width: 6px;
+}
+.clocktext .orderbutton a {
+  color: #4399c6;
+}
+.clocktext .orderbutton:hover .btn-primary {
+  box-shadow: 10px 10px 0px -5px #ef4623;
+  border-color: #ef4623;
+  border-width: 6px;
+}
+.clocktext .orderbutton:hover a {
+  color: #ef4623;
+}
+.imgCenter {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.img-center {
+  width: auto;
+  height: 364px;
 }
 .btn-primary {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
   font-size: 25px;
-  padding: 40px 17px;
+  padding: 40px 25px;
   box-shadow: 10px 10px 0px -5px #000000;
+}
+.jobcont {
+  min-height: 600px;
 }
 .jobcont h2 {
   font-family: "GeometriaHeavy";
@@ -7335,7 +7403,7 @@ footer {
   border: 1px solid black;
 }
 .contactpage .btn-primary {
-  padding: 20px 17px;
+  padding: 20px 40px;
 }
 .contactpage .buttoncont {
   margin-top: 20px;

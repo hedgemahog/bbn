@@ -4,55 +4,55 @@ html(lang="ru")
   body
     include partials/head_inner.jade
     div(class="container textPageCont")
-      .usltop
-        h1 Услуги бюро
-        .uslugiGrid
-          ul.usl
-            li 
-              a(href="./creative-centre.html")
-                .creative
-                .uslCaption Креативный центр
-            li 
-              a(href="./digital-media.html")
-                .dig-media
-                .uslCaption Digital media
-            li 
-              a(href="./brendirovanie-territorii.html")
-                .branding
-                .uslCaption Брендинг территорий        
-            li 
-              a(href="./politicheskoe-konsultirovanie.html")
-                .polit-consult
-                .uslCaption Политическое консультироваиние
-            li 
-              a(href="./izbiratelnye-kampanii.html")
-                .izbir
-                .uslCaption Избирательные кампании
-            li 
-              a(href="./pr-i-gr.html")
-                .prgr
-                .uslCaption Связи с общественностью
-            li 
-              a(href="./analiticheskaya-podderzhka.html")
-                .analytical
-                .uslCaption Аналитическая поддержка    
-            li 
-              a(href="./press-sluzhba.html")
-                .press-sluzhba
-                .uslCaption Пресс-служба
-            li 
-              a(href="./organizaciya-meropriyatii.html")
-                .event-man
-                .uslCaption Организация мероприятий 
-            .clearfix
-    .clockcont
-      img(src="./img/clock.png" class="alarmclock")
-    .clocktext 
-      p Bureau Babkin News напоминает: <br> до выборов в Государственную Думу Федерального <br> Собрания Российской Федерации VII созыва осталось
-      .timer
-      script(src="js/timer.js")
-      script(src="js/scroller.js")  
-      .orderbutton
-        a(href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".contactmodal") Заказать консультацию
+      div(class="col-xs-10 col-xs-offset-1")
+        .usltop
+          h1 Услуги бюро
+          .uslugiGrid
+            ul.usl
+              li 
+                a(href="./creative-centre.html")
+                  .creative
+                  .uslCaption Креативный центр
+              li 
+                a(href="./digital-media.html")
+                  .dig-media
+                  .uslCaption Digital media
+              li 
+                a(href="./brendirovanie-territorii.html")
+                  .branding
+                  .uslCaption Маркетинг территорий        
+              li 
+                a(href="./politicheskoe-konsultirovanie.html")
+                  .polit-consult
+                  .uslCaption Политическое консультироваиние
+              li 
+                a(href="./izbiratelnye-kampanii.html")
+                  .izbir
+                  .uslCaption Избирательные кампании
+              li 
+                a(href="./pr-i-gr.html")
+                  .prgr
+                  .uslCaption Связи с общественностью
+              li 
+                a(href="./analiticheskaya-podderzhka.html")
+                  .analytical
+                  .uslCaption Аналитика и прогнозирование    
+              li 
+                a(href="./press-sluzhba.html")
+                  .press-sluzhba
+                  .uslCaption Пресс-служба
+              li 
+                a(href="./organizaciya-meropriyatii.html")
+                  .event-man
+                  .uslCaption EVENT-МЕНЕДЖМЕНТ 
+              .clearfix
+      .clockcont
+        img(src="./img/clocknew.png" class="alarmclock")
+      .clocktext 
+        p Бюро Стратегические Коммуникации напоминает: <br> до выборов в Государственную Думу Федерального <br> Собрания Российской Федерации VII созыва осталось
+        .timer
+        script(src="js/timer.js")
+        .orderbutton
+          a(href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".contactmodal") Заказать консультацию
     include partials/modal_contact.jade      
     include partials/footer_inner_fixed.jade     

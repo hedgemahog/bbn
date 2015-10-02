@@ -26,8 +26,14 @@ html
          
         .row
           div(class="col-xs-12").textslider
-            .textsliderCont
-              |С нами становятся депутатами
+            div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
+              div(class="carousel-inner")
+                div(class="item active")
+                  <img src="img/dep.jpg">
+                div(class="item")
+                  <img src="img/majors.jpg">
+                div(class="item")
+                  <img src="img/gub.jpg"> 
         .row
           div(class="col-xs-12").whoWhom
             |Для кого мы работаем
@@ -43,7 +49,7 @@ html
           div(class="col-xs-8 col-xs-offset-2").bordered-bottom-small
             .mainH2
               | Клиенты бюро:
-        .row
+        .row.clientscont
           div(class="col-xs-8 col-xs-offset-2")      
             .col-xs-3
               .partlogo
@@ -89,37 +95,81 @@ html
                 |Госкорпорация «Ростех»  
       div(class="container geo")                   
         .geocont
-          .row.zindex11
             div(class="col-xs-10 col-xs-offset-1").bordered-bottom-small
               .mainH2
                 | География работы: 
-          .row.zindex11
             div(class="col-xs-8 col-xs-offset-2").logosliderCont
-              .prev
-                <img src="img/prev.png">
-              .next
-                <img src="img/next.png">
-              .logoslider
-                .col-xs-3
-                  .partlogo
-                    <img src="img/altay.jpg">
-                  .caption 
-                    |Алтайский край
-                .col-xs-3
-                  .partlogo
-                    <img src="img/amur.jpg">
-                  .caption 
-                    |Амурская область
-                .col-xs-3
-                  .partlogo
-                    <img src="img/kostroma.jpg">
-                  .caption 
-                    |Костромская область
-                .col-xs-3
-                  .partlogo
-                    <img src="img/krasnodar.jpg">
-                  .caption 
-                    |Краснодарский край
+              div(id="carousel-example-generic-geo" class="carousel slide" data-ride="carousel")
+                div(class="carousel-inner")
+                  div(class="item active")
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/altay.jpg">
+                      .caption 
+                        |Алтайский край
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/amur.jpg">
+                      .caption 
+                        |Амурская область
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/kostroma.jpg">
+                      .caption 
+                        |Костромская область
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/krasnodar.jpg">
+                      .caption 
+                        |Краснодарский край
+                  div(class="item")
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/mordovia.jpg">
+                      .caption 
+                        |Республика Мордовия
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/msk.jpg">
+                      .caption 
+                        |Город Москва
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/mo.jpg">
+                      .caption 
+                        |Московская область
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/samara.jpg">
+                      .caption 
+                        |Самарская область 
+                  div(class="item")
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/ekb.jpg">
+                      .caption 
+                        |Свердловская область
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/tat.jpg">
+                      .caption 
+                        |Республика Татарстан
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/amur.jpg">
+                      .caption 
+                        |Амурская область
+                    .col-xs-3
+                      .partlogo
+                        <img src="img/khv.jpg">
+                      .caption 
+                        |Хабаровский край            
+                .prev
+                  a(class="left carousel-control" href="#carousel-example-generic-geo" data-slide="prev")
+                    <img src="img/prev.png">
+                .next
+                  a(class="right carousel-control" href="#carousel-example-generic-geo" data-slide="next")
+                    <img src="img/next.png">      
             div(class="col-xs-8 col-xs-offset-2 ordermain")
               .orderbutton
                 a(href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".contactmodal") Заказать консультацию
@@ -127,6 +177,5 @@ html
         footer
           .row
             div(class="col-xs-12 mainfoot") | +7 (495) 649-83-74  | info@burcon.ru |
-      include partials/modal_contact.jade       
-
-                 
+      include partials/modal_contact.jade 
+script $(function(){ $('#carousel-example-generic').carousel({interval: 5000}); $('#carousel-example-generic-geo').carousel({interval: 5000}) });             

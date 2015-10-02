@@ -5,21 +5,22 @@ html(lang="ru")
   body
     include partials/head_inner.jade
     div(class="container textPageCont contactpage")
-      .row
-        h1.contacthead Для связи с бюро
-        div(class="col-md-4")
-          p 
-            |<strong>Bureau Babkin News</strong> г. Москва, 113 543, ул. Льва Толстого д. 15 строение 1/142<br>+7 (495) 234-35-12 <br> inquiries@babkin-news.ru
-          h2 Карта:  
-        div(class="col-md-4 col-md-offset-4")
-          p
-            |Наиболее удобный способ связи с бюро—наша форма обратной связи. Воспользовавшись ей, вы можете заказать предварительную консультацию и получить оперативный комментарий относительно услуг бюро и возможных направлений сотрудничества. Для того, чтобы оперативно связаться с Bureau babkin News, нажмите на кнопку:
-      .row
-        div(class="col-md-8") 
-          div(id="map-canvas")
-          p 
-            |Офис Bureau Babkin News на ул. Такой-то работает с таких-то по такие часы, но рекомендуется приходить по предварительной записи, например. Секретать Бюро Борис Шлипкенбойк. 
-         div(class="col-md-4 buttoncont")
-           a(href="#" class="btn btn-primary btn-md" data-toggle="modal" data-target=".contactmodal") Написать
+      div(class="col-xs-10 col-xs-offset-1")
+        .row
+          h1.contacthead Для связи с бюро
+          div(class="col-md-4")
+            p 
+              |<strong>123317 Москва, Пресненская наб., д. 8 стр. 1 <br>ММДЦ «Москва-Сити», МФК «Город Столиц»</strong>
+            h2 Карта:  
+          div(class="col-md-4 col-md-offset-4")
+            p
+              |Наиболее удобный способ связи с бюро—наша форма обратной связи. Воспользовавшись ей, вы можете заказать предварительную консультацию и получить оперативный комментарий относительно услуг бюро и возможных направлений сотрудничества. Для того, чтобы оперативно связаться с Bureau babkin News, нажмите на кнопку:
+        .row
+          div(class="col-md-8") 
+            div(id="map-canvas")
+            p 
+              |Офис бюро «Стратегические коммуникации» работает с понедельника по пятницу с 9:00 до 18:00. 
+           div(class="col-md-4 buttoncont")
+             a(href="#" class="btn btn-primary btn-md" data-toggle="modal" data-target=".contactmodal") Написать
     include partials/modal_contact.jade        
     include partials/footer_inner_fixed.jade    
