@@ -2,50 +2,58 @@ doctype html
 html(lang="ru")
   include partials/cab_head.jade
   body
-    include partials/head_inner.jade
     div(class="container textPageCont")
-      div(class="col-xs-10 col-xs-offset-1")
+      include partials/head_inner.jade
+      div(class="col-sm-10 col-sm-offset-1 col-xs-12")
         .usltop
           h1 Услуги бюро
-          .uslugiGrid
-            ul.usl
-              li 
-                a(href="./creative-centre.html")
-                  .creative
-                  .uslCaption Креативный центр
-              li 
-                a(href="./digital-media.html")
-                  .dig-media
-                  .uslCaption Digital media
-              li 
-                a(href="./brendirovanie-territorii.html")
-                  .branding
-                  .uslCaption Маркетинг территорий        
-              li 
-                a(href="./politicheskoe-konsultirovanie.html")
-                  .polit-consult
-                  .uslCaption Политическое консультироваиние
-              li 
-                a(href="./izbiratelnye-kampanii.html")
-                  .izbir
-                  .uslCaption Избирательные кампании
-              li 
-                a(href="./pr-i-gr.html")
-                  .prgr
-                  .uslCaption Связи с общественностью
-              li 
-                a(href="./analiticheskaya-podderzhka.html")
-                  .analytical
-                  .uslCaption Аналитика и прогнозирование    
-              li 
-                a(href="./press-sluzhba.html")
-                  .press-sluzhba
-                  .uslCaption Пресс-служба
-              li 
-                a(href="./organizaciya-meropriyatii.html")
-                  .event-man
-                  .uslCaption EVENT-МЕНЕДЖМЕНТ 
-              .clearfix
+        .row
+          .col-xs-6.col-sm-4.usl
+            a(href="./creative-centre.html")
+              .creative 
+                img(src="img/uslugi_icons/creative.png" class="img-responsive")
+              .uslCaption Креативный центр 
+          .col-xs-6.col-sm-4.usl
+            a(href=".//digital-media.html")
+              .creative
+                img(src="img/uslugi_icons/dig_media.png" class="img-responsive")
+              .uslCaption Digital media
+          .col-xs-6.col-sm-4.usl
+            a(href="./brendirovanie-territorii.html")
+              .creative
+                img(src="img/uslugi_icons/branding.png" class="img-responsive")
+              .uslCaption Маркетинг территорий
+          .col-xs-6.col-sm-4.usl
+            a(href="./politicheskoe-konsultirovanie.html")
+              .creative
+                img(src="img/uslugi_icons/polit_consult.png" class="img-responsive")
+              .uslCaption Политическое консультироваиние
+          .col-xs-6.col-sm-4.usl
+            a(href="./izbiratelnye-kampanii.html")
+              .creative
+                img(src="img/uslugi_icons/izbir.png" class="img-responsive")
+              .uslCaption Избирательные кампании
+          .col-xs-6.col-sm-4.usl
+            a(href="./pr-i-gr.html")
+              .creative
+                img(src="img/uslugi_icons/prgr.png" class="img-responsive")
+              .uslCaption Связи с общественностью
+          .col-xs-6.col-sm-4.usl
+            a(href="./analiticheskaya-podderzhka.html")
+              .creative
+                img(src="img/uslugi_icons/analytical.png" class="img-responsive")
+              .uslCaption Аналитика и прогнозирование  
+          .col-xs-6.col-sm-4.usl
+            a(href="./press-sluzhba.html")
+              .creative
+                img(src="img/uslugi_icons/press_sluzhba.png" class="img-responsive")
+              .uslCaption Пресс-служба
+          .col-xs-6.col-sm-4.usl
+            a(href="./organizaciya-meropriyatii.html")
+              .creative
+                img(src="img/uslugi_icons/event_man.png" class="img-responsive")
+              .uslCaption EVENT-МЕНЕДЖМЕНТ        
+      .clearfix
       .clockcont
         img(src="./img/clocknew.png" class="alarmclock")
       .clocktext 
@@ -53,6 +61,6 @@ html(lang="ru")
         .timer
         script(src="js/timer.js")
         .orderbutton
-          a(href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".contactmodal") Заказать консультацию
+          a(href="#" class="btn btn-primary" data-toggle="modal" data-target=".contactmodal") Заказать консультацию
     include partials/modal_contact.jade      
     include partials/footer_inner_fixed.jade     

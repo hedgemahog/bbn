@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
@@ -14,41 +15,47 @@
   </head>
   <script src="js/map.js"></script>
   <body>
-    <div class="navbar internalNav navbar-fixed-top">
-      <div class="navbar-header navbar-fixed-top"><a href="./index.html" class="navbar-brand">
-           
-          <img src="img/logolong.jpg"></a>
-        <ul class="nav navbar-nav">
-          <li><a href="./about.html">О бюро</a></li>
-          <li><a href="uslugi.html">Услуги</a></li>
-          <li><a href="contacts.html">Связаться</a></li>
-        </ul>
-      </div>
-    </div>
+    <header>
+      <nav role="navigation" class="navbar navbar-inner navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle btn-md">
+            <span class="sr-only">Скрыть навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button><a href="./index.html"><img src="img/logonew.jpg" class="logoint">
+            <div class="zag">Стратегические Коммуникации   </div></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./about.html">О бюро</a></li>
+            <li><a href="./uslugi.html">Услуги</a></li>
+            <li><a href="./contacts.html">Связаться</a>  </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="container textPageCont contactpage">
-      <div class="col-xs-10 col-xs-offset-1">
+      <div class="col-md-10 col-md-offset-1">
         <div class="row">
           <h1 class="contacthead">Для связи с бюро</h1>
-          <div class="col-md-4">
+          <div class="col-md-8">
             <p>
                
               <strong>123317 Москва, Пресненская наб., д. 8 стр. 1 <br>ММДЦ «Москва-Сити», МФК «Город Столиц»</strong>
             </p>
             <p><strong>+7 (495) 649-83-74 </strong></p>
-            <p><strong>info@burcon.ru  </strong></p>
+            <p><strong> </strong><a href="mailto:info@burcon.ru">info@burcon.ru  </a></p>
             <h2>Карта:  </h2>
-          </div>
-          <div class="col-md-4 col-md-offset-4">
-            <p>Наиболее удобный способ связи с бюро—наша форма обратной связи. Воспользовавшись ей, вы можете заказать предварительную консультацию и получить оперативный комментарий относительно услуг бюро и возможных направлений сотрудничества. Для того, чтобы оперативно связаться с Bureau babkin News, нажмите на кнопку:</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8"> 
             <div id="map-canvas"></div>
             <p>
                
-              Офис бюро «Стратегические коммуникации» работает с понедельника по пятницу с 9:00 до 18:00. 
+              Офис бюро «Стратегические коммуникации» работает с понедельника по пятницу с 9:00 до 18:00.       
             </p>
+          </div>
+          <div class="col-md-4">
+            <p>Наиболее удобный способ связи с Бюро—наша форма обратной связи. Воспользовавшись ей, вы можете заказать предварительную консультацию и получить оперативный комментарий относительно услуг бюро и возможных направлений сотрудничества. </p>
+            <p>Для того, чтобы оперативно связаться с Бюро Стратегические Коммуникации, нажмите на кнопку:</p>
           </div>
           <div class="col-md-4 buttoncont"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-md">Написать</a></div>
         </div>
@@ -57,12 +64,12 @@
     <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
-          <form role="form">
+          <form role="form" action="contact.php" method="POST">
             <div class="form-group">
-              <input type="text" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
-              <input type="email" placeholder="Email (обязательно)" class="form-control input-lg">
-              <input type="text" placeholder="Телефон (опционально)" class="form-control input-lg">
-              <textarea rows="6" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
+              <input type="text" name="name" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
+              <input type="email" name="email" placeholder="Email (обязательно)" class="form-control input-lg">
+              <input type="text" name="tel" placeholder="Телефон (опционально)" class="form-control input-lg">
+              <textarea rows="6" name="message" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
               <button type="submit" class="btn btn-primary">Отправить </button>
             </div>
           </form>
@@ -71,7 +78,7 @@
     </div>
     <footer>
       <div class="navbar-fixed-bottom pagefooter">© Бюро Стратегические Коммуникации, 2015. All rights reserved.  <a href="./terms.html">Правила пользования сайтом</a>.
-        <div class="pull-right">| +7 (495) 649-83-74 | info@burcon.ru |</div>
+        <div class="pull-right">| +7 (495) 649-83-74 | <a href="mailto:info@burcon.ru">info@burcon.ru</a> |</div>
       </div>
     </footer>
   </body>

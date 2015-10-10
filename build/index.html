@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
@@ -15,45 +16,54 @@
   <body>
     <div class="maincont container">
       <header>
-        <div class="row bordered-top">
-          <div class="col-xs-7"><a href="./index.html" ><img src="img/logonew.jpg" class="logoimg"></a>
+        <nav role="navigation" class="navbar navbar-main">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle btn-md">
+              <span class="sr-only">Скрыть навигацию</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button><a href="./index.html"><img src="img/logonew.jpg" class="logoimg"></a>
             <div class="headtext">
               <p class="mainheader">
                 Бюро<br>
                 Стратегические Коммуникации
               </p>
-              <p class="mainsubhead"><span>
-                   
-                  в большой политике с 2010 года  </span></p>
+              <p class="mainsubhead"><span>в большой политике с 2010 года  </span></p>
+            </div>
+            <div class="headsmall">
+              <p class="mainheader">Бюро Стратегические Коммуникации  </p>
             </div>
           </div>
-          <div class="col-xs-5">
-            <nav class="navbar">
-              <ul class="nav navbar-nav">
-                <li><a href="./about.html">О бюро</a></li>
-                <li><a href="./uslugi.html">Услуги</a></li>
-                <li><a href="./contacts.html">Связаться</a>    </li>
-              </ul>
-            </nav>
+          <div class="headsubsmall"> 
+            <p class="mainsubhead"><span>в большой политике с 2010 года    </span></p>
           </div>
-        </div>
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="./about.html">О бюро</a></li>
+              <li><a href="./uslugi.html">Услуги</a></li>
+              <li><a href="./contacts.html">Связаться</a>   	</li>
+            </ul>
+          </div>
+        </nav>
       </header>
       <div class="row">
-        <div class="col-xs-12 textslider">
+        <div class="textslider">
           <div id="carousel-example-generic" data-ride="carousel" class="carousel slide">
             <div class="carousel-inner">
-              <div class="item active"><img src="img/dep.jpg"></div>
-              <div class="item"><img src="img/majors.jpg"></div>
-              <div class="item"><img src="img/gub.jpg"> </div>
+              <div class="item active">С нами становятся депутатами</div>
+              <div class="item">С нами становятся мэрами</div>
+              <div class="item">С нами становятся губернаторами </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 whoWhom">Для кого мы работаем</div>
+        <div class="col-xs-12 whoWhom">Для кого мы работаем:</div>
       </div>
       <div class="row">
-        <div onclick="location.href='./kandidatam.html'" class="col-xs-4 mainCandidat1">
+        <div onclick="location.href='./kandidatam.html'" class="col-sm-4 mainCandidat1">
+          <div class="candsmall"><img src="img/kand2.png" class="img-responsive"></div>
           <div ontouchstart="this.classList.toggle('hover');" class="flip-container">
             <div class="flipper">
               <div class="front"><img src="img/kand1.png">    	</div>
@@ -63,23 +73,19 @@
           <p class="mainIcontext">Кандидаты</p>
           <script src="js/candidat.js"> </script>
         </div>
-        <div class="col-xs-4 mainFlag1">
-          <div class="flag"><a href="./of-licam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
-          <div class="iconmaincont">
-            <div class="flagOff show"><a href="./of-licam.html"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png"></a></div>
-            <div class="flagOn hide"><a href="./of-licam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png"></a></div>
+        <div class="col-sm-4 mainFlag1">
+          <div class="iconmaincont flagcont">
+            <div class="flagOff"><a href="./of-licam.html"><img src="img/ZNACHOK_WHITE_FILL_FINAL.png" class="img-responsive"></a></div>
+            <div class="flagOn"><a href="./of-licam.html"><img src="img/ZNACHOK_FLIPPED_FIN.png" class="img-responsive"></a></div>
           </div>
           <p class="mainIcontext">Официальные лица</p>
-          <script>$(function(){ $('.mainFlag1').mouseenter(function(){ $('.flagOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.flagOn').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainFlag1').mouseleave(function(){ $('.flagOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.flagOn').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
         </div>
-        <div class="col-xs-4 mainParti1">
-          <div class="partie"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
-          <div class="iconmaincont">
-            <div class="pOff show"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA.png"></a></div>
-            <div class="pOon hide"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png"></a></div>
+        <div class="col-sm-4 mainParti1">
+          <div class="iconmaincont partcont">
+            <div class="pOff"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA.png" class="img-responsive"></a></div>
+            <div class="pOon"><a href="./partiyam.html"><img src="img/PARTII_GRUPPA_FLIPPED.png" class="img-responsive"></a></div>
           </div>
           <p class="mainIcontext">Политические партии</p>
-          <script>$(function(){ $('.mainParti1').mouseenter(function(){ $('.pOff').switchClass("show", "hide", 0, "easeInOutCubic"); $('.pOon').switchClass("hide", "show", 0, "easeInOutCubic");  }); $('.mainParti1').mouseleave(function(){ $('.pOff').switchClass("hide", "show", 0, "easeInOutCubic"); $('.pOon').switchClass("show", "hide", 0, "easeInOutCubic");  }); });  </script>
         </div>
       </div>
       <div class="row">
@@ -88,30 +94,30 @@
         </div>
       </div>
       <div class="row clientscont">
-        <div class="col-xs-8 col-xs-offset-2">     
-          <div class="col-xs-3">
-            <div class="partlogo"><img src="img/er.png"></div>
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">     
+          <div class="col-xs-6 col-sm-3">
+            <div class="partlogo"><img src="img/er.png" class="img-responsive"></div>
             <div class="caption">
                
-              Всероссийская политическая партия «Единая Россия» 
+              Политическая партия «Единая Россия»
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="partlogo"><img src="img/kprf.png"></div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="partlogo"><img src="img/kprf.png" class="img-responsive"></div>
             <div class="caption">
                
               Коммунистическая партия Российской Федерации
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="partlogo"><img src="img/ldpr.png"></div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="partlogo"><img src="img/ldpr.png" class="img-responsive"></div>
             <div class="caption">
                
               Либерально-демократическая партия Российской Федерации 
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="partlogo"><img src="img/sr.png"></div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="partlogo"><img src="img/sr.png" class="img-responsive"></div>
             <div class="caption">
                
               Политическая партия Справедливая Россия 
@@ -119,31 +125,31 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">     
-          <div class="col-xs-3">
-            <div class="partlogo"><img src="img/rodina.png"></div>
+      <div class="row secondlogos">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">     
+          <div class="col-xs-6 col-sm-3">
+            <div class="partlogo"><img src="img/rodina.png" class="img-responsive"></div>
             <div class="caption">
                
               Всероссийская политическая партия «Родина»
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="partlogo"><img src="img/platf.png"></div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="partlogo"><img src="img/platf.png" class="img-responsive"></div>
             <div class="caption">
                
               Политическая партия «Гражданская платформа»
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="partlogo"><img src="img/onf.png"></div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="partlogo"><img src="img/onf.png" class="img-responsive"></div>
             <div class="caption">
                
               Общероссийский народный фронт
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="partlogo"><img src="img/rosteh.png"></div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="partlogo"><img src="img/rosteh.png" class="img-responsive"></div>
             <div class="caption">
                
               Госкорпорация «Ростех»  
@@ -154,36 +160,36 @@
     </div>
     <div class="container geo">                  
       <div class="geocont">
-        <div class="col-xs-10 col-xs-offset-1 bordered-bottom-small">
+        <div class="col-xs-8 col-xs-offset-2 bordered-bottom-small">
           <div class="mainH2">География работы: </div>
         </div>
-        <div class="col-xs-8 col-xs-offset-2 logosliderCont">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 logosliderCont">
           <div id="carousel-example-generic-geo" data-ride="carousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="item active">
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/altay.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/altay.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Алтайский край
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/amur.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/amur.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Амурская область
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/kostroma.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/kostroma.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Костромская область
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/krasnodar.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/krasnodar.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Краснодарский край
@@ -191,29 +197,29 @@
                 </div>
               </div>
               <div class="item">
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/mordovia.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/mordovia.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Республика Мордовия
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/msk.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/msk.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Город Москва
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/mo.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/mo.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Московская область
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/samara.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/samara.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Самарская область 
@@ -221,32 +227,32 @@
                 </div>
               </div>
               <div class="item">
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/ekb.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/ekb.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Свердловская область
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/tat.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/tat.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Республика Татарстан
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/amur.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/amur.png" class="img-responsive"></div>
                   <div class="caption">
                      
                     Амурская область
                   </div>
                 </div>
-                <div class="col-xs-3">
-                  <div class="partlogo"><img src="img/khv.jpg"></div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="partlogo"><img src="img/kostroma.png" class="img-responsive"></div>
                   <div class="caption">
                      
-                    Хабаровский край            
+                    Костромская область            
                   </div>
                 </div>
               </div>
@@ -255,27 +261,27 @@
             <div class="next"><a href="#carousel-example-generic-geo" data-slide="next" class="right carousel-control"><img src="img/next.png">      </a></div>
           </div>
         </div>
-        <div class="col-xs-8 col-xs-offset-2 ordermain">
-          <div class="orderbutton"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-lg">Заказать консультацию</a></div>
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 ordermain">
+          <div class="orderbutton"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary">Заказать консультацию</a></div>
         </div>
       </div>
     </div>
     <div class="maincont container"> 
       <footer>
         <div class="row">
-          <div class="col-xs-12 mainfoot">| +7 (495) 649-83-74  | info@burcon.ru |</div>
+          <div class="col-xs-12 mainfoot">| +7 (495) 649-83-74  | <a href="mailto:info@burcon.ru">info@burcon.ru</a> |</div>
         </div>
       </footer>
     </div>
     <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
-          <form role="form">
+          <form role="form" action="contact.php" method="POST">
             <div class="form-group">
-              <input type="text" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
-              <input type="email" placeholder="Email (обязательно)" class="form-control input-lg">
-              <input type="text" placeholder="Телефон (опционально)" class="form-control input-lg">
-              <textarea rows="6" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
+              <input type="text" name="name" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
+              <input type="email" name="email" placeholder="Email (обязательно)" class="form-control input-lg">
+              <input type="text" name="tel" placeholder="Телефон (опционально)" class="form-control input-lg">
+              <textarea rows="6" name="message" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
               <button type="submit" class="btn btn-primary">Отправить </button>
             </div>
           </form>

@@ -1,0 +1,95 @@
+//Internal pages Navbar
+.navbar-inner {
+	.navbar-header {
+		@media (min-width: @screen-lg){
+			width: 500px;
+		}
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+			.zag {
+				font-size: 22px;
+				font-family: @font-family-sans-serif-bold;
+				padding-top: 10px;
+				@media (max-width: @screen-lg){
+					font-size: 17px;
+				}
+				@media (max-width: @screen-md){
+					font-size: 26px;
+				}
+				@media (max-width: @screen-sm){
+					font-size: 17px;
+				}
+			}
+			
+		}
+	}
+	.navbar-toggle {
+    	&:hover,
+    	&:focus {
+      		background-color: @navbar-default-toggle-hover-bg;
+    	}
+    	.icon-bar {
+      		background-color: @navbar-default-toggle-icon-bar-bg;
+    	}
+  	}
+	background: #fff;
+	box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.35);
+	.mainheader {
+		font-size: 25px;
+		padding-top: 10px;
+	}
+	.navbar-nav{
+		margin-top: 10px;
+		margin-right: -350px;
+		a {
+			font-family: @font-family-sans-serif-bold;
+			font-size: 20px;
+		}
+		@media (max-width: @screen-sm){
+			margin-right: 0;
+			width: 100%;
+			li {
+				border-top: 1px solid black;
+			}
+		}
+	}
+}
+
+.logoint {
+	height: auto;
+	float: left;
+	margin-right: 10px;
+	width: 31px;
+	
+	
+}
+
+.internalNav {
+	text-align: right;
+	box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.35);
+	background: #fff;
+	.navbar-nav {
+		margin-top: 10px;
+		margin-right: 40px;
+		a {
+			font-family: @font-family-sans-serif-bold;
+			font-size: 20px;
+		}
+	}
+}
+.navbar-brand {
+	font-family: @font-family-sans-serif-bold;
+	font-size: 25px;
+	padding-left: 70px;
+	>span {
+		padding-top: 20px;
+	}
+}
+
+.termspage {
+	>p {
+		font-family: @font-family-sans-serif-med !important;
+	}
+}

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
@@ -13,19 +14,33 @@
     <script src="lib/jquery-ui/jquery-ui.js">     </script>
   </head>
   <body>
-    <div class="navbar internalNav navbar-fixed-top">
-      <div class="navbar-header navbar-fixed-top"><a href="./index.html" class="navbar-brand">
-           
-          <img src="img/logolong.jpg"></a>
-        <ul class="nav navbar-nav">
-          <li><a href="./about.html">О бюро</a></li>
-          <li><a href="uslugi.html">Услуги</a></li>
-          <li><a href="contacts.html">Связаться</a></li>
-        </ul>
-      </div>
-    </div>
+    <header>
+      <nav role="navigation" class="navbar navbar-inner navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle btn-md">
+            <span class="sr-only">Скрыть навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button><a href="./index.html"><img src="img/logonew.jpg" class="logoint">
+            <div class="zag">Стратегические Коммуникации   </div></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./about.html">О бюро</a></li>
+            <li><a href="./uslugi.html">Услуги</a></li>
+            <li><a href="./contacts.html">Связаться</a>  </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="container textPageCont">
-      <div class="col-xs-10 col-xs-offset-1">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="usltop">
+          <h1>Официальным лицам</h1>
+        </div>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 mixcont">
         <div class="textitem">
           <div class="row">
             <div class="col-xs-4">
@@ -126,14 +141,65 @@
         </div>
         <div class="row">
           <div class="col-xs-4 col-xs-offset-4 clocktext">
-            <div class="orderbutton"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-lg">Заказать консультацию              </a></div>
+            <div class="orderbutton"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-lg">Заказать консультацию </a></div>
           </div>
+        </div>
+      </div>
+      <div class="mixcont-min">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 usl"><a href="./creative-centre.html">
+              <div class="creative"> <img src="img/uslugi_icons/creative.png" class="img-responsive"></div>
+              <div class="uslCaption">Креативный центр </div></a></div>
+          <div class="col-xs-6 col-sm-4 usl"><a href=".//digital-media.html">
+              <div class="creative"><img src="img/uslugi_icons/dig_media.png" class="img-responsive"></div>
+              <div class="uslCaption">Digital media</div></a></div>
+          <div class="col-xs-6 col-sm-4 usl"><a href="./brendirovanie-territorii.html">
+              <div class="creative"><img src="img/uslugi_icons/branding.png" class="img-responsive"></div>
+              <div class="uslCaption">Маркетинг территорий</div></a></div>
+          <div class="col-xs-6 col-sm-4 usl"><a href="./politicheskoe-konsultirovanie.html">
+              <div class="creative"><img src="img/uslugi_icons/polit_consult.png" class="img-responsive"></div>
+              <div class="uslCaption">Политическое консультироваиние</div></a></div>
+          <div class="col-xs-6 col-sm-4 usl"><a href="./izbiratelnye-kampanii.html">
+              <div class="creative"><img src="img/uslugi_icons/izbir.png" class="img-responsive"></div>
+              <div class="uslCaption">Избирательные кампании</div></a></div>
+          <div class="col-xs-6 col-sm-4 usl"><a href="./pr-i-gr.html">
+              <div class="creative"><img src="img/uslugi_icons/prgr.png" class="img-responsive"></div>
+              <div class="uslCaption">Связи с общественностью</div></a></div>
+          <div class="col-xs-6 col-sm-4 usl"><a href="./analiticheskaya-podderzhka.html">
+              <div class="creative"><img src="img/uslugi_icons/analytical.png" class="img-responsive"></div>
+              <div class="uslCaption">Аналитика и прогнозирование  </div></a></div>
+          <div class="col-xs-6 col-sm-4 usl"><a href="./press-sluzhba.html">
+              <div class="creative"><img src="img/uslugi_icons/press_sluzhba.png" class="img-responsive"></div>
+              <div class="uslCaption">Пресс-служба</div></a></div>
+          <div class="col-xs-6 col-sm-4 usl"><a href="./organizaciya-meropriyatii.html">
+              <div class="creative"><img src="img/uslugi_icons/event_man.png" class="img-responsive"></div>
+              <div class="uslCaption">EVENT-МЕНЕДЖМЕНТ                       </div></a></div>
+        </div>
+        <div class="row">
+          <div class="clocktext">
+            <div class="orderbutton"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-lg">Заказать консультацию  </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
+          <form role="form" action="contact.php" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
+              <input type="email" name="email" placeholder="Email (обязательно)" class="form-control input-lg">
+              <input type="text" name="tel" placeholder="Телефон (опционально)" class="form-control input-lg">
+              <textarea rows="6" name="message" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
+              <button type="submit" class="btn btn-primary">Отправить </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
     <footer>
       <div class="navbar-fixed-bottom pagefooter">© Бюро Стратегические Коммуникации, 2015. All rights reserved.  <a href="./terms.html">Правила пользования сайтом</a>.
-        <div class="pull-right">| +7 (495) 649-83-74 | info@burcon.ru |</div>
+        <div class="pull-right">| +7 (495) 649-83-74 | <a href="mailto:info@burcon.ru">info@burcon.ru</a> |</div>
       </div>
     </footer>
   </body>

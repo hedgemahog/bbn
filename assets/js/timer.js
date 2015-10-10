@@ -30,7 +30,7 @@ var m = Math.floor(left / month);
 var d = (lastDay - nowDate.getDate());
 var h = Math.floor(left / hours);
 
-m += 1;
+m += 0;
 h -= (h - timeNow);
 
 if ((d >= 1) && (d < 10)) {

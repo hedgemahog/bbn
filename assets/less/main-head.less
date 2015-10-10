@@ -1,0 +1,103 @@
+.logoimg {
+	height: auto;
+	float: left;
+	margin-right: 40px;
+	//width: 40px;
+	@media (min-width: @screen-lg){
+		width: 81px;
+	}
+	@media (min-width: @screen-md) and (max-width: @screen-lg){
+		width: 81px;
+	}
+	@media (max-width: @screen-md){
+		width: 60px;
+	}
+	@media (max-width: @screen-sm){
+		width: 46px;
+	}
+	@media (max-width: @screen-sm){
+		width: 40px;
+	}
+	
+}
+.headtext {
+	float: left;
+	padding-right: 60px;
+	@media (max-width: 992px) {
+		padding-right: 0;
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+	@media (max-width: 480px) {
+		display: none;
+	}
+}
+.headsmall{
+	display: none;
+	@media (max-width: 768px) {
+		display: block;
+		padding-top: 15px;
+	}
+	@media (max-width: 480px) {
+		display: block;
+	}
+}
+.headsubsmall{
+	margin-top: 15px;
+	text-align: center;
+	display: none;
+	@media (max-width: 768px) {
+		display: block;
+		padding-top: 15px;
+	}
+	@media (max-width: 480px) {
+		display: block;
+	}
+	border-top: 2px solid black;
+}
+
+.navbar-main{
+	padding-top: 10px;
+	.navbar-toggle {
+    	&:hover,
+    	&:focus {
+      		background-color: @navbar-default-toggle-hover-bg;
+    	}
+    	.icon-bar {
+      		background-color: @navbar-default-toggle-icon-bar-bg;
+    	}
+  	}
+	.navbar-nav {
+		padding-top: 25px;
+		//background: #eee;
+		li {
+			a {
+				&:hover {
+					background-color: #fff !important;
+					text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.89);
+				}
+				padding: 10px 10px;
+				@media (min-width: @screen-lg) {
+					padding: 10px 20px;
+				}
+				&:last-child {
+					padding-right: 0px;
+				}
+			}
+		}
+		@media (max-width: @screen-sm){
+			width: 100%;
+			li {
+				border-top: 1px solid black;
+			}
+		}
+		a {
+			font-family: @font-family-sans-serif-head;
+			font-size: 19px;
+			@media (min-width: @screen-lg) {
+				font-size: 28px;
+			}
+		}
+	}
+}

@@ -45,3 +45,32 @@
 .back {
 	transform: rotateY(-180deg);
 }
+
+
+
+.flagOn, .pOon, .candsmall {
+	display: none;
+}
+.candsmall, .flagOn, .pOon, .flagOff, .pOff, {
+	img{
+		margin: 0 auto;
+	}
+}
+@media (max-width: @screen-lg){
+	.flagOn, .pOon, .candsmall {
+		display: block;
+	}
+	.flagOff, .pOff, .flip-container {
+		display: none;
+	}
+}
+.flagcont, .partcont {
+	&:hover {
+		.flagOn, .pOon {
+			display: block;
+		}
+		.flagOff, .pOff {
+			display: none;
+		}
+	}
+}
