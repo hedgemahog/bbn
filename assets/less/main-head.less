@@ -2,6 +2,7 @@
 	height: auto;
 	float: left;
 	margin-right: 40px;
+	margin-bottom: 10px;
 	//width: 40px;
 	@media (min-width: @screen-lg){
 		width: 81px;
@@ -10,13 +11,19 @@
 		width: 81px;
 	}
 	@media (max-width: @screen-md){
-		width: 60px;
-	}
-	@media (max-width: @screen-sm){
-		width: 46px;
+		width: 50px;
 	}
 	@media (max-width: @screen-sm){
 		width: 40px;
+	}
+	@media (max-width: @screen-sm){
+		width: 30px;
+		margin-right: 10px;
+	}
+	@media (max-width: 375px) {
+		width: 20px;
+		margin-right: 5px;
+		margin-bottom: 5px;
 	}
 	
 }
@@ -27,12 +34,46 @@
 		padding-right: 0;
 	}
 	@media (max-width: 768px) {
-		display: none;
+		.mainsubhead {
+			display: none;
+		}
 	}
 	@media (max-width: 480px) {
+		.mainsubhead {
+			display: none;
+		}
+	}
+}
+
+.mainheadermobile {
+	display: none;
+	@media (max-width: 768px) {
+		display: block;
+		font-size: 26px;
+		padding-top: 20px;
+	}
+	@media (max-width: 480px) {
+		display: block;
+		font-size: 15px;
+		padding-top: 10px;
+	}
+	@media (max-width: 375px) {
+		display: block;
+		font-size: 14px;
+		padding-top: 10px;
+	}
+	@media (max-width: 320px) {
+		display: block;
+		font-size: 12px;
+		padding-top: 10px;
+	}
+}
+.mainheader {
+	@media (max-width: 768px) {
 		display: none;
 	}
 }
+
 .headsmall{
 	display: none;
 	@media (max-width: 768px) {
@@ -66,6 +107,10 @@
     	}
     	.icon-bar {
       		background-color: @navbar-default-toggle-icon-bar-bg;
+    	}
+    	@media (max-width: 375px) {
+    		margin: 0;
+    		padding: 0;
     	}
   	}
 	.navbar-nav {

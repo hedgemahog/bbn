@@ -10,11 +10,19 @@
 @import "main-head.less";
 @import "int-head.less";
 
+html, 
 body {
 	background: #c6c6c6;
+	@media (min-width: 1200px){
+		height: 100%;
+	}
 }
 header {
 	//margin-top: 50px;
+}
+
+.container {
+	background: #ffffff;
 }
 
 h1 {
@@ -70,6 +78,9 @@ footer{
 	@media (max-width: @screen-sm) {
 		font-size: 12px;
 	}
+	p {
+		font-size: 12px;
+	}
 }
 .footRighttext {
 	text-align: right;
@@ -88,6 +99,11 @@ footer{
 	padding-left: 70px;
 	padding-right: 70px;
 	background: #fff;
+	@media (max-width: @screen-md) {
+		font-size: 10px;
+		
+	}
+
 }
 .uslugifooter {
 	.pagefooter;
@@ -143,21 +159,22 @@ footer{
 }
 
 .textslider {
-	border-top: 8px solid black;
-	border-bottom: 8px solid black;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
 	width: 100%;
-	height: 134px;
+	height: 100px;
 	text-align: center;
 	font-family: @GeometriaExtraBold;
 
 	@media (min-width: @screen-lg){
-		font-size: 72px;
+		font-size: 50px;
 	}
 	@media (min-width: @screen-md) and (max-width: @screen-lg){
 		font-size: 50px;
 		height: 90px;
 		border-top: 5px solid black;
 		border-bottom: 5px solid black;
+		
 	}
 	@media (min-width: @screen-sm) and (max-width: @screen-md){
 		font-size: 34px;
@@ -193,6 +210,9 @@ footer{
 	}
 	
 }
+.mainheadermobile {
+	font-family: @font-family-sans-serif-bold;
+}
 .mainsubhead {
 	font-family: @font-family-sans-serif-med;
 	font-size: 17px;
@@ -212,9 +232,9 @@ footer{
 	font-family: @lineaturaBold;
 	text-align: center;
 	@media (min-width: @screen-lg){
-		font-size: 55px;
+		font-size: 45px;
 		letter-spacing: 20px;
-		padding: 62px 0;
+		padding: 22px 0;
 	}
 	@media (min-width: @screen-md) and (max-width: @screen-lg){
 		font-size: 43px;
@@ -277,6 +297,11 @@ footer{
 	text-align: center;
 	
 }
+.partlogo {
+	img {
+		margin: 0 auto;
+	}
+}
 .caption {
 	font-family: @GeometriaBold;
 	font-size: 16px;
@@ -289,6 +314,9 @@ footer{
 	}
 	@media (max-width: @screen-xs){
 		font-size: 12px;
+	}
+	@media (max-width: 320px){
+		font-size: 9px;
 	}
 }
 
@@ -323,9 +351,21 @@ footer{
 	background: url(../img/wh.jpg) top center;
 	padding: 0 !important;
 	min-height: 1085px;
+	@media (max-width: 768px) {
+		min-height: 800px;
+	}
 	.carousel-control {
 		background: none;
 		top: 80px;
+		@media (max-width: 1024px) {
+			top: 50px;
+		}
+		@media (max-width: 768px) {
+			top: 40px;
+		}
+		@media (max-width: @screen-sm) {
+			top: 30px;
+		}
 	}
 	.left {
 		text-align: left;
@@ -337,6 +377,9 @@ footer{
 .ordermain{
 	text-align: center;
 	padding-top: 250px;
+	@media (max-width: 768px) {
+		padding-top: 100px;
+	}
 	.orderbutton{
 		margin-bottom: 40px;
 		.btn-primary {
@@ -361,7 +404,22 @@ footer{
 	padding-top: 50px;
 	position: relative;
 	z-index: 1;
-	min-height: 800px;
+	@media (min-width: 1200px){
+		height: 100%;
+	}
+
+	@media (max-width: 1024px){
+		min-height: 768px;
+	}
+	@media (max-width: 768px){
+		min-height: 1024px;
+	}
+
+	@media (max-width: @screen-sm){
+		padding-top: 40px;
+		min-height: 850px;
+		padding-bottom: 20px;
+	}
 	h1 {
 		font-family: @font-family-h1-textpage;
 		text-align: center;
@@ -414,9 +472,18 @@ footer{
 			@media (max-width: @screen-xs){
 				font-size: 14px;
 			}
+			@media (max-width: 375px){
+				font-size: 12px;
+			}
 		}
 	.usl {
 		padding-bottom: 20px;
+		//border: 1px solid black;
+		a {
+			&:hover {
+						text-decoration: none;
+					}
+		}
 	}	
 	.uslugiGrid {
 		text-align: center;
@@ -436,9 +503,10 @@ footer{
 				margin-top: 5px;
 				margin-right: 20px;
 				margin-bottom: 10px;
-
-
 				a {
+					&:hover {
+						text-decoration: none;
+					}
 					.polit-consult {
 						.sprite(@polit-consult);
 					}
@@ -476,6 +544,7 @@ footer{
 			font-family: @font-family-sans-serif-head;
 			font-size: 24px;
 			padding-top: 10px;
+
 		}
 	}
 	.about {
@@ -492,6 +561,18 @@ footer{
 	}
 	
 }
+.longPageCont {
+	.textPageCont;
+	@media (min-width: 1200px){
+		height: auto;
+	}
+	
+	@media (max-width: @screen-md){
+		padding-top: 40px;
+		
+	}
+}
+
 .clockcont {
 	padding-top: 40px;
 	text-align: center;
@@ -608,7 +689,8 @@ footer{
 	h2 {
 		font-family: @GeometriaBold;
 		font-size: 19px;
-		margin-top: 60px;
+		//margin-top: 60px;
+		margin-bottom: 10px;
 	}
 	p {
 		font-family: @GeometriaMedium;
@@ -621,18 +703,24 @@ footer{
 		height: 287px;
 		margin-bottom: 20px;
 		border: 1px solid black;
-		@media (max-width: @screen-sm){
-			width: 350px;
-			height: 155px;
+		@media (max-width: @screen-lg){
+			width: 500px;
+			height: 219px;
 		}
 		@media (max-width: @screen-md){
 			width: 640px;
 			height: 250px;
 		}
-		@media (max-width: @screen-lg){
-			width: 500px;
-			height: 219px;
+		@media (max-width: @screen-sm){
+			width: 320px;
+			height: 155px;
 		}
+		@media (max-width: 320px){
+			width: 280px;
+			height: 155px;
+		}
+		
+		
 	}
 	.btn-primary {
 		padding: 20px 40px;
@@ -696,12 +784,14 @@ footer{
 	img {
 		margin: 0 auto;
 	}
+	padding-bottom: 20px;
 }
 .pagehead {
 	text-align: center;
 	h2 {
 		@media (max-width: @screen-sm){
 			font-size: 25px;
+			margin-bottom: 0px;
 		}
 	}
 }
@@ -716,4 +806,25 @@ footer{
 		display: block;
 	}
 
+}
+.footer-big {
+	@media (max-width: @screen-md){
+		display: none;
+	}
+}
+.footer-small {
+	text-align: center;
+	font-size: 9px;
+	display: none;
+	@media (max-width: @screen-md){
+		display: block;
+	}
+}
+.footmain{
+	@media (max-width: @screen-md){
+		padding-top: 20px;
+	}
+}
+.bord {
+	border: 1px solid black;
 }

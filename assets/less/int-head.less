@@ -1,25 +1,35 @@
 //Internal pages Navbar
 .navbar-inner {
 	.navbar-header {
-		@media (min-width: @screen-lg){
-			width: 500px;
-		}
 		a {
 			&:hover {
 				text-decoration: none;
 			}
 			.zag {
+				margin-top: 5px;
 				font-size: 22px;
 				font-family: @font-family-sans-serif-bold;
 				padding-top: 10px;
+				width: 500px;
 				@media (max-width: @screen-lg){
 					font-size: 17px;
+					width: 400px;
 				}
 				@media (max-width: @screen-md){
-					font-size: 26px;
+					font-size: 12px;
+					width: 500px;
 				}
+				
+				
 				@media (max-width: @screen-sm){
-					font-size: 17px;
+					margin-top: 10px;
+					font-size: 14px;
+					width: 500px;
+				}
+				@media (max-width: 320px){
+					margin-top: 10px;
+					font-size: 11px;
+					width: 500px;
 				}
 			}
 			
@@ -42,10 +52,13 @@
 	}
 	.navbar-nav{
 		margin-top: 10px;
-		margin-right: -350px;
+		margin-right: -300px;
 		a {
 			font-family: @font-family-sans-serif-bold;
 			font-size: 20px;
+		}
+		@media (max-width: @screen-md){
+			margin-right: 0;
 		}
 		@media (max-width: @screen-sm){
 			margin-right: 0;
@@ -60,10 +73,20 @@
 .logoint {
 	height: auto;
 	float: left;
-	margin-right: 10px;
+	margin-right: 20px;
+	margin-left: 50px;
 	width: 31px;
-	
-	
+	margin-top: 5px;
+	padding-bottom: 5px;
+	@media (max-width: @screen-lg){
+		margin-left: 20px;
+	}
+	@media (max-width: @screen-md){
+		margin-left: 20px;
+	}
+	@media (max-width: @screen-sm){
+		margin-left: 15px;
+	}
 }
 
 .internalNav {

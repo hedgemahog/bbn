@@ -9,11 +9,11 @@ html
             div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
               div(class="carousel-inner")
                 div(class="item active")
-                  |С нами становятся депутатами
+                  |С нами пишут историю
                 div(class="item")
-                  |С нами становятся мэрами
+                  |С нами строят будущее
                 div(class="item")
-                  |С нами становятся губернаторами 
+                  |С нами добиваются успеха
         .row
           div(class="col-xs-12").whoWhom
             |Для кого мы работаем:
@@ -35,12 +35,13 @@ html
               .partlogo
                 <img src="img/er.png" class="img-responsive">
               .caption 
-                |Политическая партия «Единая Россия»
+                |ВПП «Единая Россия»
             .col-xs-6.col-sm-3
               .partlogo
                 <img src="img/kprf.png" class="img-responsive">
               .caption 
                 |Коммунистическая партия Российской Федерации
+            
             .col-xs-6.col-sm-3
               .partlogo
                 <img src="img/ldpr.png" class="img-responsive">
@@ -155,7 +156,12 @@ html
                 a(href="#" class="btn btn-primary" data-toggle="modal" data-target=".contactmodal") Заказать консультацию
       div(class="maincont container")  
         footer
-          .row
-            div(class="col-xs-12 mainfoot") | +7 (495) 649-83-74  | <a href="mailto:info@burcon.ru">info@burcon.ru</a> |
+          .row.footmain
+            .footer-big 
+              div(class="col-xs-12 mainfoot") | +7 (495) 649-83-74  | <a href="mailto:info@burcon.ru">info@burcon.ru</a> |
+              div(class="col-xs-12 mainfoot")
+                p  © Бюро Стратегические Коммуникации, 2015. All rights reserved.  <a href="./terms.html">Правила пользования сайтом</a>.
+            .footer-small 
+              |© Бюро Стратегические Коммуникации, 2015.    
       include partials/modal_contact.jade 
 script $(function(){ $('#carousel-example-generic').carousel({interval: 5000}); $('#carousel-example-generic-geo').carousel({interval: 5000}) });             

@@ -1,5 +1,6 @@
 /* entire container, keeps perspective */
 .flip-container {
+	display: none;
 	perspective: 1000;
 	transform-style: preserve-3d;
 }
@@ -49,8 +50,11 @@
 
 
 .flagOn, .pOon, .candsmall {
-	display: none;
+	display: block;
 }
+.flagOff, .pOff {
+			display: none;
+		}
 .candsmall, .flagOn, .pOon, .flagOff, .pOff, {
 	img{
 		margin: 0 auto;
@@ -62,15 +66,5 @@
 	}
 	.flagOff, .pOff, .flip-container {
 		display: none;
-	}
-}
-.flagcont, .partcont {
-	&:hover {
-		.flagOn, .pOon {
-			display: block;
-		}
-		.flagOff, .pOff {
-			display: none;
-		}
 	}
 }
