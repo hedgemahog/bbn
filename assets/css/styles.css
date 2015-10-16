@@ -7815,9 +7815,32 @@ footer {
   padding-top: 10px;
 }
 .textPageCont .about {
+  background: url(../img/watermark.png) no-repeat center center;
   padding-top: 20px;
 }
+@media (max-width: 992px) {
+  .textPageCont .about {
+    background: none;
+  }
+}
 .textPageCont .about p a {
+  font-family: "GeometriaBold";
+  color: #4399c6;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+}
+.textPageCont .about-text {
+  background: url(../img/watermark.png) no-repeat center center;
+  padding-top: 20px;
+  background: none;
+}
+@media (max-width: 992px) {
+  .textPageCont .about-text {
+    background: none;
+  }
+}
+.textPageCont .about-text p a {
   font-family: "GeometriaBold";
   color: #4399c6;
   font-size: 18px;
@@ -8002,9 +8025,32 @@ footer {
   padding-top: 10px;
 }
 .longPageCont .about {
+  background: url(../img/watermark.png) no-repeat center center;
   padding-top: 20px;
 }
+@media (max-width: 992px) {
+  .longPageCont .about {
+    background: none;
+  }
+}
 .longPageCont .about p a {
+  font-family: "GeometriaBold";
+  color: #4399c6;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+}
+.longPageCont .about-text {
+  background: url(../img/watermark.png) no-repeat center center;
+  padding-top: 20px;
+  background: none;
+}
+@media (max-width: 992px) {
+  .longPageCont .about-text {
+    background: none;
+  }
+}
+.longPageCont .about-text p a {
   font-family: "GeometriaBold";
   color: #4399c6;
   font-size: 18px;

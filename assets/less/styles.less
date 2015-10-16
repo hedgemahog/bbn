@@ -548,6 +548,10 @@ footer{
 		}
 	}
 	.about {
+		background: url(../img/watermark.png) no-repeat center center;
+		@media (max-width: @screen-md){
+			background: none;
+		}
 		padding-top: 20px;
 		p {
 			a {
@@ -558,6 +562,10 @@ footer{
 				display: block;
 			}
 		}
+	}
+	.about-text{
+		.about;
+		background: none;
 	}
 	
 }
