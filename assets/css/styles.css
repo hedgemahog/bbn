@@ -1577,7 +1577,7 @@ pre code {
 }
 @media (min-width: 640px) {
   .container {
-    width: 770px;
+    width: 670px;
   }
 }
 @media (min-width: 992px) {
@@ -6972,8 +6972,22 @@ This must be run when you have at least 2 sprites.
 @media (max-width: 768px) {
   .mainheadermobile {
     display: block;
-    font-size: 26px;
+    font-size: 22px;
     padding-top: 20px;
+  }
+}
+@media (max-width: 667px) {
+  .mainheadermobile {
+    display: block;
+    font-size: 22px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 568px) {
+  .mainheadermobile {
+    display: block;
+    font-size: 20px;
+    padding-top: 10px;
   }
 }
 @media (max-width: 480px) {
@@ -7698,7 +7712,7 @@ footer {
   font-family: "GeometriaBold";
   color: #4399c6;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 50px;
   display: block;
   opacity: 0.6;
 }
@@ -7723,12 +7737,12 @@ footer {
 }
 @media (max-width: 480px) {
   .textPageCont .uslCaption {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 @media (max-width: 375px) {
   .textPageCont .uslCaption {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 .textPageCont .usl {
@@ -7908,7 +7922,7 @@ footer {
   font-family: "GeometriaBold";
   color: #4399c6;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 50px;
   display: block;
   opacity: 0.6;
 }
@@ -7933,12 +7947,12 @@ footer {
 }
 @media (max-width: 480px) {
   .longPageCont .uslCaption {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 @media (max-width: 375px) {
   .longPageCont .uslCaption {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 .longPageCont .usl {
