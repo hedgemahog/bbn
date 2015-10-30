@@ -1587,7 +1587,7 @@ pre code {
 }
 @media (min-width: 1280px) {
   .container {
-    width: 1420px;
+    width: 1366px;
   }
 }
 .container-fluid {
@@ -6833,6 +6833,9 @@ This must be run when you have at least 2 sprites.
 .zindex11 {
   z-index: 11;
 }
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
 /* entire container, keeps perspective */
 .flip-container {
   display: none;
@@ -7103,7 +7106,7 @@ This must be run when you have at least 2 sprites.
 }
 @media (max-width: 992px) {
   .navbar-inner .navbar-header a .zag {
-    font-size: 12px;
+    font-size: 22px;
     width: 500px;
   }
 }
@@ -7214,6 +7217,11 @@ body {
 }
 .container {
   background: #ffffff;
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
 }
 h1 {
   font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
@@ -8333,4 +8341,9 @@ footer {
 }
 .bord {
   border: 1px solid black;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .firstheadmain {
+    margin-top: 80px;
+  }
 }

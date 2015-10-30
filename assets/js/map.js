@@ -5,7 +5,7 @@ function initialize() {
     mapTypeControlOptions: {
     mapTypeIds: [ '']
   },
-  center: new google.maps.LatLng(55.746871,37.539502),
+  center: new google.maps.LatLng(55.7713,37.6202108),
   zoom: 16,
   mapTypeId: 'Styled'
 
