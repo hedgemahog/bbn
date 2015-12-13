@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Бюро Стратегические Коммуникации</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name='yandex-verification' content='6e0c74e7f928109d' />    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="lib/flip/src/flip.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js">     </script>
+  </head>
+  <body>
+    <header>
+      <nav role="navigation" class="navbar navbar-inner navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle btn-md">
+            <span class="sr-only">Скрыть навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button><a href="./index.html"><img src="img/Logo_Loshadka.svg" class="logoint">
+            <div class="zag">Стратегические Коммуникации   </div></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./about.html">О бюро</a></li>
+            <li><a href="./uslugi.html">Услуги</a></li>
+            <li><a href="./contacts.html">Связаться</a>  </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container textPageCont">
+      <div class="col-md-10 col-md-offset-1 jobcont">
+        <div class="textitem">
+          <div class="row">
+            <div class="col-md-5">
+              <h2>Работа и стажировки</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 pageimage"><img src="img/WORK_N_INTERNSHIPS_FIN.png"> </div>
+            <div class="col-md-7 jobconttext">
+              <p>Если вы заинтересованы в работе или стажировке в Бюро стратегических коммуникаций — воспользуйтесь формой ниже, чтобы отправить нам свое резюме и краткий рассказ о себе.</p><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-md">Отправить резюме</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
+          <form role="form" action="contact_job.php" method="POST">
+            <div class="form-group">
+              <input type="text" name="name_job" placeholder="Ваше имя" class="form-control input-lg">
+              <input type="email" name="email_job" placeholder="Email" class="form-control input-lg">
+              <input type="text" name="position_job" placeholder="Предполагаемая должность" class="form-control input-lg">
+              <input type="file" name="file_job[]" multiple id="file_job" placeholder="Загрузить резюме" class="form-control input-lg">
+              <textarea rows="6" name="about_job" placeholder="Нам очень интересно узнать о вас побольше" class="form-control input-lg"> </textarea>
+              <button type="submit" class="btn btn-primary">Отправить </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="navbar-fixed-bottom pagefooter">
+        <div class="footer-big">
+           
+          © Бюро Стратегические Коммуникации, 2015. All rights reserved.  <a href="./terms.html">Правила пользования сайтом</a>.
+          <div class="pull-right">| +7 (495) 649-83-74 | <a href="mailto:info@burcon.ru">info@burcon.ru</a> |</div>
+        </div>
+        <div class="footer-small">
+           
+          © Бюро Стратегические Коммуникации, 2015.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

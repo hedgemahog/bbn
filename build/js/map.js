@@ -68,6 +68,12 @@ function initialize() {
   }
 ];
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+  position: new google.maps.LatLng(55.771404,37.622416),
+  map: map,
+  title:"БСК" 
+});
   var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
   map.mapTypes.set('Styled', styledMapType);
 }

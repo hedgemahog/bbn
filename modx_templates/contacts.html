@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Бюро Стратегические Коммуникации</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name='yandex-verification' content='6e0c74e7f928109d' />    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="lib/flip/src/flip.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js">     </script>
+  </head>
+  <script src="js/map.js"></script>
+  <body>
+    <header>
+      <nav role="navigation" class="navbar navbar-inner navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle btn-md">
+            <span class="sr-only">Скрыть навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button><a href="./index.html"><img src="img/Logo_Loshadka.svg" class="logoint">
+            <div class="zag">Стратегические Коммуникации   </div></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./about.html">О бюро</a></li>
+            <li><a href="./uslugi.html">Услуги</a></li>
+            <li><a href="./contacts.html">Связаться</a>  </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container textPageCont contactpage">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <h1 class="contacthead">Для связи с бюро</h1>
+          <div class="col-md-8">
+            <p>
+               
+              <strong>127051, Москва, Цветной бульвар, д. 26, стр. 1</strong>
+            </p>
+            <p><strong>+7 (495) 649-83-74 </strong></p>
+            <p><strong> </strong><a href="mailto:info@burcon.ru">info@burcon.ru  </a></p>
+            <h2>Карта:  </h2>
+            <div id="map-canvas"></div>
+            <p>
+               
+              Офис бюро «Стратегические коммуникации» работает с понедельника по пятницу с 9:00 до 18:00.       
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p>Воспользовавшись формой обратной связи, вы можете заказать предварительную консультацию и получить оперативный комментарий относительно услуг и возможных направлений сотрудничества.</p>
+            <p>Для того, чтобы оперативно связаться с нами, нажмите на кнопку:</p>
+          </div>
+          <div class="col-md-4 buttoncont"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-md">Написать</a></div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
+          <form role="form" action="contact.php" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
+              <input type="email" name="email" placeholder="Email (обязательно)" class="form-control input-lg">
+              <input type="text" name="tel" placeholder="Телефон (опционально)" class="form-control input-lg">
+              <textarea rows="6" name="message" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
+              <button type="submit" class="btn btn-primary">Отправить </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="navbar-fixed-bottom pagefooter">
+        <div class="footer-big">
+           
+          © Бюро Стратегические Коммуникации, 2015. All rights reserved.  <a href="./terms.html">Правила пользования сайтом</a>.
+          <div class="pull-right">| +7 (495) 649-83-74 | <a href="mailto:info@burcon.ru">info@burcon.ru</a> |</div>
+        </div>
+        <div class="footer-small">
+           
+          © Бюро Стратегические Коммуникации, 2015.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

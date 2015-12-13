@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Бюро Стратегические Коммуникации</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="lib/flip/src/flip.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js">     </script>
+  </head>
+  <body>
+    <div class="navbar internalNav navbar-fixed-top">
+      <div class="navbar-header navbar-fixed-top"><a href="./index.html" class="navbar-brand">
+           
+          <img src="img/logolong.jpg"></a>
+        <ul class="nav navbar-nav">
+          <li><a href="./about.html">О бюро</a></li>
+          <li><a href="uslugi.html">Услуги</a></li>
+          <li><a href="contacts.html">Связаться</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container textPageCont">
+      <div class="usltop">
+        <h1>Услуги бюро</h1>
+        <div class="uslugiGrid">
+          <ul class="usl">
+            <li> <a href="./creative-centre.html">
+                <div class="creative"></div>
+                <div class="uslCaption">Creative centre</div></a></li>
+            <li> <a href="./digital-media.html">
+                <div class="dig-media"></div>
+                <div class="uslCaption">Digital media</div></a></li>
+            <li> <a href="./brendirovanie-territorii.html">
+                <div class="branding"></div>
+                <div class="uslCaption">Брендинг территорий        </div></a></li>
+            <li> <a href="./politicheskoe-konsultirovanie.html">
+                <div class="polit-consult"></div>
+                <div class="uslCaption">Политическое консультироваиние</div></a></li>
+            <li> <a href="./izbiratelnye-kampanii.html">
+                <div class="izbir"></div>
+                <div class="uslCaption">Избирательные кампании</div></a></li>
+            <li> <a href="./pr-i-gr.html">
+                <div class="prgr"></div>
+                <div class="uslCaption">PR & GR</div></a></li>
+            <li> <a href="./analiticheskaya-podderzhka.html">
+                <div class="analytical"></div>
+                <div class="uslCaption">Аналитическая поддержка    </div></a></li>
+            <li> <a href="./press-sluzhba.html">
+                <div class="press-sluzhba"></div>
+                <div class="uslCaption">Пресс-служба</div></a></li>
+            <li> <a href="./organizaciya-meropriyatii.html">
+                <div class="event-man"></div>
+                <div class="uslCaption">Организация мероприятий </div></a></li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clockcont"><img src="./img/clock.png" class="alarmclock"></div>
+    <div class="clocktext"> 
+      <p>Bureau Babkin News напоминает: <br> до выборов в Государственную думу Федерального <br> собрания Российской Федерации VII созыва осталось</p>
+      <div class="timer"></div>
+      <script src="js/timer.js"></script>
+      <div class="orderbutton"><a href="#" data-toggle="modal" data-target=".contactmodal" class="btn btn-primary btn-lg">Заказать консультацию</a></div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
+          <form role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
+              <input type="email" placeholder="Email (обязательно)" class="form-control input-lg">
+              <input type="text" placeholder="Телефон (опционально)" class="form-control input-lg">
+              <textarea rows="6" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
+              <button type="submit" class="btn btn-primary">Отправить </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="navbar-fixed-bottom pagefooter">© Бюро Стратегические Коммуникации, 2015. All rights reserved.  <a href="./terms.html">Правила пользования сайтом</a>.
+        <div class="pull-right">| +7 (495) 649-83-74 | info@burcon.ru |</div>
+      </div>
+    </footer>
+  </body>
+</html>
