@@ -1587,7 +1587,7 @@ pre code {
 }
 @media (min-width: 1280px) {
   .container {
-    width: 1366px;
+    width: 1230px;
   }
 }
 .container-fluid {
@@ -6830,11 +6830,34 @@ This must be run when you have at least 2 sprites.
 .bordered-bottom-small {
   border-bottom: 1px solid black;
 }
+.bordered-bottom-big {
+  border-bottom: 4px solid black;
+}
 .zindex11 {
   z-index: 11;
 }
 .margin-bottom-40 {
   margin-bottom: 40px;
+}
+.padding-top-50 {
+  padding-top: 50px;
+}
+.black-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+99&0+0,1+100,1+100,0.65+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.64) 99%, rgba(0, 0, 0, 0.65) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.64) 99%, rgba(0, 0, 0, 0.65) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.64) 99%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+  /* IE6-9 */
+}
+.text_orange {
+  color: #ef4623;
+}
+.link_blue {
+  color: #419ac6;
 }
 /* entire container, keeps perspective */
 .flip-container {
@@ -7064,7 +7087,7 @@ This must be run when you have at least 2 sprites.
   }
 }
 .navbar-main .navbar-nav {
-  padding-top: 25px;
+  padding-top: 0px;
 }
 .navbar-main .navbar-nav li a {
   padding: 10px 10px;
@@ -7075,7 +7098,7 @@ This must be run when you have at least 2 sprites.
 }
 @media (min-width: 1280px) {
   .navbar-main .navbar-nav li a {
-    padding: 10px 20px;
+    padding: 10px 35px;
   }
 }
 .navbar-main .navbar-nav li a:last-child {
@@ -7095,8 +7118,41 @@ This must be run when you have at least 2 sprites.
 }
 @media (min-width: 1280px) {
   .navbar-main .navbar-nav a {
-    font-size: 28px;
+    font-size: 23px;
   }
+}
+.lang,
+.main_head_social {
+  text-align: right;
+}
+.lang {
+  padding-top: 5px;
+}
+.lang a {
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 1280px) {
+  .lang a {
+    font-size: 23px;
+  }
+}
+.main_head_social ul {
+  padding-top: 15px;
+}
+.main_head_social ul li {
+  list-style: none;
+  display: inline;
+  padding-right: 10px;
+}
+.main_head_social ul li:last-child {
+  padding-right: 0;
+}
+.lang-inner-main {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  top: 10px !important;
+  right: 15px !important;
 }
 .navbar-inner {
   background: #fff;
@@ -7151,10 +7207,10 @@ This must be run when you have at least 2 sprites.
 }
 .navbar-inner .navbar-nav {
   margin-top: 10px;
-  margin-right: -300px;
+  margin-right: -200px;
 }
 .navbar-inner .navbar-nav a {
-  font-family: "MuseoBold", Helvetica, Arial, sans-serif;
+  font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
 @media (max-width: 992px) {
@@ -7219,9 +7275,14 @@ This must be run when you have at least 2 sprites.
 .termspage > p {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif !important;
 }
+.lang-inner {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+}
 html,
 body {
-  background: #c6c6c6;
+  background: #ffffff;
 }
 @media (min-width: 1200px) {
   html,
@@ -7259,6 +7320,25 @@ h3 {
 @media (min-width: 640px) {
   .maincont {
     padding: 0 40px 0 40px;
+  }
+}
+.clients_cont {
+  position: relative;
+  background: #fff;
+}
+@media (min-width: 1280px) {
+  .clients_cont {
+    padding: 0 74px 0 74px;
+  }
+}
+@media (min-width: 640px) {
+  .clients_cont {
+    padding: 0 40px 0 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .clients_cont {
+    padding: 50px 74px 0 74px;
   }
 }
 .textPageCont {
@@ -7353,12 +7433,169 @@ footer {
 .navbar .navbar-collapse {
   text-align: center;
 }
+.bannermain {
+  width: 100%;
+}
+.bannermain .carousel-control {
+  background: none;
+  color: #ffffff;
+  top: 45%;
+}
+.bannermain .left {
+  left: -60px;
+}
+.bannermain .right {
+  right: -60px;
+}
+.bannermain .carousel-caption {
+  top: 70px;
+  right: 15%;
+  text-align: right;
+  padding-left: 35%;
+}
+.bannermain .carousel-caption h1 {
+  font-family: "GeometriaBold";
+  font-size: 26px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;
+}
+.bannermain .carousel-caption p {
+  font-family: "GeometriaMedium";
+  font-size: 18px;
+}
+.bannermain .lefttextslide {
+  top: 70px;
+  right: 15%;
+  text-align: right;
+  padding-left: 35%;
+  padding-right: 0;
+  padding-left: 0;
+  width: 30%;
+  text-align: left;
+  margin-left: -30px;
+}
+.bannermain .lefttextslide h1 {
+  font-family: "GeometriaBold";
+  font-size: 26px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;
+}
+.bannermain .lefttextslide p {
+  font-family: "GeometriaMedium";
+  font-size: 18px;
+}
+.main_post {
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+  max-height: 365px;
+}
+.main_post img {
+  width: 100%;
+}
+.main_post .black-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main_post .main_post_head {
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+}
+.main_post .main_post_head h3,
+.main_post .main_post_head p {
+  color: #ffffff;
+}
+.main_post .main_post_head h3 {
+  font-size: 35px;
+}
+.main_post .main_post_head p {
+  font-size: 20px;
+}
+.small_post {
+  position: relative;
+  max-height: 175px;
+  overflow: hidden;
+}
+.small_post img {
+  width: 100%;
+}
+.small_post .black-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.small_post .main_post_head {
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+}
+.small_post .main_post_head h3,
+.small_post .main_post_head p {
+  color: #ffffff;
+}
+.small_post .main_post_head h3 {
+  font-size: 16px;
+}
+.small_post .main_post_head p {
+  font-size: 20px;
+}
+.small_post_date {
+  text-align: right;
+  font-size: 14px;
+  font-family: "Museo500", Helvetica, Arial, sans-serif;
+  padding: 5px 0;
+}
+.news_main_head {
+  border-bottom: 4px solid black;
+}
+.news_main_head h2 {
+  font-family: "GeometriaBold";
+  font-size: 50px;
+}
+.news_main_head_inner {
+  border-bottom: 4px solid black;
+  text-align: center;
+}
+.news_main_head_inner h2 {
+  font-family: "GeometriaBold";
+  font-size: 50px;
+}
+.news_right {
+  background-color: #ededed;
+  overflow: scroll;
+  max-height: 643px;
+}
+.news_right_item {
+  border-bottom: 4px solid black;
+  padding-bottom: 20px;
+}
+.news_right_item h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.news_right_item .news_right_item_date {
+  text-align: right;
+  font-family: "GeometriaMedium";
+  font-size: 18px;
+}
+.news_right_inner {
+  background-color: #ededed;
+  overflow: scroll;
+  max-height: 643px;
+  max-height: 1200px;
+}
 #carousel-example-generic {
   padding-top: 10px;
 }
 .textslider {
   border-top: 4px solid black;
-  border-bottom: 4px solid black;
   width: 100%;
   height: 100px;
   text-align: center;
@@ -7366,7 +7603,7 @@ footer {
 }
 @media (min-width: 1280px) {
   .textslider {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 @media (min-width: 992px) and (max-width: 1280px) {
@@ -7401,6 +7638,32 @@ footer {
     height: 40px;
   }
 }
+.main_social {
+  text-align: center;
+}
+.main_social .main_social_icons {
+  text-align: right;
+  text-align: center;
+}
+.main_social .main_social_icons ul {
+  padding-top: 15px;
+}
+.main_social .main_social_icons ul li {
+  list-style: none;
+  display: inline;
+  padding-right: 10px;
+}
+.main_social .main_social_icons ul li:last-child {
+  padding-right: 0;
+}
+.social_text {
+  font-size: 20px;
+}
+.seotext {
+  padding-top: 40px;
+  font-family: "GeometriaBold";
+  font-size: 14px;
+}
 .mainheader {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
   font-size: 23px;
@@ -7408,7 +7671,7 @@ footer {
 }
 @media (min-width: 1280px) {
   .mainheader {
-    font-size: 34px;
+    font-size: 35px;
   }
 }
 @media (max-width: 480px) {
@@ -7606,7 +7869,7 @@ footer {
   position: relative;
   background: url(../img/wh.jpg) top center;
   padding: 0 !important;
-  min-height: 1085px;
+  min-height: 900px;
 }
 @media (max-width: 768px) {
   .geocont {
@@ -7637,6 +7900,57 @@ footer {
 }
 .geocont .right {
   text-align: right;
+}
+.geocont-1 {
+  position: relative;
+  background: url(../img/wh.jpg) top center;
+  padding: 0 !important;
+  min-height: 900px;
+  background: url(../img/wh1.jpg) top center;
+  min-height: 125px;
+  text-align: center;
+  padding-top: 20px !important;
+}
+@media (max-width: 768px) {
+  .geocont-1 {
+    min-height: 800px;
+  }
+}
+.geocont-1 .carousel-control {
+  background: none;
+  top: 80px;
+}
+@media (max-width: 1024px) {
+  .geocont-1 .carousel-control {
+    top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .geocont-1 .carousel-control {
+    top: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .geocont-1 .carousel-control {
+    top: 30px;
+  }
+}
+.geocont-1 .left {
+  text-align: left;
+}
+.geocont-1 .right {
+  text-align: right;
+}
+.logo-w {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+}
+.tiser-text {
+  font-size: 50px;
+  color: #ffffff;
+  padding-left: 40px;
+  display: inline;
 }
 .ordermain {
   text-align: center;
@@ -8360,4 +8674,64 @@ footer {
   .firstheadmain {
     margin-top: 80px;
   }
+}
+.post_head {
+  height: 332px;
+  width: 100%;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+.post_head img {
+  width: 100%;
+}
+.post_head .black-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.post_head .full_post_head {
+  position: absolute;
+  bottom: 0;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+.post_head .full_post_head h1,
+.post_head .full_post_head p {
+  color: #ffffff;
+}
+.post_head .full_post_head h1 {
+  font-size: 55px;
+  text-align: left;
+}
+.post_head .full_post_head p {
+  font-size: 20px;
+}
+.post_lead {
+  font-size: 27px;
+  font-family: "GeometriaExtraBold";
+  padding: 20px 0;
+}
+.post_full_text p {
+  font-size: 16px;
+}
+.post_full_text p:first-child:first-letter {
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  float: left;
+  margin: -10px 4px 2px 0;
+}
+.full_post-date {
+  text-align: right;
+  font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #524b48;
+}
+.full_post_social {
+  text-align: center;
+}
+.full_post_social img {
+  padding: 0 10px;
 }

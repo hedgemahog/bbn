@@ -1,0 +1,150 @@
+doctype html
+html
+    include partials/cab_head.jade
+    body
+      div(class="clients_cont container ")
+        include partials/head_inner.jade
+        
+        .row
+          div(class="col-xs-12").whoWhom
+            |Для кого мы работаем:
+
+        .row
+          div(class="col-sm-4 mainCandidat1" onclick="location.href='./kandidatam.html'")
+            include partials/candidFlip.jade 	
+          div(class="col-sm-4 mainFlag1")
+            include partials/flag.jade   	
+          div(class="col-sm-4 mainParti1")
+            include partials/parties.jade
+        .row
+          div(class="col-xs-8 col-xs-offset-2").bordered-bottom-small
+            .mainH2.firstheadmain
+              | Клиенты бюро:
+        .row.clientscont
+          div(class="col-xs-12 col-sm-8 col-sm-offset-2")      
+            .col-xs-6.col-sm-3
+              .partlogo
+                <img src="img/er.png" class="img-responsive">
+              .caption 
+                |ВПП «Единая Россия»
+            .col-xs-6.col-sm-3
+              .partlogo
+                <img src="img/kprf.png" class="img-responsive">
+              .caption 
+                |Коммунистическая партия Российской Федерации
+            
+            .col-xs-6.col-sm-3
+              .partlogo
+                <img src="img/ldpr.png" class="img-responsive">
+              .caption 
+                |Либерально-демократическая партия Российской Федерации 
+            .col-xs-6.col-sm-3
+              .partlogo
+                <img src="img/sr.png" class="img-responsive">
+              .caption 
+                |Политическая партия Справедливая Россия 
+        .row.secondlogos
+          div(class="col-xs-12 col-sm-8 col-sm-offset-2")      
+            .col-xs-6.col-sm-3
+              .partlogo
+                <img src="img/rodina.png" class="img-responsive">
+              .caption 
+                |Всероссийская политическая партия «Родина»
+            .col-xs-6.col-sm-3
+              .partlogo
+                <img src="img/platf.png" class="img-responsive">
+              .caption 
+                |Политическая партия «Гражданская платформа»
+            .col-xs-6.col-sm-3
+              .partlogo
+                <img src="img/onf.png" class="img-responsive">
+              .caption 
+                |Общероссийский народный фронт
+            .col-xs-6.col-sm-3
+              .partlogo
+                <img src="img/rosteh.png" class="img-responsive">
+              .caption 
+                |Госкорпорация «Ростех»  
+      div(class="container geo")                   
+        .geocont
+            div(class="col-xs-8 col-xs-offset-2").bordered-bottom-small
+              .mainH2
+                | География работы: 
+            div(class="col-xs-12 col-sm-8 col-sm-offset-2").logosliderCont
+              div(id="carousel-example-generic-geo" class="carousel slide" data-ride="carousel")
+                div(class="carousel-inner")
+                  div(class="item active")
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/altay.png" class="img-responsive">
+                      .caption 
+                        |Алтайский край
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/amur.png" class="img-responsive">
+                      .caption 
+                        |Амурская область
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/kostroma.png" class="img-responsive">
+                      .caption 
+                        |Костромская область
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/krasnodar.png" class="img-responsive">
+                      .caption 
+                        |Краснодарский край
+                  div(class="item")
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/mordovia.png" class="img-responsive">
+                      .caption 
+                        |Республика Мордовия
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/msk.png" class="img-responsive">
+                      .caption 
+                        |Город Москва
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/mo.png" class="img-responsive">
+                      .caption 
+                        |Московская область
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/samara.png" class="img-responsive">
+                      .caption 
+                        |Самарская область 
+                  div(class="item")
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/ekb.png" class="img-responsive">
+                      .caption 
+                        |Свердловская область
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/tat.png" class="img-responsive">
+                      .caption 
+                        |Республика Татарстан
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/khv.png" class="img-responsive">
+                      .caption 
+                        |Хабаровский край
+                    .col-xs-6.col-sm-3
+                      .partlogo
+                        <img src="img/tula.png" class="img-responsive">
+                      .caption 
+                        |Тульская область            
+                .prev
+                  a(class="left carousel-control" href="#carousel-example-generic-geo" data-slide="prev")
+                    <img src="img/prev.png">
+                .next
+                  a(class="right carousel-control" href="#carousel-example-generic-geo" data-slide="next")
+                    <img src="img/next.png">      
+            div(class="col-xs-12 col-sm-8 col-sm-offset-2 ordermain")
+              
+      div(class="maincont container")  
+        include partials/footer_inner_fixed.jade    
+      
+script $(function(){ $('#carousel-example-generic').carousel({interval: 5000}); $('#carousel-example-generic-geo').carousel({interval: 5000}) });             

@@ -110,6 +110,7 @@
 
 .navbar-main{
 	padding-top: 10px;
+
 	.navbar-toggle {
     	&:hover,
     	&:focus {
@@ -124,7 +125,8 @@
     	}
   	}
 	.navbar-nav {
-		padding-top: 25px;
+		padding-top: 0px;
+		//margin-left: 150px;
 		//background: #eee;
 		li {
 			a {
@@ -134,7 +136,7 @@
 				}
 				padding: 10px 10px;
 				@media (min-width: @screen-lg) {
-					padding: 10px 20px;
+					padding: 10px 35px;
 				}
 				&:last-child {
 					padding-right: 0px;
@@ -151,8 +153,38 @@
 			font-family: @font-family-sans-serif-head;
 			font-size: 19px;
 			@media (min-width: @screen-lg) {
-				font-size: 28px;
+				font-size: 23px;
 			}
 		}
 	}
 }
+.lang, .main_head_social {
+  text-align: right;
+}
+.lang {
+	padding-top: 5px;
+	a {
+		font-family: @font-family-sans-serif-head;
+		@media (min-width: @screen-lg) {
+				font-size: 23px;
+			}
+	}
+}
+.main_head_social {
+	ul {
+		padding-top: 15px;
+		li {
+			list-style: none;
+			display: inline;
+			padding-right: 10px;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+}
+.lang-inner-main {
+	.lang-inner;
+		top: 10px !important;
+		right: 15px !important;
+	}
