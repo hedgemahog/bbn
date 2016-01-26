@@ -5123,12 +5123,20 @@ button.close {
   src: url(../fonts/Geometria-Bold.otf);
 }
 @font-face {
+  font-family: 'Geometria';
+  src: url(../fonts/Geometria.otf);
+}
+@font-face {
   font-family: 'GeometriaExtraBold';
   src: url(../fonts/Geometria-ExtaBlack.otf);
 }
 @font-face {
   font-family: 'GeometriaMedium';
   src: url(../fonts/Geometria-Medium.otf);
+}
+@font-face {
+  font-family: 'EuropaNuovaExtraBold';
+  src: url(../fonts/EuropaNuovaExtraBold.otf);
 }
 .navbar {
   position: relative;
@@ -7113,8 +7121,8 @@ This must be run when you have at least 2 sprites.
   }
 }
 .navbar-main .navbar-nav a {
-  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
-  font-size: 19px;
+  font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
 @media (min-width: 1280px) {
   .navbar-main .navbar-nav a {
@@ -7293,9 +7301,9 @@ body {
 .container {
   background: #ffffff;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1380px) {
   .container {
-    width: 1400px;
+    width: 1380px;
   }
 }
 h1 {
@@ -7362,9 +7370,10 @@ footer {
   z-index: 1000;
 }
 .mainfoot {
+  border-top: 2px solid black;
   text-align: center;
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 @media (max-width: 640px) {
   .mainfoot {
@@ -7503,14 +7512,15 @@ footer {
 .main_post .main_post_head {
   position: absolute;
   bottom: 0;
-  padding-left: 10px;
+  padding: 20px;
 }
 .main_post .main_post_head h3,
 .main_post .main_post_head p {
   color: #ffffff;
+  font-family: "EuropaNuovaExtraBold";
 }
 .main_post .main_post_head h3 {
-  font-size: 35px;
+  font-size: 44px;
 }
 .main_post .main_post_head p {
   font-size: 20px;
@@ -7533,14 +7543,16 @@ footer {
 .small_post .main_post_head {
   position: absolute;
   bottom: 0;
-  padding-left: 10px;
+  padding: 0px 20px;
 }
 .small_post .main_post_head h3,
 .small_post .main_post_head p {
   color: #ffffff;
+  font-family: "GeometriaExtraBold";
 }
 .small_post .main_post_head h3 {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .small_post .main_post_head p {
   font-size: 20px;
@@ -7550,26 +7562,27 @@ footer {
   font-size: 14px;
   font-family: "Museo500", Helvetica, Arial, sans-serif;
   padding: 5px 0;
+  color: #7f7775;
 }
 .news_main_head {
   border-bottom: 4px solid black;
 }
 .news_main_head h2 {
-  font-family: "GeometriaBold";
-  font-size: 50px;
+  font-family: "GeometriaExtraBold";
+  font-size: 60px;
 }
 .news_main_head_inner {
   border-bottom: 4px solid black;
   text-align: center;
 }
 .news_main_head_inner h2 {
-  font-family: "GeometriaBold";
-  font-size: 50px;
+  font-family: "GeometriaExtraBold";
+  font-size: 60px;
 }
 .news_right {
-  background-color: #ededed;
+  background-color: #feeeeb;
   overflow: scroll;
-  max-height: 643px;
+  max-height: 720px;
 }
 .news_right_item {
   border-bottom: 4px solid black;
@@ -7578,17 +7591,23 @@ footer {
 .news_right_item h3 {
   font-size: 20px;
   line-height: 1.5;
-  text-transform: uppercase;
+  font-family: "EuropaNuovaExtraBold";
 }
 .news_right_item .news_right_item_date {
   text-align: right;
-  font-family: "GeometriaMedium";
-  font-size: 18px;
+  font-family: "GeometriaBold";
+  font-size: 14px;
+  color: #7f7775;
+  padding: 10px 0;
+}
+.news_right_item p {
+  font-family: "Geometria";
+  font-size: 15px;
 }
 .news_right_inner {
-  background-color: #ededed;
+  background-color: #feeeeb;
   overflow: scroll;
-  max-height: 643px;
+  max-height: 720px;
   max-height: 1200px;
 }
 #carousel-example-generic {
@@ -7599,7 +7618,7 @@ footer {
   width: 100%;
   height: 100px;
   text-align: center;
-  font-family: "GeometriaExtraBold";
+  font-family: "LineaturaBold";
 }
 @media (min-width: 1280px) {
   .textslider {
@@ -7660,9 +7679,12 @@ footer {
   font-size: 20px;
 }
 .seotext {
-  padding-top: 40px;
+  padding: 40px 0;
   font-family: "GeometriaBold";
-  font-size: 14px;
+  font-size: 16px;
+}
+.seotext .bottomLogo {
+  text-align: center !important;
 }
 .mainheader {
   font-family: "MuseoBold", Helvetica, Arial, sans-serif;
@@ -7902,6 +7924,7 @@ footer {
   text-align: right;
 }
 .geocont-1 {
+  margin-top: 40px;
   position: relative;
   background: url(../img/wh.jpg) top center;
   padding: 0 !important;
@@ -7944,13 +7967,14 @@ footer {
 .logo-w {
   position: absolute;
   top: 20px;
-  left: 200px;
+  left: 100px;
 }
 .tiser-text {
-  font-size: 50px;
+  font-size: 57px;
   color: #ffffff;
   padding-left: 40px;
   display: inline;
+  font-family: "EuropaNuovaExtraBold";
 }
 .ordermain {
   text-align: center;
@@ -7973,6 +7997,42 @@ footer {
   font-family: "GeometriaExtraBold";
   font-size: 34px;
   color: #ef4623;
+}
+.orangeButton .btn-primary {
+  box-shadow: none;
+  border: none;
+  background: #f89586;
+  padding: 20px 25px;
+}
+.orangeButton .btn-primary:hover {
+  background: #f89586 !important;
+  color: #fff;
+}
+.orangeButton a {
+  font-family: "EuropaNuovaExtraBold";
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.blueButton .btn-primary {
+  box-shadow: none;
+  border: none;
+  background: #94c6dd;
+  padding: 20px 25px;
+}
+.blueButton .btn-primary:hover {
+  background: #94c6dd !important;
+  color: #fff;
+}
+.blueButton a {
+  font-family: "EuropaNuovaExtraBold";
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 .textPageCont {
   padding-bottom: 50px;
