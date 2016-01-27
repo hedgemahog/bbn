@@ -1071,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Museo500", Helvetica, Arial, sans-serif;
+  font-family: "Geometria";
   font-size: 16px;
   line-height: 1.42857143;
   color: #000000;
@@ -4332,7 +4332,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Museo500", Helvetica, Arial, sans-serif;
+  font-family: "Geometria";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4450,7 +4450,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Museo500", Helvetica, Arial, sans-serif;
+  font-family: "Geometria";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6861,6 +6861,28 @@ This must be run when you have at least 2 sprites.
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
   /* IE6-9 */
 }
+.orange-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,f89586+100&0+0,0.65+99 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(245, 147, 133, 0.65) 99%, rgba(248, 149, 134, 0.65) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(245, 147, 133, 0.65) 99%, rgba(248, 149, 134, 0.65) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(245, 147, 133, 0.65) 99%, rgba(248, 149, 134, 0.65) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6f89586', GradientType=0);
+  /* IE6-9 */
+}
+.blue-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,94c6dd+100&0+0,0.65+99 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(147, 196, 219, 0.65) 99%, rgba(148, 198, 221, 0.65) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(147, 196, 219, 0.65) 99%, rgba(148, 198, 221, 0.65) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.01) 1%, rgba(147, 196, 219, 0.65) 99%, rgba(148, 198, 221, 0.65) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a694c6dd', GradientType=0);
+  /* IE6-9 */
+}
 .text_orange {
   color: #ef4623;
 }
@@ -7533,7 +7555,8 @@ footer {
 .small_post img {
   width: 100%;
 }
-.small_post .black-gradient {
+.small_post .blue-gradient,
+.small_post .orange-gradient {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -7560,9 +7583,10 @@ footer {
 .small_post_date {
   text-align: right;
   font-size: 14px;
-  font-family: "Museo500", Helvetica, Arial, sans-serif;
+  font-family: "Geometria";
   padding: 5px 0;
   color: #7f7775;
+  padding: 10px 0;
 }
 .news_main_head {
   border-bottom: 4px solid black;
@@ -7582,7 +7606,7 @@ footer {
 .news_right {
   background-color: #feeeeb;
   overflow: scroll;
-  max-height: 720px;
+  max-height: 690px;
 }
 .news_right_item {
   border-bottom: 4px solid black;
@@ -7607,7 +7631,7 @@ footer {
 .news_right_inner {
   background-color: #feeeeb;
   overflow: scroll;
-  max-height: 720px;
+  max-height: 690px;
   max-height: 1200px;
 }
 #carousel-example-generic {
@@ -8033,6 +8057,16 @@ footer {
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+.weekimage h2 {
+  font-family: "GeometriaExtraBold";
+  font-size: 34px;
+}
+.piccaption {
+  font-family: "GeometriaBold";
+  font-size: 15px;
+  text-align: right;
+  color: #7f7775;
 }
 .textPageCont {
   padding-bottom: 50px;
@@ -8763,16 +8797,28 @@ footer {
   color: #ffffff;
 }
 .post_head .full_post_head h1 {
-  font-size: 55px;
+  font-size: 57px;
   text-align: left;
+  font-family: "EuropaNuovaExtraBold";
 }
 .post_head .full_post_head p {
   font-size: 20px;
 }
 .post_lead {
-  font-size: 27px;
+  font-size: 25px;
   font-family: "GeometriaExtraBold";
-  padding: 20px 0;
+  padding: 20px 20px 0 80px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+.post_lead .post-date {
+  position: absolute;
+  left: -25px;
+  bottom: 60px;
+  transform: rotate(-90deg);
+  font-size: 15px;
+  color: #7f7f7f;
 }
 .post_full_text p {
   font-size: 16px;
@@ -8794,4 +8840,10 @@ footer {
 }
 .full_post_social img {
   padding: 0 10px;
+}
+.week_image {
+  margin-bottom: 20px;
+  border-bottom: 5px solid black;
+  width: 100%;
+  min-height: 455px;
 }
