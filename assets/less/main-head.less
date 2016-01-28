@@ -15,6 +15,7 @@
 	}
 	@media (max-width: @screen-sm){
 		width: 40px;
+		display: none;
 	}
 	@media (max-width: @screen-sm){
 		width: 30px;
@@ -47,36 +48,15 @@
 
 .mainheadermobile {
 	display: none;
-	@media (max-width: 768px) {
-		display: block;
-		font-size: 22px;
-		padding-top: 20px;
-	}
-	@media (max-width: 667px) {
-		display: block;
-		font-size: 22px;
-		padding-top: 20px;
-	}
-	@media (max-width: 568px) {
+	@media (max-width: @screen-sm) {
 		display: block;
 		font-size: 20px;
 		padding-top: 10px;
+		text-align: center;
+
+
 	}
-	@media (max-width: 480px) {
-		display: block;
-		font-size: 15px;
-		padding-top: 10px;
-	}
-	@media (max-width: 375px) {
-		display: block;
-		font-size: 14px;
-		padding-top: 10px;
-	}
-	@media (max-width: 320px) {
-		display: block;
-		font-size: 12px;
-		padding-top: 10px;
-	}
+	
 }
 .mainheader {
 	@media (max-width: 768px) {
@@ -112,6 +92,7 @@
 	padding-top: 10px;
 
 	.navbar-toggle {
+		float: left;
     	&:hover,
     	&:focus {
       		background-color: @navbar-default-toggle-hover-bg;
@@ -138,6 +119,9 @@
 				@media (min-width: @screen-lg) {
 					padding: 10px 35px;
 				}
+				@media (min-width: @screen-md) and (max-width: @screen-lg) {
+					padding: 10px 10px;
+				}
 				&:last-child {
 					padding-right: 0px;
 				}
@@ -154,6 +138,9 @@
 			font-size: 20px;
 			@media (min-width: @screen-lg) {
 				font-size: 23px;
+			}
+			@media (min-width: @screen-md) {
+				font-size: 18px;
 			}
 		}
 	}
@@ -182,9 +169,17 @@
 			}
 		}
 	}
+	@media (max-width: @screen-sm){
+		display: none;
+	}
 }
 .lang-inner-main {
 	.lang-inner;
 		top: 10px !important;
 		right: 15px !important;
+		@media (max-width: @screen-sm){
+			right: 0 !important;
+			width: 27px;
+			height: auto;
+		}
 	}

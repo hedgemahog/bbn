@@ -23,10 +23,11 @@ header {
 
 .container {
 	background: #ffffff;
-	@media (min-width: 1380px){
+	@media (min-width: 1281px) and (max-width: 1440px){
 		width: 1380px;
 	}
-
+	
+	
 }
 
 h1 {
@@ -165,9 +166,8 @@ footer{
 
 
 //Main Page
-
 .bannermain {
-	width: 100%;
+	//width: 100%;
 	.carousel-control{
 		background: none;
 		color: #ffffff;
@@ -176,24 +176,50 @@ footer{
 	}
 	.left {
 			left: -60px;
+			
+			@media (min-width: @screen-sm) and (max-width: @screen-md){
+				left: -20px;
+			}
 		}
-		.right {
+	.right {
 			right: -60px;
-		}
+			
+			@media (min-width: @screen-sm) and (max-width: @screen-md){
+				right: -20px;
+			}
+	}
 	.carousel-caption {
 		top: 70px;
 		right: 15%;
 		text-align: right;
 		padding-left: 35%;
+		@media (min-width: 1280px){
+			top: 0px;
+		}
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			top: 0;
+		}
 		h1 {
 			font-family: @GeometriaBold;
 			font-size: 26px;
 			border-bottom: 1px solid #ffffff;
 			padding-bottom: 10px;
+			@media (min-width: @screen-sm) and (max-width: @screen-md){
+				font-size: 18px;
+			}
+			@media (min-width: @screen-xs) and (max-width: @screen-sm){
+				font-size: 13px;
+			}
 		}
 		p {
 			font-family: @GeometriaMedium;
 			font-size: 18px;
+			@media (min-width: @screen-sm) and (max-width: @screen-md){
+				font-size: 14px;
+			}
+			@media (min-width: @screen-xs) and (max-width: @screen-sm){
+				font-size: 9px;
+			}
 
 		}
 	}
@@ -235,10 +261,16 @@ footer{
 		}
 		h3 {
 			font-size: 44px;
+			@media (min-width: @screen-sm) and (max-width: @screen-md){
+				font-size: 27px;
+			}
 			
 		}
 		p {
 			font-size: 20px;
+			@media (min-width: @screen-sm) and (max-width: @screen-md){
+				font-size: 13px;
+			}
 		}
 	}
 }
@@ -268,6 +300,9 @@ footer{
 		h3 {
 			font-size: 18px;
 			line-height: 1.5;
+			@media (min-width: @screen-sm) and (max-width: @screen-md){
+				font-size: 15px;
+			}
 		}
 		p {
 			font-size: 20px;
@@ -281,14 +316,21 @@ footer{
 	padding: 5px 0;
 	color: #7f7775;
 	padding: 10px 0;
+	@media (min-width: @screen-sm) and (max-width: @screen-md){
+		font-size: 8px;
+	}
 }
 
 .news_main_head {
-	border-bottom: 4px solid black;
+	//border-bottom: 4px solid black;
 	h2 {
 		font-family: @GeometriaExtraBold;
 		font-size: 60px;
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			font-size: 42px;
+		}
 	}
+
 }
 .news_main_head_inner {
 	.news_main_head;
@@ -298,6 +340,9 @@ footer{
 	background-color: #feeeeb;
 	overflow: scroll;
 	max-height: 690px;
+	@media (min-width: @screen-sm) and (max-width: @screen-md){
+		max-height: 570px;
+	}
 
 }
 
@@ -308,6 +353,9 @@ footer{
 		font-size: 20px;
 		line-height: 1.5;
 		font-family: @EuropaNuovaExtraBold;
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			font-size: 14px;
+		}
 	}
 	.news_right_item_date {
 		text-align: right;
@@ -315,10 +363,16 @@ footer{
 		font-size: 14px;
 		color: #7f7775;
 		padding: 10px 0;
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			font-size: 12px;
+		}
 	}
 	p {
 		font-family: @Geometria;
 		font-size: 15px;
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			font-size: 11px;
+		}
 	}
 }
 .news_right_inner {
@@ -332,7 +386,7 @@ footer{
 
 .textslider {
 	border-top: 4px solid black;
-	
+	border-bottom: 4px solid black;
 	width: 100%;
 	height: 100px;
 	text-align: center;
@@ -342,14 +396,14 @@ footer{
 		font-size: 45px;
 	}
 	@media (min-width: @screen-md) and (max-width: @screen-lg){
-		font-size: 50px;
+		font-size: 40px;
 		height: 90px;
 		border-top: 5px solid black;
 		border-bottom: 5px solid black;
 		
 	}
 	@media (min-width: @screen-sm) and (max-width: @screen-md){
-		font-size: 34px;
+		font-size: 30px;
 		border-top: 2px solid black;
 		border-bottom: 2px solid black;
 		height: 60px;
@@ -358,7 +412,7 @@ footer{
 		font-size: 22px;
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
-		height: 40px;
+		//height: 40px;
 	}
 	@media (max-width: @screen-xs){
 		font-size: 16px;
@@ -385,6 +439,9 @@ footer{
 	font-size: 16px;
 	.bottomLogo{
 		text-align: center !important;
+	}
+	@media (min-width: @screen-md) and (max-width: @screen-lg) {
+		font-size: 12px;
 	}
 }
 .mainheader{
@@ -564,18 +621,17 @@ footer{
 	}
 }
 .geocont-1 {
+	position: relative;
+	
 	margin-top: 40px;
-	.geocont;
 	background: url(../img/wh1.jpg) top center;
-	min-height: 125px;
 	text-align: center;
-	padding-top: 20px !important;
+	padding: 40px 0 20px 0;
+	
+	height: auto;
 
 }
-.logo-w, .tiser-text {
-	//display: inline-block;
 
-}
 .logo-w {
 	position: absolute;
 	top: 20px;
@@ -584,9 +640,21 @@ footer{
 .tiser-text {
 	font-size: 57px;
 	color: #ffffff;
-	padding-left: 40px;
+	//padding-left: 40px;
 	display: inline;
 	font-family: @EuropaNuovaExtraBold;
+	line-height: 1;
+	@media (min-width: @screen-md) and (max-width: @screen-lg){
+		font-size: 39px;
+	}
+	img {
+		margin-top: -20px;
+		padding-right: 30px;
+		@media (min-width: @screen-md) and (max-width: @screen-lg) {
+			width: 74px;
+			height: auto;
+		}
+	}
 
 }
 .ordermain{
@@ -634,6 +702,9 @@ footer{
 		width: 100%;
 		text-transform: uppercase;
 		letter-spacing: 3px;
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			font-size: 15px;
+		}
 
 	}
 }
@@ -661,6 +732,9 @@ footer{
 		width: 100%;
 		text-transform: uppercase;
 		letter-spacing: 3px;
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			font-size: 15px;
+		}
 
 	}
 }
@@ -1114,7 +1188,7 @@ footer{
 }
 .footmain{
 	@media (max-width: @screen-md){
-		padding-top: 20px;
+		//padding-top: 20px;
 	}
 }
 .bord {
@@ -1209,4 +1283,38 @@ footer{
 	border-bottom: 5px solid black;
 	width: 100%;
 	min-height: 455px;
+}
+//Аналитика
+.main_post_analityc {
+	.main_post;
+	img {
+		min-height: 300px;
+		width: 100%;
+	}
+	margin-bottom: 0;
+	height: 300px;
+	.main_post_head
+		h3 {
+			font-size: 30px;
+			border-bottom: 4px solid #ffffff;
+
+		}
+		p {
+			font-size: 20px;
+			font-family: @Geometria !important;
+		}
+}
+.second-posts-analityc {
+	height: 304px;
+	background: #fef2f0;
+}
+.second-posts-analityc-item {
+	position: relative;
+	h3, p {
+		//padding-left: 130px;
+	}
+	img {
+		width: 117px;
+		height: 117px;
+	}
 }
