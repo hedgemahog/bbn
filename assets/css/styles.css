@@ -7201,6 +7201,19 @@ This must be run when you have at least 2 sprites.
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .lang-inner-main {
+    right: 0 !important;
+    width: 27px;
+    height: auto;
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .lang-inner-main {
+    display: none;
+  }
+}
 .in .navbar-nav li {
   text-align: left;
   border-right: 1px solid black;
@@ -7229,7 +7242,7 @@ This must be run when you have at least 2 sprites.
 }
 @media (max-width: 992px) {
   .navbar-inner .navbar-header a .zag {
-    font-size: 22px;
+    font-size: 20px;
     width: 500px;
   }
 }
@@ -7267,8 +7280,13 @@ This must be run when you have at least 2 sprites.
   font-size: 20px;
 }
 @media (max-width: 992px) {
+  .navbar-inner .navbar-nav a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
   .navbar-inner .navbar-nav {
-    margin-right: 0;
+    margin-right: 80px;
   }
 }
 @media (max-width: 768px) {
@@ -7333,6 +7351,19 @@ This must be run when you have at least 2 sprites.
   right: 30px;
   top: 5px;
 }
+@media (max-width: 768px) {
+  .lang-inner {
+    right: 0 !important;
+    width: 27px;
+    height: auto;
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .lang-inner {
+    display: none;
+  }
+}
 html,
 body {
   background: #ffffff;
@@ -7391,7 +7422,12 @@ h3 {
 }
 @media (min-width: 1280px) {
   .clients_cont {
-    padding: 50px 74px 0 74px;
+    padding: 50px 0;
+  }
+}
+@media (min-width: 992px) {
+  .clients_cont {
+    padding: 50px 0;
   }
 }
 .textPageCont {
@@ -8423,6 +8459,13 @@ footer {
   background: #f89586;
   padding: 20px 25px;
 }
+@media (max-width: 768px) {
+  .orangeButton .btn-primary {
+    background: #ffffff;
+    border: 1px solid #f89586;
+    color: #f89586;
+  }
+}
 .orangeButton .btn-primary:hover {
   background: #f89586 !important;
   color: #fff;
@@ -8442,7 +8485,6 @@ footer {
   font-size: 20px;
   color: #fff;
   width: 100%;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -8458,17 +8500,24 @@ footer {
 @media (max-width: 480px) {
   .orangeButton a {
     font-size: 10px !important;
-    letter-spacing: 2px;
+    letter-spacing: 0;
   }
 }
 .blueButton .btn-primary {
   box-shadow: none;
   border: none;
-  background: #94c6dd;
+  background: #f89586;
   padding: 20px 25px;
 }
+@media (max-width: 768px) {
+  .blueButton .btn-primary {
+    background: #ffffff;
+    border: 1px solid #f89586;
+    color: #f89586;
+  }
+}
 .blueButton .btn-primary:hover {
-  background: #94c6dd !important;
+  background: #f89586 !important;
   color: #fff;
 }
 @media (max-width: 480px) {
@@ -8486,7 +8535,6 @@ footer {
   font-size: 20px;
   color: #fff;
   width: 100%;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -8496,9 +8544,28 @@ footer {
 }
 @media (max-width: 480px) {
   .blueButton a {
-    font-size: 10px !important;
-    letter-spacing: 2px;
+    font-size: 10px;
   }
+}
+@media (max-width: 480px) {
+  .blueButton a {
+    font-size: 10px !important;
+    letter-spacing: 0;
+  }
+}
+.blueButton .btn-primary {
+  background: #94c6dd;
+}
+@media (max-width: 768px) {
+  .blueButton .btn-primary {
+    background: #ffffff;
+    border: 1px solid #94c6dd;
+    color: #94c6dd;
+  }
+}
+.blueButton .btn-primary:hover {
+  background: #94c6dd !important;
+  color: #fff;
 }
 .weekimage h2 {
   font-family: "GeometriaExtraBold";

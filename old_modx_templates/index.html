@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[[seoTitle]]</title>
+    [[$head]]   
+  </head>
+  <body>
+    <div class="maincont container">
+      <header>
+        <nav role="navigation" class="navbar navbar-main">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle btn-md">
+              <span class="sr-only">Скрыть навигацию</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button><a href="./index.html"><img src="img/logonew.jpg" class="logoimg"></a>
+            <div class="headtext">
+              <p class="mainheader">Бюро <br/>Стратегические <br/> Коммуникации</p>
+              <p class="mainheadermobile">Бюро Стратегические Коммуникации  </p>
+            </div>
+          </div>
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+             [[$topmenu_main]]
+             <div class="lang-inner-main"><a href="#"> <img src="img/en.png"></a></div>
+            <div class="main_head_social">
+              [[$social]]
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="row">
+        <div class="textslider">
+           [[$slider_main]]
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+        [[$banner_main]]
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="news_main_head">
+            <h2>Новости и аналитика</h2>
+          </div>
+        </div>
+        <div class="col-xs-8">
+          <div class="main_post">
+            [[$main_post]]
+          </div>
+          <div class="row">
+             [[$mini_posts]]
+          </div>
+          <div class="row">
+            [[$colorbuttons]]
+          </div>
+        </div>
+        <div class="col-xs-4 news_right">
+          [[$right_news]]
+        </div>
+      </div>
+    
+    </div>
+    <div class="container geo">                  
+      <div class="geocont-1 margin-bottom-40">
+        <div class="logo-w"><img src="img/logo-white.png"></div>
+        <div class="tiser-text">В большой политике с 2010 года    </div>
+      </div>
+      <div class="maincont container"></div>
+      <div class="row">
+        <div class="col-xs-12 main_social">
+          <div class="main_social_icons">
+            [[$social2]]
+          </div>
+          <p class="social_text">| <span class="text_orange">+7 (495) 649-83-74</span> | <a href="mailto:info@burcon.ru" class="link_blue">info@burcon.ru</a> |      </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="seotext">
+            [[$seotext]]
+            
+          </div>
+        </div>
+      </div>
+      <footer>
+        [[$footer_main]]
+        
+      </footer>
+    </div>
+    
+      
+ 
+    <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
+          <form role="form" action="contact.php" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Ваше имя (обязательно)" class="form-control input-lg">
+              <input type="email" name="email" placeholder="Email (обязательно)" class="form-control input-lg">
+              <input type="text" name="tel" placeholder="Телефон (опционально)" class="form-control input-lg">
+              <textarea rows="6" name="message" placeholder="Текст сообщения" class="form-control input-lg"> </textarea>
+              <button type="submit" class="btn btn-primary">Отправить </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>$(function(){ $('#carousel-example-generic').carousel({interval: 5000}); $('#carousel-example-generic-geo').carousel({interval: 5000}) });             </script>

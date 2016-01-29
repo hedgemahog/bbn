@@ -57,7 +57,10 @@ h3 {
 .clients_cont{
 	.maincont;
 	@media (min-width: @screen-lg){
-		padding: 50px 74px 0 74px;
+		padding: 50px 0;
+	}
+	@media (min-width: @screen-md){
+		padding: 50px 0;
 	}
 
 }
@@ -824,6 +827,11 @@ footer{
 		border: none;
 		background: #f89586;
 		padding: 20px 25px;
+		@media (max-width: @screen-sm){
+				background: #ffffff;
+				border: 1px solid #f89586;
+				color: #f89586; 
+			}
 		&:hover{
 			background: #f89586 !important;
 			color: #fff;
@@ -840,7 +848,7 @@ footer{
 		font-size: 20px;
 		color: #fff;
 		width: 100%;
-		text-transform: uppercase;
+		//text-transform: uppercase;
 		letter-spacing: 3px;
 		@media (min-width: @screen-sm) and (max-width: @screen-md){
 			font-size: 15px;
@@ -850,50 +858,25 @@ footer{
 			}
 		@media (max-width: @screen-xs){
 				font-size: 10px !important;
-				letter-spacing: 2px;
+				letter-spacing: 0;
 			}	
 
 
 	}
 }
 .blueButton{
-	//text-align: center;
-	//padding-top: 250px;
-
-	@media (max-width: 768px) {
-		//padding-top: 100px;
-	}
+	.orangeButton;
 	.btn-primary {
-		box-shadow: none;
-		border: none;
 		background: #94c6dd;
-		padding: 20px 25px;
+		@media (max-width: @screen-sm){
+				background: #ffffff;
+				border: 1px solid #94c6dd;
+				color: #94c6dd; 
+			}
 		&:hover{
 			background: #94c6dd !important;
 			color: #fff;
 		}
-		@media (max-width: @screen-xs){
-				padding: 20px 15px;
-			}
-		@media (max-width: 320px){
-				padding: 10px 5px;
-			}	
-	}
-	a {
-		font-family: @EuropaNuovaExtraBold;
-		font-size: 20px;
-		color: #fff;
-		width: 100%;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		@media (min-width: @screen-sm) and (max-width: @screen-md){
-			font-size: 15px;
-		}
-		@media (max-width: @screen-xs){
-				font-size: 10px !important;
-				letter-spacing: 2px;
-			}
-
 	}
 }
 
