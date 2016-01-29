@@ -167,6 +167,9 @@ footer{
 
 //Main Page
 .bannermain {
+	@media (max-width: @screen-xs) {
+  		display: none;
+	}
 	//width: 100%;
 	.carousel-control{
 		background: none;
@@ -199,6 +202,7 @@ footer{
 		@media (min-width: @screen-sm) and (max-width: @screen-md){
 			top: 0;
 		}
+		
 		h1 {
 			font-family: @GeometriaBold;
 			font-size: 26px;
@@ -264,12 +268,18 @@ footer{
 			@media (min-width: @screen-sm) and (max-width: @screen-md){
 				font-size: 27px;
 			}
+			@media (max-width: @screen-xs){
+				font-size: 14px;
+			}
 			
 		}
 		p {
 			font-size: 20px;
 			@media (min-width: @screen-sm) and (max-width: @screen-md){
 				font-size: 13px;
+			}
+			@media (max-width: @screen-xs){
+				display: none;
 			}
 		}
 	}
@@ -282,6 +292,9 @@ footer{
 		width: 100%;
 		//max-height: 175px;
 	}
+	@media (max-width: @screen-xs){
+				margin-bottom: 20px;
+			}
 	.blue-gradient, .orange-gradient {
 		width: 100%;
 		height: 100%;
@@ -303,6 +316,13 @@ footer{
 			@media (min-width: @screen-sm) and (max-width: @screen-md){
 				font-size: 15px;
 			}
+			@media (max-width: @screen-xs){
+				font-size: 10px;
+			}
+			@media (max-width: 320px){
+				font-size: 10px;
+				line-height: 1;
+			}
 		}
 		p {
 			font-size: 20px;
@@ -319,18 +339,55 @@ footer{
 	@media (min-width: @screen-sm) and (max-width: @screen-md){
 		font-size: 8px;
 	}
+	@media (max-width: @screen-xs){
+				display: none;
+			}
 }
-
+.leftcolmain {
+	@media (max-width: @screen-sm) {
+			padding-bottom: 40px;
+			background: #f2f8fb;
+		}
+}
 .news_main_head {
-	//border-bottom: 4px solid black;
+	border-bottom: 4px solid black;
+	.analitonly {
+		display: none;
+		@media (max-width: @screen-sm) {
+			display: block;
+		}
+	}
+	.newsandanalyt {
+		display: block;
+		@media (max-width: @screen-sm) {
+			display: none;
+		}
+	}
 	h2 {
 		font-family: @GeometriaExtraBold;
 		font-size: 60px;
 		@media (min-width: @screen-sm) and (max-width: @screen-md){
 			font-size: 42px;
 		}
+		@media (max-width: @screen-sm){
+			font-size: 28px;
+
+		}
+		@media (max-width: @screen-xs) {
+			font-size: 16px;
+			padding-left: 10px;
+		}
 	}
 
+}
+.newsonly_main_head{
+	.news_main_head;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	display: none;
+	@media (max-width: @screen-sm) {
+			display: block;
+		}
 }
 .news_main_head_inner {
 	.news_main_head;
@@ -340,6 +397,9 @@ footer{
 	background-color: #feeeeb;
 	overflow: scroll;
 	max-height: 690px;
+	@media (max-width: @screen-sm) {
+		background: none;
+	}
 	@media (min-width: @screen-sm) and (max-width: @screen-md){
 		max-height: 570px;
 	}
@@ -349,6 +409,16 @@ footer{
 .news_right_item {
 	border-bottom: 4px solid black;
 	padding-bottom: 20px;
+	@media (max-width: @screen-sm) {
+		border-bottom: none;
+		padding: 20px 40px 20px 40px;
+		&:nth-child(2n){
+			background: #ffffff;
+		}
+		&:nth-child(2n+1){
+			background: #feeeeb;
+		}
+	}
 	h3 {
 		font-size: 20px;
 		line-height: 1.5;
@@ -356,6 +426,13 @@ footer{
 		@media (min-width: @screen-sm) and (max-width: @screen-md){
 			font-size: 14px;
 		}
+		@media (max-width: @screen-sm) {
+			font-size: 16px;
+		}
+		@media (max-width: @screen-xs) {
+			font-size: 12px;
+		}
+
 	}
 	.news_right_item_date {
 		text-align: right;
@@ -366,6 +443,13 @@ footer{
 		@media (min-width: @screen-sm) and (max-width: @screen-md){
 			font-size: 12px;
 		}
+		@media (max-width: @screen-sm) {
+			font-size: 12px;
+		}
+		@media (max-width: @screen-xs) {
+			font-size: 9px;
+			text-align: left;
+		}
 	}
 	p {
 		font-family: @Geometria;
@@ -373,7 +457,18 @@ footer{
 		@media (min-width: @screen-sm) and (max-width: @screen-md){
 			font-size: 11px;
 		}
+		@media (max-width: @screen-sm) {
+			font-size: 12px;
+		}
 	}
+	img {
+		@media (max-width: @screen-sm) {
+			display: none;
+		}
+	}
+	@media (max-width: @screen-xs) {
+			font-size: 8px;
+		}
 }
 .news_right_inner {
 	.news_right;
@@ -393,10 +488,10 @@ footer{
 	font-family: @lineaturaBold;
 
 	@media (min-width: @screen-lg){
-		font-size: 45px;
+		font-size: 40px;
 	}
 	@media (min-width: @screen-md) and (max-width: @screen-lg){
-		font-size: 40px;
+		font-size: 30px;
 		height: 90px;
 		border-top: 5px solid black;
 		border-bottom: 5px solid black;
@@ -415,11 +510,18 @@ footer{
 		//height: 40px;
 	}
 	@media (max-width: @screen-xs){
-		font-size: 16px;
+		font-size: 12px;
 		border-top: 1px solid black;
 		border-bottom: 1px solid black;
 		height: 40px;
 	}
+	@media (max-width: 320px){
+		font-size: 9px;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		height: 35px;
+	}
+
 
 	
 }
@@ -439,9 +541,17 @@ footer{
 	font-size: 16px;
 	.bottomLogo{
 		text-align: center !important;
+		img {
+			@media (max-width: @screen-xs) {
+			width: 70% !important;
+			}
+		}
 	}
 	@media (min-width: @screen-md) and (max-width: @screen-lg) {
 		font-size: 12px;
+	}
+	@media (max-width: @screen-sm) {
+			font-size: 10px;
 	}
 }
 .mainheader{
@@ -629,7 +739,9 @@ footer{
 	padding: 40px 0 20px 0;
 	
 	height: auto;
-
+	@media (max-width: @screen-sm) {
+	  padding-top: 20px;
+	}
 }
 
 .logo-w {
@@ -647,12 +759,34 @@ footer{
 	@media (min-width: @screen-md) and (max-width: @screen-lg){
 		font-size: 39px;
 	}
+	@media (max-width: @screen-sm) {
+			font-size: 30px;
+	}
+	@media (max-width: @screen-xs) {
+			font-size: 16px;
+		}
+	@media (max-width: 320px) {
+			font-size: 14px;
+		}	
 	img {
 		margin-top: -20px;
 		padding-right: 30px;
 		@media (min-width: @screen-md) and (max-width: @screen-lg) {
 			width: 74px;
 			height: auto;
+		}
+		@media (max-width: @screen-sm) {
+			width: 67px;
+			height: auto;
+		}
+		@media (max-width: @screen-xs) {
+			margin-top: -10px;
+		}
+		@media (max-width: 320px) {
+			width: 37px;
+			height: auto;
+			padding-right: 5px;
+			margin-top: 0;
 		}
 	}
 
@@ -694,6 +828,12 @@ footer{
 			background: #f89586 !important;
 			color: #fff;
 		}
+		@media (max-width: @screen-xs){
+				padding: 20px 15px;
+			}
+		@media (max-width: 320px){
+				padding: 10px 5px;
+			}	
 	}
 	a {
 		font-family: @EuropaNuovaExtraBold;
@@ -705,6 +845,14 @@ footer{
 		@media (min-width: @screen-sm) and (max-width: @screen-md){
 			font-size: 15px;
 		}
+		@media (max-width: @screen-xs){
+				font-size: 10px;
+			}
+		@media (max-width: @screen-xs){
+				font-size: 10px !important;
+				letter-spacing: 2px;
+			}	
+
 
 	}
 }
@@ -724,6 +872,12 @@ footer{
 			background: #94c6dd !important;
 			color: #fff;
 		}
+		@media (max-width: @screen-xs){
+				padding: 20px 15px;
+			}
+		@media (max-width: 320px){
+				padding: 10px 5px;
+			}	
 	}
 	a {
 		font-family: @EuropaNuovaExtraBold;
@@ -735,6 +889,10 @@ footer{
 		@media (min-width: @screen-sm) and (max-width: @screen-md){
 			font-size: 15px;
 		}
+		@media (max-width: @screen-xs){
+				font-size: 10px !important;
+				letter-spacing: 2px;
+			}
 
 	}
 }
@@ -1182,6 +1340,8 @@ footer{
 	text-align: center;
 	font-size: 9px;
 	display: none;
+	border-top: 1px solid black;
+	padding-top: 20px;
 	@media (max-width: @screen-md){
 		display: block;
 	}

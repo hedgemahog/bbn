@@ -6,15 +6,16 @@ html
         include partials/head_main.jade
         //-Текстовый слайдер начало
         .row
-          .textslider
-            div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
-              div(class="carousel-inner")
-                div(class="item active")
-                  |Создаем информационные и избирательные кампании
-        //-Текстовый слайдер конец        
+          .col-xs-12
+            .textslider
+              div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
+                div(class="carousel-inner")
+                  div(class="item active")
+                    |Создаем информационные и избирательные кампании
+            //-Текстовый слайдер конец        
         
-        //-Баннер начало        
-        .row
+          //-Баннер начало        
+          
           div(class="col-xs-12")
             div(id="carousel-example-generic-geo" class="carousel slide bannermain" data-ride="carousel")
               div(class="carousel-inner")
@@ -39,12 +40,14 @@ html
               .next
                 a(class="right carousel-control" href="#carousel-example-generic-geo" data-slide="next")
                   <img src="img/next-white.png">        
-        //-Баннер конец
+          //-Баннер конец
         .row
-          div(class="col-xs-12")
-            .news_main_head
-              h2 Новости и аналитика
-          div(class="col-md-8")
+          .news_main_head
+            h2.newsandanalyt Новости и аналитика
+            h2.analitonly Аналитика Б.С.К
+        .row
+          //-левая колонка
+          div(class="col-md-8 leftcolmain")
             .main_post
               img(src="img/post1.jpg" class="img-responsive")
               .black-gradient
@@ -72,7 +75,11 @@ html
                   a(class="btn btn-primary" href="#" role="button") Больше аналитики
               div(class="col-xs-6")
                 .blueButton
-                  a(class="btn btn-primary" href="#" role="button") Рассылка Б.С.К.    
+                  a(class="btn btn-primary" href="#" role="button") Рассылка Б.С.К. 
+
+          //-правая колонка
+          .col-md-4.newsonly_main_head
+            h2 Новости
           div(class="col-md-4 news_right")
             div(class="news_right_item")
               img(src="img/news_left.jpg" class="img-responsive")
@@ -94,6 +101,7 @@ html
               h3 АНКАРА ВЫЗВАЛА РОССИЙСКОГО ПОСЛА ИЗ-ЗА НАПАДЕНИЙ НА ПОСОЛЬСТВО
               .news_right_item_date 18.09.2015
               p Министерство иностранных дел Турции вызвало российского посла в связи с нападениями на посольство в Москве и консульство в Новороссийске. Турция потребовала, чтобы Россия обеспечила защиту дипломатическим миссиям в соответствии с международным правом.   
+
       .geocont-1.margin-bottom-40
         .tiser-text 
           img(src="img/logo-white.png")

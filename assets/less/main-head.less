@@ -53,8 +53,14 @@
 		font-size: 20px;
 		padding-top: 10px;
 		text-align: center;
-
-
+	}
+	@media (max-width: @screen-xs) {
+      font-size: 12px;
+      padding-top: 15px;
+	}
+	@media (max-width: 320px) {
+      font-size: 12px;
+      padding-top: 0;
 	}
 	
 }
@@ -177,9 +183,24 @@
 	.lang-inner;
 		top: 10px !important;
 		right: 15px !important;
+
 		@media (max-width: @screen-sm){
 			right: 0 !important;
 			width: 27px;
 			height: auto;
+			display: none;
+		}
+		@media (max-width: @screen-xs){
+			display: none;
 		}
 	}
+.in {
+	.navbar-nav {
+		li {
+			text-align: left;
+		 	border-right: 1px solid black;
+		 	border-left: 1px solid black;
+		 	padding-left: 20px;
+		}
+	}
+}
