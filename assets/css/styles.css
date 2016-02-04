@@ -2476,38 +2476,6 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-.fade.in {
-  opacity: 1;
-}
-.collapse {
-  display: none;
-}
-.collapse.in {
-  display: block;
-}
-tr.collapse.in {
-  display: table-row;
-}
-tbody.collapse.in {
-  display: table-row-group;
-}
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition-property: height, visibility;
-  transition-property: height, visibility;
-  -webkit-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-}
 .caret {
   display: inline-block;
   width: 0;
@@ -7107,6 +7075,8 @@ This must be run when you have at least 2 sprites.
 }
 .navbar-main .navbar-nav {
   padding-top: 0px;
+  margin-right: 90px;
+  margin-bottom: 10px;
 }
 .navbar-main .navbar-nav li a {
   padding: 10px 10px;
@@ -7128,14 +7098,6 @@ This must be run when you have at least 2 sprites.
 .navbar-main .navbar-nav li a:last-child {
   padding-right: 0px;
 }
-@media (max-width: 768px) {
-  .navbar-main .navbar-nav {
-    width: 100%;
-  }
-  .navbar-main .navbar-nav li {
-    border-top: 1px solid black;
-  }
-}
 .navbar-main .navbar-nav a {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -7148,6 +7110,35 @@ This must be run when you have at least 2 sprites.
 @media (min-width: 992px) {
   .navbar-main .navbar-nav a {
     font-size: 18px;
+  }
+}
+@media (min-width: 480px) {
+  .navbar-main .navbar-nav a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-main .navbar-collapse {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    width: 100%;
+  }
+  .navbar-main .navbar-collapse .navbar-nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+  }
+  .navbar-main .navbar-collapse .navbar-nav li {
+    margin: 0;
+    padding: 0 0 0 10%;
+    border-bottom: 1px solid black;
+  }
+  .navbar-main .navbar-collapse .navbar-nav li:last-child {
+    border-bottom: none;
   }
 }
 .lang,
@@ -7165,6 +7156,36 @@ This must be run when you have at least 2 sprites.
     font-size: 23px;
   }
 }
+.rasologo {
+  float: left;
+  text-align: right;
+  margin-left: 330px;
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .rasologo {
+    margin-left: 200px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .rasologo {
+    margin-left: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1152px) {
+  .rasologo {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 992px) {
+  .rasologo {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .rasologo {
+    display: none;
+  }
+}
 .main_head_social ul {
   padding-top: 15px;
 }
@@ -7175,6 +7196,9 @@ This must be run when you have at least 2 sprites.
 }
 .main_head_social ul li:last-child {
   padding-right: 0;
+}
+.main_head_social ul li a:hover {
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .main_head_social {
@@ -7190,10 +7214,8 @@ This must be run when you have at least 2 sprites.
 }
 @media (max-width: 768px) {
   .lang-inner-main {
-    right: 0 !important;
-    width: 27px;
+    width: 20px;
     height: auto;
-    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -7213,12 +7235,6 @@ This must be run when you have at least 2 sprites.
   .lang-inner-main {
     display: none;
   }
-}
-.in .navbar-nav li {
-  text-align: left;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  padding-left: 20px;
 }
 .navbar-inner {
   background: #fff;
@@ -7302,6 +7318,8 @@ This must be run when you have at least 2 sprites.
   .navbar-inner .navbar-header a .zag-sm {
     display: block;
     margin-top: 5px;
+    text-align: center;
+    width: 100%;
   }
 }
 .navbar-inner .navbar-toggle {
@@ -7331,18 +7349,35 @@ This must be run when you have at least 2 sprites.
     font-size: 15px;
   }
 }
+@media (min-width: 992px) and (max-width: 1280px) {
+  .navbar-inner .navbar-nav {
+    margin-right: 80px;
+  }
+}
 @media (max-width: 992px) {
   .navbar-inner .navbar-nav {
     margin-right: 80px;
   }
 }
 @media (max-width: 768px) {
-  .navbar-inner .navbar-nav {
-    margin-right: 0;
+  .navbar-inner .navbar-collapse {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     width: 100%;
   }
-  .navbar-inner .navbar-nav li {
-    border-top: 1px solid black;
+  .navbar-inner .navbar-collapse .navbar-nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+  }
+  .navbar-inner .navbar-collapse .navbar-nav li {
+    margin: 0;
+    padding: 0 0 0 10%;
+    border-bottom: 1px solid black;
   }
 }
 .logoint {
@@ -7400,16 +7435,46 @@ This must be run when you have at least 2 sprites.
 }
 @media (max-width: 768px) {
   .lang-inner {
-    right: 0 !important;
-    width: 27px;
+    width: 20px;
     height: auto;
-    display: none;
   }
 }
 @media (max-width: 480px) {
   .lang-inner {
     display: none;
   }
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+tr.collapse.in {
+  display: table-row;
+}
+tbody.collapse.in {
+  display: table-row-group;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 html,
 body {
@@ -7446,16 +7511,7 @@ h3 {
 .clients_cont {
   position: relative;
   background: #fff;
-}
-@media (min-width: 1280px) {
-  .clients_cont {
-    padding: 50px 0;
-  }
-}
-@media (min-width: 992px) {
-  .clients_cont {
-    padding: 50px 0;
-  }
+  padding-top: 50px;
 }
 .textPageCont {
   background: #fff;
@@ -7502,10 +7558,10 @@ footer {
 }
 .pagefooter {
   box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
-  height: 53px;
   padding-top: 15px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 15px;
   background: #fff;
 }
 @media (max-width: 992px) {
@@ -7515,10 +7571,10 @@ footer {
 }
 .uslugifooter {
   box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
-  height: 53px;
   padding-top: 15px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 15px;
   background: #fff;
   box-shadow: none;
   border-top: 1px solid black;
@@ -7560,16 +7616,10 @@ footer {
   color: #ffffff;
   top: 45%;
 }
-.bannermain .left {
-  left: -60px;
-}
 @media (min-width: 768px) and (max-width: 992px) {
   .bannermain .left {
     left: -20px;
   }
-}
-.bannermain .right {
-  right: -60px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bannermain .right {
@@ -7581,6 +7631,11 @@ footer {
   right: 15%;
   text-align: right;
   padding-left: 35%;
+}
+@media (max-width: 1024px) {
+  .bannermain .carousel-caption {
+    top: 0px;
+  }
 }
 @media (min-width: 1280px) {
   .bannermain .carousel-caption {
@@ -7598,6 +7653,11 @@ footer {
   border-bottom: 1px solid #ffffff;
   padding-bottom: 10px;
 }
+@media (max-width: 1024px) {
+  .bannermain .carousel-caption h1 {
+    font-size: 18px;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
   .bannermain .carousel-caption h1 {
     font-size: 18px;
@@ -7611,6 +7671,11 @@ footer {
 .bannermain .carousel-caption p {
   font-family: "GeometriaMedium";
   font-size: 18px;
+}
+@media (max-width: 1024px) {
+  .bannermain .carousel-caption p {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bannermain .carousel-caption p {
@@ -7633,6 +7698,11 @@ footer {
   text-align: left;
   margin-left: -30px;
 }
+@media (max-width: 1024px) {
+  .bannermain .lefttextslide {
+    top: 0px;
+  }
+}
 @media (min-width: 1280px) {
   .bannermain .lefttextslide {
     top: 0px;
@@ -7649,6 +7719,11 @@ footer {
   border-bottom: 1px solid #ffffff;
   padding-bottom: 10px;
 }
+@media (max-width: 1024px) {
+  .bannermain .lefttextslide h1 {
+    font-size: 18px;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
   .bannermain .lefttextslide h1 {
     font-size: 18px;
@@ -7662,6 +7737,11 @@ footer {
 .bannermain .lefttextslide p {
   font-family: "GeometriaMedium";
   font-size: 18px;
+}
+@media (max-width: 1024px) {
+  .bannermain .lefttextslide p {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bannermain .lefttextslide p {
@@ -7701,6 +7781,11 @@ footer {
 }
 .main_post .main_post_head h3 {
   font-size: 44px;
+}
+@media (max-width: 1280px) {
+  .main_post .main_post_head h3 {
+    font-size: 27px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .main_post .main_post_head h3 {
@@ -7929,6 +8014,11 @@ footer {
     padding-left: 10px;
   }
 }
+@media (max-width: 768px) {
+  .news_main_head_inner {
+    text-align: left;
+  }
+}
 .news_right {
   background-color: #feeeeb;
   overflow: scroll;
@@ -7947,6 +8037,7 @@ footer {
 .news_right_item {
   border-bottom: 4px solid black;
   padding-bottom: 20px;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .news_right_item {
@@ -8121,6 +8212,9 @@ footer {
 .main_social .main_social_icons ul li:last-child {
   padding-right: 0;
 }
+.main_social .main_social_icons ul li a:hover {
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .main_social .main_social_icons {
     display: none;
@@ -8132,7 +8226,8 @@ footer {
 .seotext {
   padding: 40px 0;
   font-family: "GeometriaBold";
-  font-size: 16px;
+  font-size: 9px;
+  opacity: 0.2;
 }
 .seotext .bottomLogo {
   text-align: center !important;
@@ -8150,6 +8245,11 @@ footer {
 @media (max-width: 768px) {
   .seotext {
     font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .seotext {
+    display: none;
   }
 }
 .mainheader {
@@ -8602,6 +8702,11 @@ footer {
 .weekimage h2 {
   font-family: "GeometriaExtraBold";
   font-size: 34px;
+}
+@media (max-width: 768px) {
+  .weekimage h2 {
+    font-size: 15px;
+  }
 }
 .piccaption {
   font-family: "GeometriaBold";
@@ -9287,8 +9392,6 @@ footer {
   text-align: center;
   font-size: 9px;
   display: none;
-  border-top: 1px solid black;
-  padding-top: 20px;
 }
 @media (max-width: 992px) {
   .footer-small {
@@ -9304,14 +9407,21 @@ footer {
   }
 }
 .post_head {
-  height: 332px;
+  min-height: 332px;
   width: 100%;
   background: #000;
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 992px) {
+  .post_head {
+    min-height: 0;
+    height: auto;
+  }
+}
 .post_head img {
   width: 100%;
+  height: auto;
 }
 .post_head .black-gradient {
   width: 100%;
@@ -9335,24 +9445,84 @@ footer {
   text-align: left;
   font-family: "EuropaNuovaExtraBold";
 }
+@media (max-width: 992px) {
+  .post_head .full_post_head h1 {
+    font-size: 39px;
+  }
+}
+@media (max-width: 768px) {
+  .post_head .full_post_head h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .post_head .full_post_head h1 {
+    font-size: 16px;
+  }
+}
 .post_head .full_post_head p {
   font-size: 20px;
 }
 .post_lead {
   font-size: 25px;
   font-family: "GeometriaExtraBold";
-  padding: 20px 20px 0 80px;
+  padding: 40px 20px 0 40px;
   margin-bottom: 20px;
   border-bottom: 2px solid black;
   position: relative;
+  min-height: 130px;
+}
+@media (max-width: 992px) {
+  .post_lead {
+    font-size: 17px;
+    padding-left: 50px !important;
+    min-height: 0;
+    padding: 20px 10px 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .post_lead {
+    font-size: 15px;
+    padding-left: 50px !important;
+    background: #f7f7f7;
+    color: #404040;
+    min-height: 0;
+  }
+}
+@media (max-width: 480px) {
+  .post_lead {
+    font-size: 10px;
+    padding-left: 50px !important;
+    background: #f7f7f7;
+    color: #404040;
+    min-height: 0;
+  }
 }
 .post_lead .post-date {
   position: absolute;
   left: -25px;
-  bottom: 60px;
+  bottom: 40%;
   transform: rotate(-90deg);
   font-size: 15px;
   color: #7f7f7f;
+}
+@media (max-width: 992px) {
+  .post_lead .post-date {
+    bottom: 40%;
+    font-size: 10px;
+    left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .post_lead .post-date {
+    color: #7b7b7b;
+  }
+}
+@media (max-width: 480px) {
+  .post_lead .post-date {
+    font-size: 10px;
+    left: -10px;
+  }
 }
 .post_full_text p {
   font-size: 16px;
@@ -9363,11 +9533,36 @@ footer {
   float: left;
   margin: -10px 4px 2px 0;
 }
+@media (max-width: 992px) {
+  .post_full_text p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .post_full_text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .post_full_text p {
+    font-size: 11px;
+  }
+}
 .full_post-date {
   text-align: right;
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #524b48;
+  color: #8c8c8c;
+}
+@media (max-width: 992px) {
+  .full_post-date {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .full_post-date {
+    font-size: 11px;
+  }
 }
 .full_post_social {
   text-align: center;
@@ -9375,11 +9570,23 @@ footer {
 .full_post_social img {
   padding: 0 10px;
 }
+@media (max-width: 768px) {
+  .soc_border_left,
+  .soc_border_right {
+    display: none;
+  }
+}
 .week_image {
   margin-bottom: 20px;
   border-bottom: 5px solid black;
   width: 100%;
   min-height: 455px;
+}
+@media (max-width: 480px) {
+  .week_image {
+    min-height: 0;
+    height: auto;
+  }
 }
 .main_post_analityc {
   position: relative;
@@ -9411,6 +9618,11 @@ footer {
 }
 .main_post_analityc .main_post_head h3 {
   font-size: 44px;
+}
+@media (max-width: 1280px) {
+  .main_post_analityc .main_post_head h3 {
+    font-size: 27px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .main_post_analityc .main_post_head h3 {
@@ -9457,4 +9669,58 @@ footer {
 .second-posts-analityc-item img {
   width: 117px;
   height: 117px;
+}
+.post_quote {
+  background: #fef2f0;
+  color: #808080;
+  padding: 2% 5%;
+  font-size: 27px;
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .post_quote {
+    font-size: 19px;
+  }
+}
+@media (max-width: 768px) {
+  .post_quote {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .post_quote {
+    font-size: 21px;
+    padding: 2% 1%;
+  }
+}
+.post_quote_blue {
+  background: #fef2f0;
+  color: #808080;
+  padding: 2% 5%;
+  font-size: 27px;
+  font-family: "LineaturaRegular", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+  background: #f2f8fb;
+}
+@media (max-width: 992px) {
+  .post_quote_blue {
+    font-size: 19px;
+  }
+}
+@media (max-width: 768px) {
+  .post_quote_blue {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .post_quote_blue {
+    font-size: 21px;
+    padding: 2% 1%;
+  }
+}
+.textpage_image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }

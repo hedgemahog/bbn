@@ -113,7 +113,8 @@
   	}
 	.navbar-nav {
 		padding-top: 0px;
-		//margin-left: 150px;
+		margin-right: 90px;
+		margin-bottom: 10px;
 		//background: #eee;
 		li {
 			a {
@@ -134,9 +135,9 @@
 			}
 		}
 		@media (max-width: @screen-sm){
-			width: 100%;
+			//width: 100%;
 			li {
-				border-top: 1px solid black;
+				//border: 1px solid black;
 			}
 		}
 		a {
@@ -147,6 +148,33 @@
 			}
 			@media (min-width: @screen-md) {
 				font-size: 18px;
+			}
+			@media (min-width: @screen-xs) {
+				font-size: 15px;
+			}
+		}
+	}
+	.navbar-collapse {
+		@media (max-width: @screen-sm) {
+		  padding: 0;
+		  margin: 0;	
+		  border-top: 1px solid black;
+		  border-right: 1px solid black;
+		  border-left: 1px solid black;
+		  width: 100%;
+			.navbar-nav{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				text-align: left;
+				li {
+					margin: 0;
+					padding: 0 0 0 10%;
+					border-bottom: 1px solid black;
+					&:last-child{
+						border-bottom: none;
+					}
+				}
 			}
 		}
 	}
@@ -163,6 +191,30 @@
 			}
 	}
 }
+.rasologo {
+	float: left;
+	text-align: right;
+	margin-left: 330px;
+	//margin-top: 10px;	
+	@media (min-width: @screen-md) and (max-width: 1280px){
+			margin-left: 200px;
+			//width: 100px;
+		}
+	@media (min-width: @screen-md) and (max-width: 1024px){
+			margin-left: 100px;
+			//width: 100px;
+		}	
+	@media (min-width: @screen-md) and (max-width: 1152px){
+			margin-left: 120px;
+			//width: 100px;
+		}		
+	@media (max-width: @screen-md){
+		margin-left: 200px;
+	}	
+	@media (max-width: @screen-sm){
+		display: none;
+	}	
+}
 .main_head_social {
 	ul {
 		padding-top: 15px;
@@ -172,6 +224,11 @@
 			padding-right: 10px;
 			&:last-child {
 				padding-right: 0;
+			}
+			a {
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -194,13 +251,3 @@
 			display: none;
 		}
 	}
-.in {
-	.navbar-nav {
-		li {
-			text-align: left;
-		 	border-right: 1px solid black;
-		 	border-left: 1px solid black;
-		 	padding-left: 20px;
-		}
-	}
-}

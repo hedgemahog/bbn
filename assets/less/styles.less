@@ -9,6 +9,7 @@
 @import "flip.less";
 @import "main-head.less";
 @import "int-head.less";
+@import "component-animations.less";
 
 html, 
 body {
@@ -56,12 +57,8 @@ h3 {
 }
 .clients_cont{
 	.maincont;
-	@media (min-width: @screen-lg){
-		padding: 50px 0;
-	}
-	@media (min-width: @screen-md){
-		padding: 50px 0;
-	}
+	padding-top: 50px;
+	
 
 }
 .textPageCont{
@@ -110,10 +107,11 @@ footer{
 
 .pagefooter {
 	box-shadow: 0px -5px 10px 0px rgba(50, 50, 50, 0.35);
-	height: 53px;
+	//height: 53px;
 	padding-top: 15px;
 	padding-left: 70px;
 	padding-right: 70px;
+	padding-bottom: 15px;
 	background: #fff;
 	@media (max-width: @screen-md) {
 		font-size: 10px;
@@ -181,14 +179,14 @@ footer{
 		
 	}
 	.left {
-			left: -60px;
+			//left: -50px;
 			
 			@media (min-width: @screen-sm) and (max-width: @screen-md){
 				left: -20px;
 			}
 		}
 	.right {
-			right: -60px;
+			//right: -50px;
 			
 			@media (min-width: @screen-sm) and (max-width: @screen-md){
 				right: -20px;
@@ -199,6 +197,10 @@ footer{
 		right: 15%;
 		text-align: right;
 		padding-left: 35%;
+		
+		@media (max-width: 1024px){
+			top: 0px;
+		}
 		@media (min-width: 1280px){
 			top: 0px;
 		}
@@ -211,6 +213,9 @@ footer{
 			font-size: 26px;
 			border-bottom: 1px solid #ffffff;
 			padding-bottom: 10px;
+			@media (max-width: 1024px){
+				font-size: 18px;
+			}
 			@media (min-width: @screen-sm) and (max-width: @screen-md){
 				font-size: 18px;
 			}
@@ -221,6 +226,9 @@ footer{
 		p {
 			font-family: @GeometriaMedium;
 			font-size: 18px;
+			@media (max-width: 1024px){
+				font-size: 14px;
+			}
 			@media (min-width: @screen-sm) and (max-width: @screen-md){
 				font-size: 14px;
 			}
@@ -268,6 +276,9 @@ footer{
 		}
 		h3 {
 			font-size: 44px;
+			@media (max-width: @screen-lg){
+				font-size: 27px;
+			}
 			@media (min-width: @screen-sm) and (max-width: @screen-md){
 				font-size: 27px;
 			}
@@ -395,6 +406,9 @@ footer{
 .news_main_head_inner {
 	.news_main_head;
 	text-align: center;
+	@media (max-width: @screen-sm) {
+			text-align: left;
+		}
 }
 .news_right {
 	background-color: #feeeeb;
@@ -412,6 +426,7 @@ footer{
 .news_right_item {
 	border-bottom: 4px solid black;
 	padding-bottom: 20px;
+	width: 100%;
 	@media (max-width: @screen-sm) {
 		border-bottom: none;
 		padding: 20px 40px 20px 40px;
@@ -528,8 +543,6 @@ footer{
 		border-bottom: 1px solid black;
 		height: 35px;
 	}
-
-
 	
 }
 .main_social {
@@ -542,10 +555,12 @@ footer{
 .social_text {
 	font-size: 20px;
 }
+
 .seotext {
 	padding: 40px 0;
 	font-family: @GeometriaBold;
-	font-size: 16px;
+	font-size: 9px;
+	opacity: 0.2;
 	.bottomLogo{
 		text-align: center !important;
 		img {
@@ -559,6 +574,9 @@ footer{
 	}
 	@media (max-width: @screen-sm) {
 			font-size: 10px;
+	}
+	@media (max-width: @screen-xs) {
+			display: none;
 	}
 }
 .mainheader{
@@ -888,6 +906,9 @@ footer{
 	h2 {
 		font-family: @GeometriaExtraBold;
 		font-size: 34px;
+		@media (max-width: @screen-sm){
+				font-size: 15px; 
+			}
 	}
 }
 .piccaption {
@@ -1327,8 +1348,8 @@ footer{
 	text-align: center;
 	font-size: 9px;
 	display: none;
-	border-top: 1px solid black;
-	padding-top: 20px;
+	//border-top: 1px solid black;
+	//padding-top: 20px;
 	@media (max-width: @screen-md){
 		display: block;
 	}
@@ -1347,17 +1368,21 @@ footer{
 		margin-top: 80px;
 	}
 }
-//post page
 
+//post page
 .post_head {
-	height: 332px;
+	min-height: 332px;
 	width: 100%;
 	background: #000;
 	position: relative;
 	overflow: hidden;
+	@media (max-width: @screen-md){
+				min-height: 0;
+				height: auto;
+			}
 	img {
 		width: 100%;
-		//height: 332px;
+		height: auto;
 	}
 	.black-gradient {
 		width: 100%;
@@ -1378,6 +1403,15 @@ footer{
 			font-size: 57px;
 			text-align: left;
 			font-family: @EuropaNuovaExtraBold;
+			@media (max-width: @screen-md){
+				font-size: 39px;
+			}
+			@media (max-width: @screen-sm){
+				font-size: 35px;
+			}
+			@media (max-width: @screen-xs){
+				font-size: 16px;
+			}
 		}
 		p {
 			font-size: 20px;
@@ -1387,37 +1421,85 @@ footer{
 .post_lead {
 	font-size: 25px;
 	font-family: @GeometriaExtraBold;
-	padding: 20px 20px 0 80px;
+	padding: 40px 20px 0 40px;
 	margin-bottom: 20px;
 	border-bottom: 2px solid black;
 	position: relative;
+	min-height: 130px;
+	@media (max-width: @screen-md){
+				font-size: 17px;
+				padding-left: 50px !important;
+				min-height: 0;
+				padding: 20px 10px 0 20px;
+			}
+	@media (max-width: @screen-sm){
+				font-size: 15px;
+				padding-left: 50px !important;
+				background: #f7f7f7;
+				color: #404040;
+				min-height: 0;
+			}
+	@media (max-width: @screen-xs){
+				font-size: 10px;
+				padding-left: 50px !important;
+				background: #f7f7f7;
+				color: #404040;
+				min-height: 0;
+			}				
 	.post-date {
 		position: absolute;
 		left: -25px;
-		bottom: 60px;
+		bottom: 40%;
 		transform: rotate(-90deg);
 		font-size: 15px;
 		color: #7f7f7f;
+		@media (max-width: @screen-md){
+				bottom: 40%;
+				font-size: 10px;
+				left: 0;
+		}
+		@media (max-width: @screen-md){
+				color: #7b7b7b;
+			}
+		@media (max-width: @screen-xs){
+				font-size: 10px;
+				left: -10px;
+			}		
 	}
 }
 .post_full_text {
 	p {
 		&:first-child {
-			&:first-letter {
-			font-family: @font-family-sans-serif-head;
-			font-size: 35px;
-			float: left;
-			margin: -10px 4px 2px 0;
-		}
+				&:first-letter {
+				font-family: @font-family-sans-serif-head;
+				font-size: 35px;
+				float: left;
+				margin: -10px 4px 2px 0;
+			}
 		}
 		font-size: 16px;
+		@media (max-width: @screen-md){
+			font-size: 12px;
+		}
+		@media (max-width: @screen-sm){
+			font-size: 14px;
+		}
+		@media (max-width: @screen-xs){
+			font-size: 11px;
+		}
 	}
 }
 .full_post-date {
 	text-align: right;
 	font-family: @font-family-sans-serif-med;
 	font-size: 16px;
-	color: #524b48;
+	color: #8c8c8c;
+	@media (max-width: @screen-md){
+		font-size: 12px;
+	}
+	@media (max-width: @screen-sm){
+		font-size: 11px;
+	}	
 }
 .full_post_social {
 	text-align: center;
@@ -1425,11 +1507,21 @@ footer{
 		padding: 0 10px;
 	}
 }
+.soc_border_left, .soc_border_right {
+ @media (max-width: @screen-sm){
+		display: none;
+	}
+} 
 .week_image {
 	margin-bottom: 20px;
 	border-bottom: 5px solid black;
 	width: 100%;
 	min-height: 455px;
+	@media (max-width: @screen-xs){
+		min-height: 0;
+		height: auto;
+		//width: auto;
+	}
 }
 //Аналитика
 .main_post_analityc {
@@ -1464,4 +1556,32 @@ footer{
 		width: 117px;
 		height: 117px;
 	}
+}
+.post_quote {
+	background: #fef2f0;
+	color: #808080;
+	padding: 2% 5%;
+	font-size: 27px;
+	font-family: @font-family-sans-serif-head;
+	margin-bottom: 10px;
+	@media (max-width: @screen-md){
+		font-size: 19px;
+	}
+	@media (max-width: @screen-sm){
+		font-size: 25px;
+	}
+	@media (max-width: @screen-xs){
+		font-size: 21px;
+		padding: 2% 1%;
+	}
+}
+.post_quote_blue {
+	.post_quote;
+	background: #f2f8fb;
+}
+.textpage_image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	
 }
