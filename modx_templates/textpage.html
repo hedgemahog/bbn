@@ -1,48 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Бюро Стратегические Коммуникации</title>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="lib/flip/src/flip.js"></script>
-    <script src="lib/jquery-ui/jquery-ui.js">     </script>
+    <title>[[seoTitle]]</title>
+    [[$head_newspage]]
   </head>
   <body>
-    <div class="navbar internalNav navbar-fixed-top">
-      <div class="navbar-header navbar-fixed-top"><a href="./index.html" class="navbar-brand">
-           
-          <img src="img/logolong.jpg"></a>
-        <ul class="nav navbar-nav">
-          <li><a href="./about.html">О бюро</a></li>
-          <li><a href="uslugi.html">Услуги</a></li>
-          <li><a href="contacts.html">Связаться</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container textPageCont">
-      <div class="textitem">
-        <div class="row">
-          <div class="col-xs-4">
-            <h2>Избирательные кампании</h2>
+    [[$head_inner]]
+    <div class="container longPageCont">
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="post_head">[[*news_img]]
+          <div class="black-gradient"></div>
+          <div class="full_post_head">  
+            <h1>[[*pagetitle]]</h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-4"><img src="img/izbir_big.jpg"> </div>
-          <div class="col-xs-8">
-            <p class="bigFl">В тот момент, когда вы достигли максимальных высот вашей отрасли и поставили цель связать будующую деятельность со статусом официального лица, вам необходимо позаботиться безоговорочной поддержке избирателей. <br>Ключом к успеху является продуманная до мелочей предвыборная кампания. <br>Специалисты бюро готовы разработать для вас именно такую. <br>Мы тщательно проанализируем Ваши конкурентные приемущества, специфику региона, настроения элит, работников социальной сферы в общем поймут чего ждут избиратели. <br>Мы используем весь накопленный опыт и знания в сфере связей с общественностью, политических технологий и маркетинга для того, чтобы провести избирательную кампанию на высшем организационном уровне, сформировать ваш сильный имидж и выстроить долгосрочные связи с целевой аудиторией.      </p>
-          </div>
+        <div class="post_lead">
+          <p>[[*introtext]]</p>
+          <div class="post-date">[[*publishedon:strtotime:date=`%d.%m.%Y`]]</div>
         </div>
+        <div class="post_full_text">
+          [[*content]]
+        </div>
+        <div class="full_post-date">[[*publishedon:strtotime:date=`%d.%m.%Y`]]</div>
+      </div>
+      <div class="full_post_social">
+        [[$fullpost_social]]
       </div>
     </div>
-    <footer>
-      <div class="navbar-fixed-bottom pagefooter">© Бюро Стратегические Коммуникации, 2015. All rights reserved.  <a href="./terms.html">Правила пользования сайтом</a>.
-        <div class="pull-right">| +7 (495) 649-83-74 | info@burcon.ru |</div>
-      </div>
-    </footer>
+    [[$footer_inner_fixed]]
   </body>
 </html>

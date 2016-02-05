@@ -10,6 +10,7 @@
 @import "main-head.less";
 @import "int-head.less";
 @import "component-animations.less";
+@import "analytyc.less";
 
 html, 
 body {
@@ -903,6 +904,7 @@ footer{
 }
 
 .weekimage {
+	margin-top: 20px;
 	h2 {
 		font-family: @GeometriaExtraBold;
 		font-size: 34px;
@@ -1371,7 +1373,7 @@ footer{
 
 //post page
 .post_head {
-	min-height: 332px;
+	max-height: 332px;
 	width: 100%;
 	background: #000;
 	position: relative;
@@ -1382,7 +1384,7 @@ footer{
 			}
 	img {
 		width: 100%;
-		height: auto;
+		//height: auto;
 	}
 	.black-gradient {
 		width: 100%;
@@ -1523,40 +1525,7 @@ footer{
 		//width: auto;
 	}
 }
-//Аналитика
-.main_post_analityc {
-	.main_post;
-	img {
-		min-height: 300px;
-		width: 100%;
-	}
-	margin-bottom: 0;
-	height: 300px;
-	.main_post_head
-		h3 {
-			font-size: 30px;
-			border-bottom: 4px solid #ffffff;
 
-		}
-		p {
-			font-size: 20px;
-			font-family: @Geometria !important;
-		}
-}
-.second-posts-analityc {
-	height: 304px;
-	background: #fef2f0;
-}
-.second-posts-analityc-item {
-	position: relative;
-	h3, p {
-		//padding-left: 130px;
-	}
-	img {
-		width: 117px;
-		height: 117px;
-	}
-}
 .post_quote {
 	background: #fef2f0;
 	color: #808080;

@@ -143,13 +143,17 @@
 		a {
 			font-family: @font-family-sans-serif-med;
 			font-size: 20px;
-			@media (min-width: @screen-lg) {
+			
+			@media (max-width: @screen-lg) {
 				font-size: 23px;
 			}
-			@media (min-width: @screen-md) {
+			@media (max-width: 1024px) {
 				font-size: 18px;
 			}
-			@media (min-width: @screen-xs) {
+			@media (max-width: @screen-md) {
+				font-size: 18px;
+			}
+			@media (max-width: @screen-xs) {
 				font-size: 15px;
 			}
 		}
@@ -194,22 +198,22 @@
 .rasologo {
 	float: left;
 	text-align: right;
-	margin-left: 330px;
+	margin-left: 230px;
 	//margin-top: 10px;	
 	@media (min-width: @screen-md) and (max-width: 1280px){
-			margin-left: 200px;
+			margin-left: 60px;
 			//width: 100px;
 		}
 	@media (min-width: @screen-md) and (max-width: 1024px){
-			margin-left: 100px;
+			margin-left: 20px;
 			//width: 100px;
 		}	
 	@media (min-width: @screen-md) and (max-width: 1152px){
-			margin-left: 120px;
+			margin-left: 60px;
 			//width: 100px;
 		}		
 	@media (max-width: @screen-md){
-		margin-left: 200px;
+		margin-left: 150px;
 	}	
 	@media (max-width: @screen-sm){
 		display: none;

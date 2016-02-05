@@ -1,36 +1,82 @@
 doctype html
 html
-    include partials/cab_head.jade
-    body
-      div(class="clients_cont container ")
-        include partials/head_inner.jade       
-        .row
-          .news_main_head_inner
-            h2 Аналитика Б.С.К.
-        .row    
-          div(class="col-xs-6 bordered-bottom-big zero")
-            .main_post_analityc
-              img(src="img/post1.jpg" class="img-responsive")
-              .black-gradient
-              .main_post_head
-                h3 Партнеры БСК о вопросах международной безопасности
-                p Партнеры БСК о вопросах международной безопасностиAnt dollaciunt laccaest, sa nem nonsequ ibusam corum nonsedi occuptur? Qui offici doluptat. 
-          div(class="col-xs-6 bordered-bottom-big zero second-posts-analityc")
-            .media.second-posts-analityc-item
-              .media-left
-                img(src="img/post1.jpg" class="media-object")
-              .media-body    
-                h4(class="media-heading") The best mince pie on sale this Festive Season? Not from where you’d think!
-                p Alitiumque dolendundae pratis escia dolupta possersperum quam, nus imil es aribus, omnimus amusam qui commolores sante quia coratur res aliquiam essequa mustiis denis autem illupta ssinveliqui se iureped magni
-            .media.second-posts-analityc-item
-              .media-left
-                img(src="img/post1.jpg" class="media-object")
-              .media-body    
-                h4(class="media-heading") The best mince pie on sale this Festive Season? Not from where you’d think!
-                p Alitiumque dolendundae pratis escia dolupta possersperum quam, nus imil es aribus, omnimus amusam qui commolores sante quia coratur res aliquiam essequa mustiis denis autem illupta ssinveliqui se iureped magni
-                  
-             
+  include partials/cab_head.jade
+  body
+    div(class="clients_cont container ")
+      include partials/head_inner.jade       
+      .news_main_head_inner
+        h2 Аналитика Б.С.К.
+      .row.analyt_top_posts    
+        div(class="col-md-6 main_post_analityc")
+          img(src="img/post1.jpg" class="img-responsive")
+          .black-gradient
+          .main_post_head
+            h3 Партнеры БСК о вопросах международной безопасности
+            p Партнеры БСК о вопросах международной безопасностиAnt dollaciunt laccaest, sa nem nonsequ ibusam corum nonsedi occuptur? Qui offici doluptat.
           
-        
-      div(class="maincont container")  
-        include partials/footer_inner_fixed.jade         
+        div(class="col-md-6 second_posts_cont")
+          .media.second-posts-analityc-item
+              .media-left
+                .second-posts-analityc-item-data 11.03.2016
+                .analityc-img
+                  img(src="img/post1.jpg" class="media-object")
+              .media-body    
+                h4(class="media-heading") The best mince pie on sale this Festive Season? Not from where you’d think!
+                p Alitiumque dolendundae pratis escia dolupta possersperum quam, nus imil es aribus, omnimus amusam qui commolores sante quia coratur res aliquiam essequa mustiis denis autem illupta ssinveliqui se iureped magni
+            .media.second-posts-analityc-item
+              .media-left
+                .second-posts-analityc-item-data 11.03.2016
+                .analityc-img
+                  img(src="img/post1.jpg" class="media-object")
+              .media-body    
+                h4(class="media-heading") The best mince pie on sale this Festive Season? Not from where you’d think!
+                p Alitiumque dolendundae pratis escia dolupta possersperum quam, nus imil es aribus, omnimus amusam qui commolores sante quia coratur res aliquiam essequa mustiis denis autem illupta ssinveliqui se iureped magni
+
+      .row.analyt-grid-cont.margin-bottom-40
+        .col-md-3.col-sm-4.col-xs-6.grid-item
+          .grid-posts-analityc-item-data 11.03.2016
+          .grid-img
+            img(src="img/post1.jpg" class="")
+          p Партнеры БСК о вопросах международной безопасности    
+        .col-md-3.col-sm-4.col-xs-6.grid-item
+          .grid-posts-analityc-item-data 11.03.2016
+          .grid-img
+            img(src="img/post1.jpg" class="")
+          p Партнеры БСК о вопросах международной безопасности
+        .col-md-3.col-sm-4.col-xs-6.grid-item
+          .grid-posts-analityc-item-data 11.03.2016
+          .grid-img
+            img(src="img/post1.jpg" class="")
+          p Партнеры БСК о вопросах международной безопасности
+        .col-md-3.col-sm-4.col-xs-6.grid-item
+          .grid-posts-analityc-item-data 11.03.2016
+          .grid-img
+            img(src="img/post1.jpg" class="")
+          p Партнеры БСК о вопросах международной безопасности
+        .col-md-3.col-sm-4.col-xs-6.grid-item
+          .grid-posts-analityc-item-data 11.03.2016
+          .grid-img
+            img(src="img/post1.jpg" class="")
+          p Партнеры БСК о вопросах международной безопасности
+        .col-md-3.col-sm-4.col-xs-6.grid-item
+          .grid-posts-analityc-item-data 11.03.2016
+          .grid-img
+            img(src="img/post1.jpg" class="")
+          p Партнеры БСК о вопросах международной безопасности
+        .col-md-3.col-sm-4.col-xs-6.grid-item
+          .grid-posts-analityc-item-data 11.03.2016
+          .grid-img
+            img(src="img/post1.jpg" class="")
+          p Партнеры БСК о вопросах международной безопасности
+        .col-md-3.col-sm-4.col-xs-6.grid-item
+          .grid-posts-analityc-item-data 11.03.2016
+          .grid-img
+            img(src="img/post1.jpg" class="")
+          p Партнеры БСК о вопросах международной безопасности 
+      .row
+        .col-sm-4.col-sm-offset-4.margin-bottom-40.analityc-botton
+          .orangeButton
+            a(class="btn btn-primary" href="#" role="button") Архив материалов
+
+    div(class="maincont container")  
+      include partials/footer_inner_fixed.jade         
