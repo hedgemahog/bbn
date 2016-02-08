@@ -7869,6 +7869,33 @@ tbody.collapse.in {
     font-size: 16px !important;
   }
 }
+.news_main_head_inner sup {
+  font-size: 14px;
+  font-family: "GeometriaExtraBold";
+  text-transform: uppercase;
+  color: #6fb4d1;
+  top: -2.5em;
+  letter-spacing: 3px;
+}
+@media (max-width: 992px) {
+  .news_main_head_inner sup {
+    font-size: 9px;
+  }
+}
+@media (max-width: 768px) {
+  .news_main_head_inner sup {
+    font-size: 11px;
+    letter-spacing: 0;
+    top: -2em;
+  }
+}
+@media (max-width: 480px) {
+  .news_main_head_inner sup {
+    font-size: 11px;
+    letter-spacing: 0;
+    top: -0.5em;
+  }
+}
 html,
 body {
   background: #ffffff;
@@ -8369,6 +8396,7 @@ footer {
 }
 .news_main_head_inner {
   border-bottom: 4px solid black;
+  position: relative;
   text-align: center;
 }
 .news_main_head_inner .analitonly {
