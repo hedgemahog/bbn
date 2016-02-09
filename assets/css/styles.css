@@ -5083,12 +5083,20 @@ button.close {
   src: url(../fonts/LineaturaBold.otf);
 }
 @font-face {
+  font-family: 'LineaturaLight';
+  src: url(../fonts/LineaturaLight.otf);
+}
+@font-face {
   font-family: 'GeometriaHeavy';
   src: url(../fonts/Geometria-Heavy.otf);
 }
 @font-face {
   font-family: 'GeometriaBold';
   src: url(../fonts/Geometria-Bold.otf);
+}
+@font-face {
+  font-family: 'GeometriaLight';
+  src: url(../fonts/Geometria-Light.otf);
 }
 @font-face {
   font-family: 'Geometria';
@@ -7806,7 +7814,7 @@ tbody.collapse.in {
   }
 }
 .grid-item p {
-  font-size: 15px;
+  font-size: 13px;
   font-family: EuropaNuovaExtraBold;
   color: #494b4c;
 }
@@ -7894,6 +7902,63 @@ tbody.collapse.in {
     font-size: 11px;
     letter-spacing: 0;
     top: -0.5em;
+  }
+}
+.subscribepage_head {
+  padding-top: 10%;
+  text-align: center;
+}
+.subscribepage_head h1 {
+  font-family: "LineaturaLight";
+}
+.subscribepage_head h1 span {
+  font-family: "LineaturaBold";
+}
+.subscribecont {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.subscribecont img {
+  width: 100%;
+  height: auto;
+}
+.subscribecont p {
+  margin-top: 10%;
+  font-family: "GeometriaBold";
+  font-size: 30px;
+  color: #404040;
+}
+@media (max-width: 480px) {
+  .subscribecont p {
+    font-size: 12px !important;
+  }
+}
+.subscribe_field {
+  padding-top: 5%;
+}
+.subscribe_email {
+  width: 100%;
+  border: 4px solid black;
+  box-shadow: 10px 10px 0px -5px #000000;
+  padding: 40px 25px;
+  color: #939393;
+  text-align: center;
+  background: #f4f4f4;
+  font-size: 30px;
+}
+@media (max-width: 480px) {
+  .subscribe_email {
+    padding: 20px 5px;
+    font-size: 12px !important;
+  }
+}
+.subscribe_pic_credits {
+  font-family: "GeometriaLight";
+  color: #939393;
+}
+@media (max-width: 480px) {
+  .subscribe_pic_credits {
+    font-size: 7px !important;
   }
 }
 html,
@@ -8442,7 +8507,8 @@ footer {
 }
 .news_right {
   background-color: #feeeeb;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   max-height: 690px;
 }
 @media (max-width: 768px) {
@@ -8454,6 +8520,13 @@ footer {
   .news_right {
     max-height: 570px;
   }
+}
+.news_right .ist {
+  text-align: right;
+  font-family: "GeometriaLight";
+  font-style: italic;
+  color: #7f7775;
+  font-size: 80%;
 }
 .news_right_item {
   border-bottom: 4px solid black;
@@ -8541,7 +8614,8 @@ footer {
 }
 .news_right_inner {
   background-color: #feeeeb;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   max-height: 690px;
   max-height: 1200px;
 }
@@ -8554,6 +8628,13 @@ footer {
   .news_right_inner {
     max-height: 570px;
   }
+}
+.news_right_inner .ist {
+  text-align: right;
+  font-family: "GeometriaLight";
+  font-style: italic;
+  color: #7f7775;
+  font-size: 80%;
 }
 @media (max-width: 992px) {
   .news_right_inner {

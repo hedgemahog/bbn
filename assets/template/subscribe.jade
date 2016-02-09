@@ -1,0 +1,26 @@
+doctype html
+html
+  include partials/cab_head.jade
+  body
+    div(class="clients_cont container ")
+      include partials/head_inner.jade       
+      .row
+        .col-md-8.col-md-offset-2
+          .subscribepage_head
+            h1 ОСТАВЬТЕ Свой отпечаток в политике — С <span>Бюро СТРАТЕГИЧЕСКИЕ КОММУНИКАЦИИ</span>
+      .row
+        .col-md-6.col-md-offset-3.subscribecont 
+          form
+            <input type="image" src="img/fingerprint.jpg" class="img-responsive" alt="ОК">   
+       
+            p <i>Подпишитесь на рассылку Б.С.К., чтобы всегда быть в курсе событий и уверенно ориентироваться в актуальной новостной повестке!</i> 
+            .subscribe_field
+              <input type="email" class="subscribe_email" id="exampleInputEmail1" placeholder="ваш e-mail">
+      .row
+        .col-md-8.col-md-offset-2.subscribe_pic_credits
+          .pull-right Pic.: Saul Steinberg, Fingerprint Man. 1951.
+          .clearfix
+          .pull-right ©Saul Steinberg Foundation 
+
+    div(class="maincont container")  
+      include partials/footer_inner_fixed.jade         

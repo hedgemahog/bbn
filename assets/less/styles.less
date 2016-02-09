@@ -11,6 +11,7 @@
 @import "int-head.less";
 @import "component-animations.less";
 @import "analytyc.less";
+@import "subscribe.less";
 
 html, 
 body {
@@ -414,13 +415,21 @@ footer{
 }
 .news_right {
 	background-color: #feeeeb;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	max-height: 690px;
 	@media (max-width: @screen-sm) {
 		background: none;
 	}
 	@media (min-width: @screen-sm) and (max-width: @screen-md){
 		max-height: 570px;
+	}
+	.ist{
+		text-align: right;
+		font-family: @GeometriaLight;
+		font-style: italic;
+		color: #7f7775;
+		font-size: 80%;
 	}
 
 }
