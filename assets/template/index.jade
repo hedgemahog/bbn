@@ -2,7 +2,8 @@ doctype html
 html
     include partials/cab_head.jade
     body
-      div(class="maincont container")
+      include partials/mobile_menu.jade
+      div(class="maincont container" id="panel")
         include partials/head_main.jade
         //-Текстовый слайдер начало
         .textslider

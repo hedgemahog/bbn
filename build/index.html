@@ -11,14 +11,30 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
     <script src="js/bootstrap.js"></script>
     <script src="lib/flip/src/flip.js"></script>
-    <script src="lib/jquery-ui/jquery-ui.js">     </script>
+    <script src="lib/jquery-ui/jquery-ui.js"></script>
   </head>
   <body>
-    <div class="maincont container">
+    <nav id="menu" class="collapse navbar-collapse mobile-menu">
+      <ul class="nav ">
+        <li><a href="./about.html">О бюро</a></li>
+        <li><a href="./uslugi.html">Услуги</a></li>
+        <li><a href="./uslugi.html">Клиенты</a></li>
+        <li><a href="./uslugi.html">Новости</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="mobile-menu-social">
+        <li><a href="http://www.facebook.com/burconrus/"><img src="img/fb.png"></a></li>
+        <li><a href="#"><img src="img/tw.png"></a></li>
+        <li><a href="#"><img src="img/insta.png"></a></li>
+        <li><a href="#"><img src="img/yout.png"></a></li>
+        <li><a href="mailto:info@burcon.ru"><img src="img/mail1.png">	</a></li>
+      </ul>
+    </nav>
+    <div id="panel" class="maincont container">
       <header>
         <nav role="navigation" class="navbar navbar-main">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle btn-md">
+            <button type="button" data-toggle="" data-target=".navbar-collapse" class="navbar-toggle btn-md">
               <span class="sr-only">Скрыть навигацию</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -196,6 +212,8 @@
         </div>
       </div>
     </footer>
+    <script src="lib/slideout.js/dist/slideout.min.js"></script>
+    <script src="js/menu.js"></script>
     <div tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" class="modal fade contactmodal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content"><a href="#" data-dismiss="modal" class="modal_close"></a>
