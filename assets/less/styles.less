@@ -180,7 +180,10 @@ footer{
 		background: none;
 		color: #ffffff;
 		top: 45%;
-		
+		width: 4%;
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			width: 12%;
+		}
 	}
 	.left {
 			//left: -50px;
@@ -253,9 +256,9 @@ footer{
 	}
 }
 
-.main_post{
+.main_post {
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	overflow: hidden;
 	max-height: 365px;
 	@media (max-width: @screen-sm){
@@ -426,11 +429,19 @@ footer{
 	overflow-y: scroll;
 	overflow-x: hidden;
 	max-height: 690px;
+	width: 32.3%;
+	padding-right: 0;
+	padding-left: 0;
+	@media (max-width: @screen-md) {
+		width: 100%;
+		height: 300px;
+	}
 	@media (max-width: @screen-sm) {
 		background: none;
+		height: 300px;
 	}
 	@media (min-width: @screen-sm) and (max-width: @screen-md){
-		max-height: 570px;
+		max-height: 300px;
 	}
 	.ist{
 		text-align: right;
@@ -446,6 +457,8 @@ footer{
 	border-bottom: 4px solid black;
 	padding-bottom: 20px;
 	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
 	@media (max-width: @screen-sm) {
 		border-bottom: none;
 		padding: 20px 40px 20px 40px;
@@ -576,6 +589,7 @@ footer{
 }
 .social_text {
 	font-size: 20px;
+	font-weight: bold;
 }
 
 .seotext {
@@ -781,7 +795,7 @@ footer{
 	position: relative;
 	
 	margin-top: 40px;
-	background: url(../img/wh1.jpg) top center;
+	background: url(../img/wh1.jpg) 50% 20%;
 	text-align: center;
 	padding: 40px 0 20px 0;
 	

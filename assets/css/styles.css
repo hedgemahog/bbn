@@ -7512,7 +7512,7 @@ tbody.collapse.in {
 }
 .main_post_analityc {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   overflow: hidden;
   max-height: 365px;
   padding-right: 0 !important;
@@ -8007,11 +8007,11 @@ tbody.collapse.in {
 }
 #menu .nav li {
   font-family: "MuseoMedium", Helvetica, Arial, sans-serif;
-  font-size: 26px;
+  font-size: 18px;
   border-bottom: 1px solid #eee;
 }
 #menu .nav li a {
-  padding: 10px 10px;
+  padding: 10px 5px;
 }
 .mobile-menu-social {
   margin: 0 0 0 10px;
@@ -8163,6 +8163,12 @@ footer {
   background: none;
   color: #ffffff;
   top: 45%;
+  width: 4%;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bannermain .carousel-control {
+    width: 12%;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bannermain .left {
@@ -8303,7 +8309,7 @@ footer {
 }
 .main_post {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   overflow: hidden;
   max-height: 365px;
 }
@@ -8581,15 +8587,25 @@ footer {
   overflow-y: scroll;
   overflow-x: hidden;
   max-height: 690px;
+  width: 32.3%;
+  padding-right: 0;
+  padding-left: 0;
+}
+@media (max-width: 992px) {
+  .news_right {
+    width: 100%;
+    height: 300px;
+  }
 }
 @media (max-width: 768px) {
   .news_right {
     background: none;
+    height: 300px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .news_right {
-    max-height: 570px;
+    max-height: 300px;
   }
 }
 .news_right .ist {
@@ -8603,6 +8619,8 @@ footer {
   border-bottom: 4px solid black;
   padding-bottom: 20px;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media (max-width: 768px) {
   .news_right_item {
@@ -8688,16 +8706,26 @@ footer {
   overflow-y: scroll;
   overflow-x: hidden;
   max-height: 690px;
+  width: 32.3%;
+  padding-right: 0;
+  padding-left: 0;
   max-height: 1200px;
+}
+@media (max-width: 992px) {
+  .news_right_inner {
+    width: 100%;
+    height: 300px;
+  }
 }
 @media (max-width: 768px) {
   .news_right_inner {
     background: none;
+    height: 300px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .news_right_inner {
-    max-height: 570px;
+    max-height: 300px;
   }
 }
 .news_right_inner .ist {
@@ -8798,6 +8826,7 @@ footer {
 }
 .social_text {
   font-size: 20px;
+  font-weight: bold;
 }
 .seotext {
   padding: 40px 0;
@@ -9068,7 +9097,7 @@ footer {
 .geocont-1 {
   position: relative;
   margin-top: 40px;
-  background: url(../img/wh1.jpg) top center;
+  background: url(../img/wh1.jpg) 50% 20%;
   text-align: center;
   padding: 40px 0 20px 0;
   height: auto;
