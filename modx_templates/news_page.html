@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>[[seoTitle]]</title>
+    [[$head_newspage]]
+  </head>
+  <body>
+[[$mobile_menu]]
+<div id="panel">
+    [[$head_inner]]
+    <div class="container longPageCont">
+     <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="post_head"><img src="[[*news_img]]">
+          <div class="black-gradient"></div>
+          <div class="full_post_head">  
+            <h1>[[*pagetitle]]</h1>
+          </div>
+        </div>
+        <div class="post_lead">
+          <p>[[*introtext]]</p>
+          <div class="post-date">[[*publishedon:strtotime:date=`%d.%m.%Y`]]</div>
+        </div>
+        <div class="post_full_text">
+          [[*content]]
+        </div>
+        <div class="full_post-date">[[*publishedon:strtotime:date=`%d.%m.%Y`]]</div>
+        <div>[[*news_link]]</div>
+      </div>
+      <div class="full_post_social">
+        [[$fullpost_social]]
+      </div>
+      </div>
+    </div>
+    [[$footer_inner_fixed]]
+</div>
+  </body>
+</html>
